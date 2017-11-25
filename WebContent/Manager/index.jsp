@@ -310,7 +310,7 @@
         <div id="a_1"><a href="faxianyy.jsp">发现音乐</a></div>
         <div id="a_2"><a href="wodeyy.jsp">我的音乐</a></div>
         <div id="a_3"><a href="yyren.jsp">音乐人</a></div>
-        <div id="a_4"><a href="pengyou.jsp">朋友</a></div>
+        <div id="a_4"><a href="zhuce.jsp">注册</a></div>
         <div id="a_5">
             <table width="200" height="60" border="0">
                 <tr>
@@ -320,8 +320,8 @@
             </table>
         </div>
         <div id="a_dl">
-            <form id="form1" name="form1" method="post" action="Music.jsp?action=login">
-                <table width="400" height="60" border="0">
+            <form id="form1" name="form1" method="post" action="denglu.jsp?action=login">
+                <table width="450" height="60" border="0">
                     <tr>
                         <td>用户名</td>
                         <td> <input name="id" type="hidden" id="id" value=" "/></td>
@@ -329,6 +329,7 @@
                         <td>密码</td>
                         <td><input name="txtPassword" type="password" id="txtPassword" size="12"/></td>
                         <td><input type="submit" name="button" id="button" value="登陆"/></td>
+                        <td><input type="submit" name="button1" id="button1"value="注册"/></td>
                     </tr>
                 </table>
             </form>

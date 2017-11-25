@@ -269,17 +269,25 @@
             }
             #midl_0{
            		float:left;
-                width:800px;
+                width:200px;
                 height:20px;
-                font-family:Blackoak Std;
+                border:1;
+                align:center;
+                background-color:#323232;   
 
             }
+           #midl_1{
+    			float:right;
+    			width:400px;
+    			height:400ox;
+    			border:1px;
+    			background-color:#323232;       
+           }
             .l_1{
                 width:150px;
                 height:50px;
                 border-style:hiddle;
                 align:center;
-                maigin-top:5px;
                 
             }
             .l_2{
@@ -289,10 +297,19 @@
                 background-color:#323232;
                 text-align:center;
             }
+           	.l_2:hover{
+           		height:50px;
+           		 background-color:black;
+           		 text-align:center;
+           		transition-delay:50ms;/*延迟*/
+                transition-duration:300ms;/*过渡动画时间*/
+                transition-property:height;/*动画效果是改变宽度*/
+           	}
             .t{
             	width:231px;
             	height:200px;
             	border:1;
+            	margin:15px 10px 15px 10px;
             	border-style:hiddle;
             	text-align:center;
             }
@@ -300,6 +317,7 @@
 				width:230px;
 				height:200px;
 				border-style:hiddle;
+				margin:5px 10px 5px 10px;
 				
             }
         </style>
@@ -376,19 +394,28 @@
         </div>
 
         <div id="midleft">				<!-- 主内容区左 -->
-            <div id="midl_0">
-            
+            <div >
+            <table border=1 id="midl_0">
+            	<tr>
+            	<td>
+            	<div class="l_1"><a href="tuijian.jsp"><img src="images/tuijian.jpg" border="0"  alt="推荐歌曲"></a></div>
+            	</td>
+            	 <td><div class="l_2"><a href="tuijian.jsp">推荐</a></div></td>
+                 <td><div class="l_2"><a href="tuijian.jsp">榜单</a></div></td>
+                 <td><div class="l_2"><a href="tuijian.jsp">专辑</a></div></td>
+            	</tr>
+            </table>
             </div> 
             <br/>
-            <div class="yinyue">
-            <table border=1  bordercolor="#000000" align="center">
+            <div >
+            <table align="center" class="yinyue">
             		
-            	<tr>
+            <!-- 	<tr>
                         <td><div class="l_1"><a href="tuijian.jsp"><img src="images/tuijian.jpg" border="0"  alt="推荐歌曲"></a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">推荐</a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">榜单</a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">专辑</a></div></td>
-            	</tr>
+            	</tr> -->
             <tr>
             	<td>
            		<div class="t"><a href="tuijian.jsp"><img src="images/bj.jpg" class="t1" alt="歌曲1"></a></div>

@@ -267,24 +267,26 @@
                 border-style:solid;
             }
             #midl_0{
+           		float:left;
                 width:800px;
                 height:20px;
                 font-family:Blackoak Std;
 
             }
             .l_1{
-                float:left;
                 width:150px;
                 height:50px;
                 border-style:hiddle;
                 align:center;
+                maigin-top:5px;
+                
             }
             .l_2{
                 width:50px;
                 height:30px;
                 font-size:20px;
-                border-left:1px #808080 solid;
                 background-color:#323232;
+                text-align:center;
             }
             .t{
             	width:231px;
@@ -308,7 +310,7 @@
         <div id="a_1"><a href="faxianyy.jsp">发现音乐</a></div>
         <div id="a_2"><a href="wodeyy.jsp">我的音乐</a></div>
         <div id="a_3"><a href="yyren.jsp">音乐人</a></div>
-        <div id="a_4"><a href="pengyou.jsp">朋友</a></div>
+        <div id="a_4"><a href="zhuce.jsp">注册</a></div>
         <div id="a_5">
             <table width="200" height="60" border="0">
                 <tr>
@@ -318,8 +320,8 @@
             </table>
         </div>
         <div id="a_dl">
-            <form id="form1" name="form1" method="post" action="Music.jsp?action=login">
-                <table width="400" height="60" border="0">
+            <form id="form1" name="form1" method="post" action="denglu.jsp?action=login">
+                <table width="450" height="60" border="0">
                     <tr>
                         <td>用户名</td>
                         <td> <input name="id" type="hidden" id="id" value=" "/></td>
@@ -327,6 +329,7 @@
                         <td>密码</td>
                         <td><input name="txtPassword" type="password" id="txtPassword" size="12"/></td>
                         <td><input type="submit" name="button" id="button" value="登陆"/></td>
+                        <td><input type="submit" name="button1" id="button1"value="注册"/></td>
                     </tr>
                 </table>
             </form>
@@ -372,19 +375,19 @@
         </div>
 
         <div id="midleft">				<!-- 主内容区左 -->
-<!--             <div id="midl_0">
-                <table border="1"bordercolor="black">
-                   
-                </table>
-            </div> -->
-            <div class="yinyue">
-            <table border=1 bordercolor="#000000" align="center">
-             <tr>
+            <div id="midl_0">
+                <table border="1"bordercolor="black"align="center">
+                    <tr>
                         <td><div class="l_1"><a href="tuijian.jsp"><img src="images/tuijian.jpg" border="0"  alt="推荐歌曲"></a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">推荐</a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">榜单</a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">专辑</a></div></td>
             </tr>
+                </table>
+            </div> 
+            <div class="yinyue">
+            <table border=1 bordercolor="#000000" align="center">
+            
             <tr>
             	<td>
            		<div class="t"><a href="tuijian.jsp"><img src="images/bj.jpg" class="t1" alt="歌曲1"></a></div>

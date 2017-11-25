@@ -39,6 +39,7 @@ position:relative;
  position:absolute;
  height:250px;
  width:350px;
+ text-align:right;
  left:50%;             
  top:50%; 
  margin-left:-175px;   /*设置为宽度(width:450px;)的一半*/             
@@ -91,7 +92,7 @@ position:relative;
 <div id="biao">
 <div id="content">
     <form id="form1" name="form1" method="post" action="zhuce.jsp?action=reg">
-          <table width="100" border="0">
+          <table width="230" border="0">
           <tr id="1">
            <td colspan="2" align="center"><strong>用户注册</strong></td>
        </tr>
@@ -114,24 +115,26 @@ position:relative;
                     </td>
                 </tr>-->
                 <tr>
-                    <td>Email</td>
+                    <td>电话</td>
                     <td>
                         <input type="text" name="txtEmail" id="txtEmail" width="500px"/>
                     </td>
                 </tr>
                 <tr>
-                    <td>身份</td>
+                    <td>邮箱</td>
                     <td>
                         <input type="text" name="txtPower" id="txtPower" width="500px"/>
                     </td>
                 </tr>
-                <tr>
-                    <td colspan="2">
+          </table>
+          <div class="button" style="text-align:center">
+          	<tr>
+                    <td>
                          <input type="submit" name="button" id="button" value="注册" onclick="return Mi();"/>
                          <input type="reset" name="button2" id="button2" value="重置"/>
                     </td>
                 </tr>
-          </table>
+          </div>
     </form>
 </div>
 </div>

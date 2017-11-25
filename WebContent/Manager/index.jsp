@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -376,18 +377,18 @@
 
         <div id="midleft">				<!-- 主内容区左 -->
             <div id="midl_0">
-                <table border="1"bordercolor="black"align="center">
-                    <tr>
+            
+            </div> 
+            <br/>
+            <div class="yinyue">
+            <table border=1  bordercolor="#000000" align="center">
+            		
+            	<tr>
                         <td><div class="l_1"><a href="tuijian.jsp"><img src="images/tuijian.jpg" border="0"  alt="推荐歌曲"></a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">推荐</a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">榜单</a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">专辑</a></div></td>
-            </tr>
-                </table>
-            </div> 
-            <div class="yinyue">
-            <table border=1 bordercolor="#000000" align="center">
-            
+            	</tr>
             <tr>
             	<td>
            		<div class="t"><a href="tuijian.jsp"><img src="images/bj.jpg" class="t1" alt="歌曲1"></a></div>

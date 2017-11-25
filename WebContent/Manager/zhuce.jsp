@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     
 <%@ page import="common.MD5" %>
 <%@ page import="common.conn" %>
@@ -11,29 +10,27 @@
 <head>
 <title>注册</title>
 <style type="text/css">
-	body {
-		background-color: gray;
-		font-family: STKaiti;
-		color: white;
-		font-size: 20px;
-	}
-	#biao {
-		height: 500px;
-		width: 400px;
-		margin: 100px;
-		background-image: url(../images/bj8.JPG);
-		position: relative;  
-	}
-	#content {
+	.content {
+		border: 2px solid #a1a1a1;
+		padding: 30px 30px;
 		position: absolute;
-		height: 250px;
-		width: 350px;
-		text-align: right;
-		left: 50%;             
-		top: 50%; 
-		margin-left: -175px;   /*设置为宽度(width:450px;)的一半*/             
-		margin-top: -125px; 
+		border-radius:25px;
+		background: #dddddd;
+		height: 200px;
+		width: 250px;
+		left: 25%;             
+		top: 25%; 
 	} 
+	#button {
+		width:50px;
+		height:30px;
+		box-shadow: 5px 5px 2px #888888;
+	}
+	#wenben {
+		border:1px solid #a1a1a1;
+		border-radius:25px;
+	}
+	.gs {width: 180px; height: 22px;}
 </style>
 </head>
 
@@ -70,34 +67,33 @@
 	   }
    }
 %>
-<div id="content">
+<div class="content">
     <form id="form1" name="form1" method="post" action="zhuce.jsp?action=reg">
        	<table>
-          	<tr> 
-          		<td colspan="2" align="center"> <strong>用户注册</strong> 
-          		</td> 
+          	<tr align="center"> 
+          		<td colspan="2"> <strong>用户注册</strong>  </td> 
           	</tr>
-      		<tr> 
+      		<tr align = "right">
       			<td>用户名</td> 
-      			<td> <input type="text" name="name" id="name" width="500px"/> </td>
+      			<td> <input id="wenben" type="text"  name="name"  id="name" class="gs"/> </td>
           	</tr>
-           	<tr> 
+           	<tr align = "right"> 
            		<td>密码</td> 
-           		<td> <input type="text" name="pass" id="pass" width="500px" /> </td>
+           		<td> <input id= "wenben" type="password" name="pass"  id="pass"  class="gs"/> </td>
       		</tr>
-           	<tr>
+           	<tr align = "right">
 				<td>电话</td>
-              	<td> <input type="text" name="phone" id="phone" width="500px"/> </td>
+              	<td> <input id= "wenben" type="text" name="phone"  id="phone"  class= "gs"/> </td>
            	</tr>
-           	<tr> 
+           	<tr align = "right"> 
            		<td>邮箱</td>
-                <td> <input type="text" name="email" id="email" width="500px"/> </td>
+                <td> <input id= "wenben"  type="text" name="email"  id="email"  class= "gs"/> </td>
            	</tr>
       	</table>
        	<table>
-       		<tr>
-           		<td > <input type="submit" name="button" id="button" value="注册"/> </td>
-               	<td> <input type="reset" name="button2" id="button2" value="重置"/> </td>
+       		<tr id="button">
+           		<td > <input style="" id="button" type="submit" name="button" id="button" value="注册"/> </td>
+               	<td> <input style="" id="button" type="reset" name="button2" id="button2" value="重置"/> </td>
           	</tr>
           </table>
 	</form>

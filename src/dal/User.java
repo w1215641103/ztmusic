@@ -32,7 +32,7 @@ public class User {
 	//”√ªß≤Â»Î
 	public int insert(UserInfo info) {
 		String sql = "insert into user(name, pass, phone, email, admin) values ";
-		sql = sql + "('"+info.getname()+"', '"+info.getpass()+"', '"+info.getphone()+"', '"+info.getpass()+"', '"+info.getemail()+"', '"+info.getadmin()+"')";
+		sql = sql + "('"+info.getname()+"', '"+info.getpass()+"', '"+info.getphone()+"','"+info.getemail()+"', '"+info.getadmin()+"')";
 		int result = 0;
 		result = conn.update(sql);
 		conn.close();

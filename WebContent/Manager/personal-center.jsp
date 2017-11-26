@@ -5,164 +5,146 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>个人中心</title>
-<style type="text/css">
-            a:link,a:visited
-            {
-                color: white;
-                text-decoration:none;/*超链接无下划线*/
-            }
-            #container{			/*全体设置*/
-                background-color:#141414;
-                margin:0px;
-                padding:0px;
-                width:100%px;
-                height:60px;
-                        }
-            #banner{				/*页头设定*/
-                background-color:#141414;
-                width:1200px;
-                height:60px;
-                border:0px #330000 solid;
-                blackground:#330000;
-                margin: 0px auto;
-            }
-            #a_0{
-                float:left;
-                line-height:190%;
-                /*text-indent:300px; /*文字缩进*/
-                font-size:30px;			/*文字大小*/
-                font-family:Blackoak Std;	/*字体*/
-            }
-            #a_1{
-                float:left;
-                line-height:300%;
-                width:100px;
-                height:60px;
-                font-size:20px;
-                text-align:center;
-                background-color:#1a1a1a;
-                /*	border-radius:2em;*/
-            }
-            #a_1:hover
-            {
-                width:120px;
-                height:60px;
-                background-color:#141414;
-                text-align:center;
-                transition-delay:150ms;/*延迟*/
-                transition-duration:500ms;/*过渡动画时间*/
-                transition-property:width;/*动画效果是改变宽度*/
+  <title>个人中心</title>
+    <style type="text/css">
+        a:link,a:visited
+        {
+            color: white;
+            text-decoration:none;/*超链接无下划线*/
+        }
+        #container{			/*全体设置*/
+            background-color:#141414;
+            margin:0px;
+            padding:0px;
+            width:100%px;
+            height:60px;
+        }
+        #banner{				/*页头设定*/
+            background-color:#141414;
+            width:1200px;
+            height:60px;
+            border:0px #330000 solid;
+            blackground:#330000;
+            margin: 0px auto;
+        }
+        #a_0{
+            float:left;
+            line-height:190%;
+            /*text-indent:300px; /*文字缩进*/
+            font-size:30px;			/*文字大小*/
+            font-family:Blackoak Std;	/*字体*/
+        }
+        #a_1{
+            float:left;
+            line-height:300%;
+            width:100px;
+            height:60px;
+            font-size:20px;
+            text-align:center;
+            background-color:#1a1a1a;
+            /*	border-radius:2em;*/
+        }
+        #a_1:hover
+        {
+            width:120px;
+            height:60px;
+            background-color:#141414;
+            text-align:center;
+            transition-delay:150ms;/*延迟*/
+            transition-duration:500ms;/*过渡动画时间*/
+            transition-property:width;/*动画效果是改变宽度*/
 
-            }
-            #a_2{
-                float:left;
-                line-height:300%;
-                width:100px;
-                height:60px;
-                text-align:center;
-                font-size:20px;
-                background-color:#1a1a1a;
-                text-decoration:none;
-            }
-            #a_2:hover
-            {
-                width:120px;
-                height:60px;
-                background-color:#141414;
-                text-align:center;
-                transition-delay:150ms;/*延迟*/
-                transition-duration:500ms;/*过渡动画时间*/
-                transition-property:width;/*动画效果是改变宽度*/
-            }
-            #a_3{
-                float:left;
-                line-height:300%;
-                width:75px;
-                height:60px;
-                background-color:#1a1a1a;
-                font-size:20px;
-            }
-            #a_3:hover
-            {
-                width:95px;
-                height:60px;
-                background-color:#141414;
-                text-align:center;
-                transition-delay:150ms;/*延迟*/
-                transition-duration:500ms;/*过渡动画时间*/
-                transition-property:width;/*动画效果是改变宽度*/
-            }
-            #a_4{
-                float:left;
-                line-height:300%;
-                width:50px;
-                height:60px;
-                text-align:center;
-                background-color:#1a1a1a;
-                /*	border:1px solid black;*/
-                font-size:20px;
-            }
-            #a_4:hover
-            {
-                width:70px;
-                height:60px;
-                background-color:#141414;
-                transition-delay:150ms;/*延迟*/
-                transition-duration:500ms;/*过渡动画时间*/
-                transition-property:width;/*动画效果是改变宽度*/
-            }
-            #a_5{
-                float:left;
+        }
+        #a_2{
+            float:left;
+            line-height:300%;
+            width:100px;
+            height:60px;
+            text-align:center;
+            font-size:20px;
+            background-color:#1a1a1a;
+            text-decoration:none;
+        }
+        #a_2:hover
+        {
+            width:120px;
+            height:60px;
+            background-color:#141414;
+            text-align:center;
+            transition-delay:150ms;/*延迟*/
+            transition-duration:500ms;/*过渡动画时间*/
+            transition-property:width;/*动画效果是改变宽度*/
+        }
+        #a_3{
+            float:left;
+            line-height:300%;
+            width:75px;
+            height:60px;
+            background-color:#1a1a1a;
+            font-size:20px;
+        }
+        #a_3:hover
+        {
+            width:95px;
+            height:60px;
+            background-color:#141414;
+            text-align:center;
+            transition-delay:150ms;/*延迟*/
+            transition-duration:500ms;/*过渡动画时间*/
+            transition-property:width;/*动画效果是改变宽度*/
+        }
+        #a_4{
+            float:left;
+            line-height:300%;
+            width:50px;
+            height:60px;
+            text-align:center;
+            background-color:#1a1a1a;
+            /*	border:1px solid black;*/
+            font-size:20px;
+        }
+        #a_4:hover
+        {
+            width:70px;
+            height:60px;
+            background-color:#141414;
+            transition-delay:150ms;/*延迟*/
+            transition-duration:500ms;/*过渡动画时间*/
+            transition-property:width;/*动画效果是改变宽度*/
+        }
+        #a_5{
+            float:left;
 
-            }
+        }
 
-            #a_dl{
-                float:left;
-                line-height:270%;
-                font-size:20px;
-                color:white;
-            }
-            #fenge{
-                background-color:#aa0700;
-                width:1920px;
-                height:5px;
+        #a_dl{
+            float:left;
+            line-height:270%;
+            font-size:20px;
+            color:white;
+        }
+        #fenge{
+            background-color:#aa0700;
+            width:1920px;
+            height:5px;
 
-            }
-            #fenge2{
-                background-color:#141414;
-                width:1920px;
-                height:15px;
-            
-             .leftwenli{
-          		float:left;
-          		width:358px;
-          		height:1399px;
-          		border:1px;
-          		border-style:solid;
-          		background-color:gray;
-          }
-          .rightwenli{
-          		float:right;
-          		width:358px;
-          		height:1399px;
-          		border:1px;
-          		border-style:solid;
-          		background-color:gray;
-          }
-            .mid{
-            	float:left;
-                width:50%;
-                hight:500px;
-            }
-            
-            
-            
-            
-</style>
+        }
+        #fenge2{
+            background-color:#141414;
+            width:1920px;
+            height:15px;
+        }
+        .mid{
+            width:1200px;
+            height:700px;
+            border:0px #330000 solid;
+            margin: 0px auto;
+        }
+    </style>
 
 
 </head>
-<body>
+<body id="body1" style="position:absolute;left:0px;top:0px;">
 <div id="container"style="position:absolute;">
     <div id="banner">			<!-- 页面头部 -->
         <div id="a_0"><a href="index.jsp">ZT .</a></div>
@@ -193,22 +175,29 @@
                 </table>
             </form>
         </div>
+
+
     </div>
     <div id="fenge"></div>			<!-- 分割线 -->
     <div id="fenge2"></div>
-    <div class="leftwenli"></div>		<!-- 左边背景纹理 -->
-    <div class="rightwenli"></div>		<!-- 右边背景纹理 -->
-    <div class="mid">
-    	<div class="g_1"><a href=" "><img class="tou" src="images/bj1.jpg" alt="头像"width="100px" height="100px"></a></div>
-    	<div class="g_2">
-    		<h1 class="g_2_1"><b>class</b></h1>
-    		<div class="g_2_2"><input type="submit" name="button2" id="button2" value="编辑个人资料"></div>
-    		<hr>
-    	<p>所在地区： </p>
-    	<p>社交网络:</p>
-    		<br>
-    	</div>
-    </div>
+<!--    <div class="leftwenli"></div>		&lt;!&ndash; 左边背景纹理 &ndash;&gt;
+    <div class="rightwenli"></div>		 右边背景纹理 -->
+
+        <div class="mid">
+         <div class="g_1"><a href=" "><img class="t" src="images/bj1.jpg" alt="头像"width="100px" height="100px"></a></div>
+            <table class="r">
+                <tr>
+                    <td><h1><b>class</b></h1>
+                    <td><input type="submit" name="button2" id="button2" value="编辑个人资料"></td>
+                </tr>
+            </table>
+            <div class="g_2">
+                    <hr>
+                    <p>所在地区： </p>
+                    <p>社交网络:</p>
+                    <br>
+            </div>
+        </div>
 </div>
 </body>
 </html>

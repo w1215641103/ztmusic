@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-  <title>Insert title here</title>
+<title>ZT.音乐网</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <style type="text/css">
             a:link,a:visited
@@ -371,7 +369,7 @@
           .leftwenli{
           		float:left;
           		width:358px;
-          		height:1396px;
+          		height:1399px;
           		border:1px;
           		border-style:solid;
           		background-color:gray;
@@ -379,7 +377,7 @@
           .rightwenli{
           		float:right;
           		width:358px;
-          		height:1396px;
+          		height:1399px;
           		border:1px;
           		border-style:solid;
           		background-color:gray;

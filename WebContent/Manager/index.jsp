@@ -14,13 +14,10 @@
                 color: white;
                 text-decoration:none;/*超链接无下划线*/
             }
-            #body1{
-                background-image:url("images/jin.jpg");
-                width:1920px;
-                hight:1080px;
-                border:0px solid;
+        /*     body{
+				background-color:#141414;
 
-            }
+            } */
             #container{			/*全体设置*/
                 background-color:#141414;
                 margin:0px;
@@ -29,11 +26,12 @@
                 height:60px;
             }
             #middle{		/*中间整个面板的固定大小*/
+            	float:left;
                 width:1200px;
                 hight:500px;
 /*                 border-left:1px #808080 solid;
                 border-right:1px #808080 solid; */
-                margin: 0px  auto ;
+                margin: 0px;
             }
             #banner{				/*页头设定*/
                 background-color:#141414;
@@ -256,16 +254,20 @@
             #midleft{
                 float:left;
                 width:800px;
-                height:10000000px;
-                border:1;
-                border-style:hiddle;
+                height:1000px;
+                border:1px;
+                border-style:solid;
                 color:black;
+                background-color:#323232;   
 
             }
-            .midright{
+            #midright{
                 float:right;
-                width:400px;
+                width:396px;
+                height:1000px;
+                border:1px;
                 border-style:solid;
+                background-color:gray;
             }
             #midl_0{
            		float:left;
@@ -317,9 +319,71 @@
 				width:230px;
 				height:200px;
 				border-style:hiddle;
-				margin:5px 10px 5px 10px;
 				
             }
+            .r{
+            	width:100px;
+            	height:60px;
+            	border:1;
+            	margin:15px 0px 15px 0px;
+            	border-style:hiddle;
+            	text-align:center;
+            	background-color:gray;
+            	
+            }
+            .r1{
+				width:100px;
+				height:60px;
+				border:1;
+				border-style:;
+				
+            }
+            .d{
+            	background-color:red;
+            }
+          .r2{
+          		width:290px;
+				height:60px;
+				border:1;
+				text-align:center;
+				border-style:;
+          }
+          .d:hover{
+          		background-color:yellow;
+          		transition-delay:50ms;/*延迟*/
+                transition-duration:300ms;/*过渡动画时间*/
+                transition-property:background-color;/*动画效果是改变宽度*/
+          }
+          .copyright{
+         		width:1200px;
+                height:70px;
+                border:1;
+                border-style:hiddle;
+				
+          }
+          .copy{
+         		width:1200px;
+				height:60px;
+				float:bottom;
+				text-align:center;
+				background-color:gray;
+          }
+          .leftwenli{
+          		float:left;
+          		width:358px;
+          		height:1396px;
+          		border:1px;
+          		border-style:solid;
+          		background-color:gray;
+          }
+          .rightwenli{
+          		float:right;
+          		width:358px;
+          		height:1396px;
+          		border:1px;
+          		border-style:solid;
+          		background-color:gray;
+          }
         </style>
     </head>
 <body id="body1" style="position:absolute;left:0px;top:0px;">
@@ -365,6 +429,8 @@
             <div id="b_4"><a href="geshou.jsp">歌手</a></div>
         </div>
     </div>
+    <div class="leftwenli"></div>		<!-- 左边背景纹理 -->
+       <div class="rightwenli"></div>		<!-- 右边背景纹理 -->
     <div id="middle" >	<!-- 居中部分模板 -->
         <div id="jquery-script-menu"> </div>
         <div class="slider">
@@ -405,11 +471,13 @@
                  <td><div class="l_2"><a href="tuijian.jsp">专辑</a></div></td>
             	</tr>
             </table>
-            </div> 
-            <br/>
-            <div >
-            <table align="center" class="yinyue">
-            		
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <div>
+            <table align="center" class="yinyue">		
             <!-- 	<tr>
                         <td><div class="l_1"><a href="tuijian.jsp"><img src="images/tuijian.jpg" border="0"  alt="推荐歌曲"></a></div></td>
                         <td><div class="l_2"><a href="tuijian.jsp">推荐</a></div></td>
@@ -465,11 +533,42 @@
             </div>
         </div>
         <div id="midright">
+        <a>MUSICCLASS</a>
+        <hr>
+        <table class="mid_r">
+        	<tr class="d">
+        		<td><div class="r"><a href="tuijian.jsp"><img src="images/bj.jpg" class="r1" alt="歌曲1"></a></div></td>
+        		<td><div class="r2"><a href="tuijian.jsp"><b>class</b></a></div></td>
+        	</tr>
+        	<tr class="d">
+        		<td><div class="r"><a href="tuijian.jsp"><img src="images/bj.jpg" class="r1" alt="歌曲1"></a></div></td>
+        		<td><div class="r2"><a href="tuijian.jsp"><b>class</b></a></div></td>
+        	</tr>
+        	        	<tr class="d">
+        		<td><div class="r"><a href="tuijian.jsp"><img src="images/bj.jpg" class="r1" alt="歌曲1"></a></div></td>
+        		<td><div class="r2"><a href="tuijian.jsp"><b>class</b></a></div></td>
+        	</tr>
+        	        	<tr class="d">
+        		<td><div class="r"><a href="tuijian.jsp"><img src="images/bj.jpg" class="r1" alt="歌曲1"></a></div></td>
+        		<td><div class="r2"><a href="tuijian.jsp"><b>class</b></a></div></td>
+        	</tr>
+        	        	<tr class="d">
+        		<td><div class="r"><a href="tuijian.jsp"><img src="images/bj.jpg" class="r1" alt="歌曲1"></a></div></td>
+        		<td><div class="r2"><a href="tuijian.jsp"><b>class</b></a></div></td>
+        	</tr>
+        </table>
         </div>
+            <div class="copyright">
+    	<table class="copy">
+    		<tr>
+    			<td>zhe li   shi  ye w wei  de  di fang</td>
+    		</tr>
+    	</table>
+    </div>		<!-- 版权部分 -->
     </div>
-    <div id="copyright"></div>		<!-- 版权部分 -->
-    <div id="leftwenli"></div>		<!-- 左边背景纹理 -->
-    <div id="rightwenli"></div>		<!-- 右边背景纹理 -->
+
+   
+ 
 </div>
 </body>
 </html>

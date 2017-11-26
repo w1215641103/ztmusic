@@ -26,40 +26,22 @@
 %> --%>
 <div id="content">
     <form id="form1" name="form1" method="post" action="register.jsp?action=reg">
-          <table width="100" border="0">
+          <table style = (width:100)  border="1">
                 <tr>
                     <td>用户名</td>
                     <td>
-                        <input type="text" name="txtUserName" id="txtUserName" width="500px"/>
+                        <input type="text" name="name" id="name" width="500px"/>
                     </td>
                 </tr>
                 <tr>
                     <td>密码</td>
                     <td>
-                        <input type="text" name="txtPassword" id="txtPassword" width="500px"/>
-                    </td>
-                </tr>
-               <!--   <tr>
-                    <td>确认密码</td>
-                    <td>
-                        <input type="text" name="txtPassword2" id="txtPassword2" width="500px"/>
-                    </td>
-                </tr>-->
-                <tr>
-                    <td>Email</td>
-                    <td>
-                        <input type="text" name="txtEmail" id="txtEmail" width="500px"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>身份</td>
-                    <td>
-                        <input type="text" name="txtPower" id="txtPower" width="500px"/>
+                        <input type="text" name="pass" id="pass" width="500px"/>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                         <input type="submit" name="button" id="button" value="注册"/>
+                         <input type="submit" name="button" id="button" value="登录"/>
                          <input type="reset" name="button2" id="button2" value="重置"/>
                     </td>
                 </tr>

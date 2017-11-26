@@ -1,3 +1,4 @@
+//Êý¾Ý¿â²Ù×÷
 package common;
 import java.sql.*;
 

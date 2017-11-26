@@ -1,3 +1,4 @@
+//MD5º”√‹
 package common;
 
 import java.io.UnsupportedEncodingException;

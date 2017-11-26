@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="common.cookie" %>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -391,7 +391,15 @@
         <div id="a_1"><a href="faxianyy.jsp">发现音乐</a></div>
         <div id="a_2"><a href="wodeyy.jsp">我的音乐</a></div>
         <div id="a_3"><a href="yyren.jsp">音乐人</a></div>
-        <div id="a_4"><a href="zhuce.jsp">注册</a></div>
+        <% String name = cookie.readCookie(request, "name");
+        		if (name.equals("")) { %>
+        	<div id="a_4"><a href="zhuce.jsp">注册</a></div>
+        	<div id="a_4"><a href="denglu.jsp">登录</a></div>
+        <%} else {%>
+        	<div id="a_3">已登录</div>
+        	<div id="a_4"><a href="logout.jsp">退出</a></div>
+       				<!--  登录后显示的东西 -->
+        <%} %>
         <div id="a_5">
             <table width="200" height="60" border="0">
                 <tr>
@@ -399,21 +407,6 @@
                     <td><input type="submit" name="button2" id="button2" value="搜索"/></td>
                 </tr>
             </table>
-        </div>
-        <div id="a_dl">
-            <form id="form1" name="form1" method="post" action="denglu.jsp?action=login">
-                <table width="450" height="60" border="0">
-                    <tr>
-                        <td>用户名</td>
-                        <td> <input name="id" type="hidden" id="id" value=" "/></td>
-                        <td><input name="txtUserName" type="text" id="txtUserName" size="12"/></td>
-                        <td>密码</td>
-                        <td><input name="txtPassword" type="password" id="txtPassword" size="12"/></td>
-                        <td><input type="submit" name="button" id="button" value="登陆"/></td>
-                        <td><input type="submit" name="button1" id="button1"value="注册"/></td>
-                    </tr>
-                </table>
-            </form>
         </div>
     </div>
     <div id="fenge"></div>			<!-- 分割线 -->

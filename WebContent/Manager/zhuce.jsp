@@ -4,6 +4,7 @@
 <%@ page import="common.conn" %>
 <%@ page import="dal.User" %>
 <%@ page import="model.UserInfo" %>
+<%@ page import="common.cookie" %>
 
 <html>
 
@@ -36,8 +37,7 @@
 
 <body>
 <%
-   String regex = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$";	
-   request.setCharacterEncoding("utf-8");
+   request.setCharacterEncoding("utf-8");		//页面编码
    String action=request.getParameter("action");
    String name=request.getParameter("name");
    String pass=request.getParameter("pass");
@@ -45,7 +45,7 @@
    String email=request.getParameter("email");
    UserInfo info=new UserInfo();
    User user=new User();
-   if ("reg".equals(action)) {
+   if ("zc".equals(action)) {		//注册
 	   if (name.equals("") || pass.equals("")) {
 		   out.println("<script>alert('用户名或密码不能为空');</script>");
 	   } else if (pass.length()<6 || pass.length()>16) {
@@ -63,12 +63,13 @@
 		   info.setemail(email);
 		   info.setadmin(0);
 		   user.insert(info);
+		   cookie.writeCookie(response, "name", name);		//写入cookie
 		   out.println("<script>alert('注册成功');window.location.href('index.jsp');</script>");
 	   }
    }
 %>
 <div class="content">
-    <form id="form1" name="form1" method="post" action="zhuce.jsp?action=reg">
+    <form id="form1" name="form1" method="post" action="zhuce.jsp?action=zc">
        	<table>
           	<tr align="center"> 
           		<td colspan="2"> <strong>用户注册</strong>  </td> 
@@ -92,8 +93,8 @@
       	</table>
        	<table>
        		<tr id="button">
-           		<td > <input style="" id="button" type="submit" name="button" id="button" value="注册"/> </td>
-               	<td> <input style="" id="button" type="reset" name="button2" id="button2" value="重置"/> </td>
+           		<td > <input style="" id="button" type="submit" name="button" value="注册"/> </td>
+               	<td> <input style="" id="button" type="reset" name="button2"  value="重置"/> </td>
           	</tr>
           </table>
 	</form>

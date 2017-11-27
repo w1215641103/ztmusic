@@ -132,11 +132,38 @@ a:active{color:red;}
 .dropdown:hover .dropdown-content {
   display:block;
 }
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#333;
+ }
+ li{
+   float:left;
+ }
+ li a{
+   display:block;
+   color:white;
+   text-align:center;
+   padding:1px 20px;
+   text-decoration:none;
+ }
+ li a:hover{
+   background-color:#111;
+   }
     </style>
 </head>
 <body>
 <div class="mymusic" style="height: 611px">
-    <div class="d-mymusic" >发现音乐 我的音乐 商城 音乐人</div>
+    <div class="d-mymusic" >
+    <ul>
+       <li><a class="active" href="#home">发现音乐</a></li>
+       <li><a href="#news">我的音乐</a></li>
+       <li><a href="#content">商城</a></li>
+       <li><a href="#about">音乐人</a></li>
+       </ul>
+</div>
     <div class="class1"></div>
     <div class="class2"><br>
         <p><b><a href="class3" target="_blank">我的歌手</a></b>

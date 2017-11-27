@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,6 +9,7 @@
 body{
 		background-color:#cccccc;	
 }
+<<<<<<< HEAD
 .player{
 		display:-webkit-flex;					/* 固定 */
 		-webkit-justify-content:center;			/* 水平居中 */
@@ -17,6 +17,10 @@ body{
 		display:flex;					/* 固定 */
 		justify-content:center;			/* 水平居中 */
 		align-items:center;			/* 垂直居中 */
+=======
+.player{			
+		 display: -webkit-flex;
+>>>>>>> 8c008af79c236cb53fe15f12ccb191f267c1cfa7
          width:100%;
          height:40px;
          background-color:#2d2d2d;
@@ -24,6 +28,8 @@ body{
          border-bottom:1px solid #4a4a4a;
          position:fixed;
          bottom:0%;
+         -webkit-justify-content: center;
+         -webkit-align-items: center;
         }
 .slider{
 		width:600px;
@@ -32,7 +38,10 @@ body{
 		border-top:1px solid #0b0b0b;
 		border-bottom:1px solid #4a4a4a;
 		border-radius:6px;
+<<<<<<< HEAD
 		margin:0px 1%;
+=======
+>>>>>>> 8c008af79c236cb53fe15f12ccb191f267c1cfa7
 		position:relative;
 		}
 .slider > .processor{
@@ -82,6 +91,7 @@ body{
 		border-radius:50%;
 		top:-4px;
 		left:-4px;
+<<<<<<< HEAD
 }
 .q{		
 		display:flex;					/* 固定 */
@@ -110,15 +120,39 @@ body{
 		height:40px;
 		background-color:green;
 }
+=======
+		}
+	.a{
+		display: -webkit-flex;
+		-webkit-justify-content: center;
+		border:1px;
+		border-style:solid;
+		border-color:red;
+		width:150px;
+		margin:10px 10px;
+	} 
+>>>>>>> 8c008af79c236cb53fe15f12ccb191f267c1cfa7
 </style>
 </head>
 <body>
 <div class="player">
+<<<<<<< HEAD
 	<div class="q">
 		<a href=" " ><img src="images/04.png" width="25px" height="25px" alt="bofang"></a>
 		<a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
 		<a href=" " ><img src="images/05.png" width="25px" height="25px" alt="bofang"></a>
 		<!-- <img src="images/07.png"width="30px" height="30px"> -->
+=======
+<div class="a">
+<a href=" " ><img src="images/04.png" width="30px" height="30px" alt="bofang"></a>
+<a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
+<a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a>
+</div>
+	<div class="slider">								<!-- 滑动条 -->
+	<div class="buffer"></div>					<!-- 缓冲进度条 -->
+	<div class="processor"></div>			<!-- 播放进度条 -->
+	<div class="controller"></div>			<!-- 控制点 -->
+>>>>>>> 8c008af79c236cb53fe15f12ccb191f267c1cfa7
 	</div>
 		<div class="w">
 			<div class="w1"></div>

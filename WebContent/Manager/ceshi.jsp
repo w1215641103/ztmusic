@@ -22,20 +22,13 @@ body{
          -webkit-align-items: center;
         }
 .slider{
-		width:100px;
+		width:600px;
 		height:5px;
 		background-color:#181818;
 		border-top:1px solid #0b0b0b;
 		border-bottom:1px solid #4a4a4a;
 		border-radius:6px;
 		position:relative;
-		}
-.slider > .buffer{
-		width:60%;
-		height:100%;
-		background-color:#535353;
-		border-radius:6px;
-		position:absolute;
 		}
 .slider > .processor{
 		width:8px;
@@ -62,23 +55,36 @@ body{
 		border:1px;
 		border-style:solid;
 		border-color:red;
-		width:150px;
+		width:10%;
 		margin:10px 10px;
 	} 
+	.b{
+		border:1px;
+		border-style:solid;
+		border-color:red;
+		width:10%;
+		margin:10px 10px;
+	}
 </style>
 </head>
 <body>
+<audio id="music"></audio>
 <div class="player">
 <div class="a">
 <a href=" " ><img src="images/04.png" width="30px" height="30px" alt="bofang"></a>
 <a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
-<a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a>
+
 </div>
+<div class="b"><a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a></div>
 	<div class="slider">								<!-- 滑动条 -->
-	<div class="buffer"></div>					<!-- 缓冲进度条 -->
 	<div class="processor"></div>			<!-- 播放进度条 -->
 	<div class="controller"></div>			<!-- 控制点 -->
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+	var dom=document.getElementById("music");
+	dom.play();
+</script>
+
 </html>

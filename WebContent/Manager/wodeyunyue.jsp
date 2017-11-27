@@ -32,7 +32,7 @@
             height: 82%;
             width: 180px;
             margin-left: 110px;
-            font-size: 25px;
+            font-size: 20px;
             text-align: center;
             word-spacing: 100px;
 
@@ -62,7 +62,7 @@
             background-color: red;
             height: 3px;
             width: 100%;
-            margin-top: 231px;
+            margin-top: 0px;
         }
         .class6{
             border: 1px solid gainsboro;
@@ -72,25 +72,90 @@
             margin-left: 291px;
         }
         .class7{
-            border: solid gainsboro;
-            background-color: blue;
-            height: 10px;
-            width: 50px;
-            margin-top: 200px;
-            margin-left:50px;
+            border: 0.1px solid white;
+            background-color: white;
+            height: 25px;
+            width: 250px;
+            margin-top: 70px;
+            margin-left:250px;
         }
+        table{
+        border-collapse: collapse;
+        }
+        table,td,th
+{
+	border:0.1px solid gainsboro;
+}
+th{
+    background: linear-gradient(white,gainsboro);
+}
+table
+{
+	width:100%;
+}
+th
+{
+	height:30px;
+	text-align:left;
+}
+a:link{color:black;}
+a:visited{color:black;}
+a:hover{color:red;}
+a:active{color:red;}
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background-color:white;
+  min-width:120px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:5px 1px;
+}
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background-color:white;
+  min-width:120px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:5px 1px;
+}
+.dropdown:hover .dropdown-content {
+  display:block;
+}
     </style>
 </head>
 <body>
 <div class="mymusic" style="height: 611px">
     <div class="d-mymusic" >发现音乐 我的音乐 商城 音乐人</div>
     <div class="class1"></div>
-    <div class="class2"><br><br>
-        <a href="class4" target="_blank"><button onclick="getElementById('demo').innerHTML=Date()">我的歌手</button></a><br><br>
-        <a href="class4" target="_blank"><button onclick="getElementById('demo').innerHTML=Date()">我的歌单</button></a><br><br>
-        <a href="class4" target="_blank"><button onclick="getElementById('demo').innerHTML=Date()">我的电台</button></a><br><br>
-        <a href="class4" target="_blank"><button onclick="getElementById('demo').innerHTML=Date()">我喜欢的音乐</button></a><br><br>
-        <a href="class4" target="_blank"><button onclick="getElementById('demo').innerHTML=Date()">收藏的歌单</button></a><br><br>
+    <div class="class2"><br>
+        <p><b><a href="class3" target="_blank">我的歌手</a></b>
+        <p><b><a href="class3" target="_blank">我的电台</a></b>
+        <div class="dropdown">
+        <span>我的歌单</span>
+        <div class="dropdown-content">
+        <p>我喜欢的音乐</p>
+        <p>树</p>
+        </div>
+        </div><br><br>
+        <div class="dropdown">
+        <span>收藏的歌单</span>
+        <div class="dropdown-content">
+        <p>民谣100首</p>
+        <p>DJ程一</p>
+        </div>
+        </div>
+        </div>
     </div>
     <div class="class3">
         <div class="class4">
@@ -100,15 +165,50 @@
                 </div>
             </a>
             <div class="class7">
-            <button onclick="getElementById('demo').innerHTML=Date()">播放</button>
-            <button onclick="getElementById('demo').innerHTML=Date()">分享</button>
-            <button onclick="getElementById('demo').innerHTML=Date()">下载</button>
+                <button onclick="getElementById('demo').innerHTML=Date()">播放</button>
+                <button onclick="getElementById('demo').innerHTML=Date()">分享</button>
+                <button onclick="getElementById('demo').innerHTML=Date()">下载</button>
+                <button onclick="getElementById('demo').innerHTML=Date()">评论</button>
             </div>
-            <div class="class"></div>
+            
         </div>
         <div class="class5">歌曲列表</div>
+        <div class="class"></div>
     </div>
-    <div class="class6"></div>
-    </div>
+    <div class="class6">
+    <table>
+<tr>
+<th>歌曲标题</th>
+<th>时长</th>
+<th>歌手</th>
+<th>专辑</th>
+</tr>
+<tr>
+<td>你还要我怎样</td>
+<td>04:10</td>
+<td>薛之谦</td>
+<td>你还要我怎样</td>
+</tr>
+<tr>
+<td>功夫熊猫</td>
+<td>04:00</td>
+<td>周杰伦</td>
+<td>新专辑</td>
+</tr>
+<tr>
+<td>你好吗</td>
+<td>04:05</td>
+<td>周杰伦</td>
+<td>你好吗</td>
+</tr>
+<tr>
+<td>我不配</td>
+<td>04:25</td>
+<td>周杰伦</td>
+<td>魔杰座</td>
+</tr>
+</table>
+    
+</div>
 </body>
 </html>

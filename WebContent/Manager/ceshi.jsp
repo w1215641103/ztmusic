@@ -105,21 +105,65 @@ body{
 </style>
 </head>
 <body>
+
+<audio id="audio" scr="" loop="loop" autoplay="autoplay"></audio>
+
 <div class="player">
 	<div class="q">
-		<a href=" "><img src="images/04.png" width="25px" height=audo></a>
-		<a href=" "><img src="images/01.png" width="35px" height=audo></a>
-		<a href=" "><img src="images/05.png" width="25px" height=audo></a>
+		<img id="qys" src="images/04.png" width="25px" height="25px">
+		<img id="bofang" src="images/01.png" width="35px" height="35px" onclck="getSong()">
+		<img id="hys" src="images/05.png" width="25px" height="25px">
 	</div>
 		<div class="w">
 			<div class="w1"></div>
 			<div class="w2"></div>
 		</div>
 		<div class="slider">
-			<div class="processor"></div>
-			<div class="controller"></div>
+			<div id="jindu" class="processor"></div>
+			<div id="huadian" class="controller"></div>
 		</div>
 	<div class="x"> </div>
-</div>	
+</div>
+
+<script>
+	$(function() {
+		getSong();
+	})
+	
+	function getSong() {
+		var audio = document.getElementById("audio");
+		audio.src = "http://timelessberry.com/material/item/mp3/2013midori.mp3";
+		audio.loop = true;		//歌曲循环
+		playCotrol();			//播放控制函数
+	}
+	
+	//点击播放/暂停
+	function clicks() {
+		var audio = document.getElementById("audio");
+		$("#bofang").click(function()) {
+			if($("#bofang")).hasClass("play")) {
+				$("#bofang").addClass("pause").removeClass("play");
+				audio.play();		//开始播放
+				dragMove();			//滚动条开始
+				$("#bofang").html("暂停播放");
+			} else {
+				$("#bofang").addClass("play").removeClass("pause");
+				$("#bofang").html("点击播放");
+				audio.pause();
+			}
+		})
+	}
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

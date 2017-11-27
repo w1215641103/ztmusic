@@ -1,10 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="common.cookie" %>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ZT.音乐网</title>
+<<<<<<< HEAD
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+	
+</style>
+</head>
+<body>
+<div class="a">
+=======
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="css/jplay.css">
         <style type="text/css">
@@ -617,13 +627,8 @@
 <a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
 <a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a>
 </div>
+>>>>>>> 8c008af79c236cb53fe15f12ccb191f267c1cfa7
 	
-	<div class="slider">
-		<div class="buffer"></div>
-		<div class="processor"></div>
-		<div class="controller"></div>
-	</div>
-</div>
 </div>
 </body>
 </html>

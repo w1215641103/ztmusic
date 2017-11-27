@@ -4,9 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ZT.音乐网</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="css/style.css/shouye.css">
+<title>音乐播放</title>
+
 </head>
 <body>
 

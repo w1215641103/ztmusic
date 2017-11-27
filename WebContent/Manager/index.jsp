@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ZT.音乐网</title>
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/jplay.css">
         <style type="text/css">
             a:link,a:visited
             {
@@ -16,6 +17,7 @@
 				background-color:#141414;
 
             } */
+        	*{padding:o;margin:0;}
             #container{			/*全体设置*/
                 background-color:#141414;
                 margin:0px;
@@ -557,9 +559,6 @@
     	</table>
     </div>		<!-- 版权部分 -->
     </div>
-
-   
- 
 </div>
 </body>
 </html>

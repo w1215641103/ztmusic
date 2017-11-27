@@ -388,9 +388,9 @@
 <div id="container"style="position:absolute;">
     <div id="banner">			<!-- 页面头部 -->
         <div id="a_0"><a href="index.jsp">ZT .</a></div>
-        <div id="a_1"><a href="faxianyy.jsp">发现音乐</a></div>
-        <div id="a_2"><a href="wodeyy.jsp">我的音乐</a></div>
-        <div id="a_3"><a href="yyren.jsp">音乐人</a></div>
+        <div id="a_1"><a href="index.jsp">发现音乐</a></div>
+        <div id="a_2"><a href="wodeyunyue.jsp">我的音乐</a></div>
+        <div id="a_3"><a href="ceshi.jsp">音乐人</a></div>
         <% String name = cookie.readCookie(request, "name");
         		if (name.equals("")) { %>
         	<div id="a_4"><a href="zhuce.jsp">注册</a></div>

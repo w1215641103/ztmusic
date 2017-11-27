@@ -617,7 +617,7 @@
 <a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
 <a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a>
 </div>
-	<div class="yl"><img src="images/<input type="range" min="1" max="100" /> </div>
+	
 	<div class="slider">
 		<div class="buffer"></div>
 		<div class="processor"></div>

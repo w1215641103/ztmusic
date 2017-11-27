@@ -71,7 +71,9 @@ body{
 <a href=" " ><img src="images/04.png" width="30px" height="30px" alt="bofang"></a>
 <a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
 <a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a>
+<div class="yl"><img src="images/07.png"><input type="range" min="1" max="100" /></div>
 </div>
+
 	<div class="slider">
 	<div class="buffer"></div>
 	<div class="processor"></div>

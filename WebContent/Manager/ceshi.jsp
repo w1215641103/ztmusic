@@ -27,11 +27,7 @@ body{
         }
 .slider{
 		width:600px;
-<<<<<<< HEAD
-		height:5px;
-=======
 		height:7px;
->>>>>>> adf1bad859a77a1d038b40c05d0807196ddf42ae
 		background-color:#181818;
 		border-top:1px solid #0b0b0b;
 		border-bottom:1px solid #4a4a4a;
@@ -40,8 +36,6 @@ body{
 		position:relative;
 		}
 .slider > .processor{
-<<<<<<< HEAD
-=======
 		width:8px;
 		height:100%;
 		background-color:#c70c0c;
@@ -71,7 +65,6 @@ body{
 		position:relative;
 }
 .w > .w1{
->>>>>>> adf1bad859a77a1d038b40c05d0807196ddf42ae
 		width:8px;
 		height:100%;
 		background-color:#c70c0c;
@@ -117,31 +110,6 @@ body{
 		height:40px;
 		background-color:green;
 }
-<<<<<<< HEAD
-=======
-=======
-		}
-	.a{
-		display: -webkit-flex;
-		-webkit-justify-content: center;
-		border:1px;
-		border-style:solid;
-		border-color:red;
-		width:10%;
-		margin:10px 10px;
-	} 
-<<<<<<< HEAD
-	.b{
-		border:1px;
-		border-style:solid;
-		border-color:red;
-		width:10%;
-		margin:10px 10px;
-	}
-=======
->>>>>>> 8c008af79c236cb53fe15f12ccb191f267c1cfa7
->>>>>>> adf1bad859a77a1d038b40c05d0807196ddf42ae
->>>>>>> 56246414c7446f743807072b497178a26c839ced
 </style>
 </head>
 <body>
@@ -152,20 +120,6 @@ body{
 		<a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
 		<a href=" " ><img src="images/05.png" width="25px" height="25px" alt="bofang"></a>
 		<!-- <img src="images/07.png"width="30px" height="30px"> -->
-<<<<<<< HEAD
-=======
-=======
-<div class="a">
-<a href=" " ><img src="images/04.png" width="30px" height="30px" alt="bofang"></a>
-<a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
-
-</div>
-<div class="b"><a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a></div>
-	<div class="slider">								<!-- 滑动条 -->
-	<div class="processor"></div>			<!-- 播放进度条 -->
-	<div class="controller"></div>			<!-- 控制点 -->
->>>>>>> 8c008af79c236cb53fe15f12ccb191f267c1cfa7
->>>>>>> 56246414c7446f743807072b497178a26c839ced
 	</div>
 		<div class="w">
 			<div class="w1"></div>

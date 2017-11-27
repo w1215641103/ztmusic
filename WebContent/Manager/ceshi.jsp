@@ -18,6 +18,7 @@ body{
          border-bottom:1px solid #4a4a4a;
          position:fixed;
          bottom:0%;
+<<<<<<< HEAD
          -webkit-justify-content: center;
          -webkit-align-items: center;
         }
@@ -26,6 +27,12 @@ body{
 		height:10px;
 		border-style:solid;
 		border-color:red;
+=======
+        }
+.slider{
+		width:100px;
+		height:5px;
+>>>>>>> b5cdf2356a5503cdfce2c00acf3c6afffd9c1226
 		background-color:#181818;
 		border-top:1px solid #0b0b0b;
 		border-bottom:1px solid #4a4a4a;
@@ -50,13 +57,13 @@ body{
 		position:absolute;
 		width:6px;
 		height:6px;
-		border:10px solid #f3f3f6;
+		border:3px solid #f3f3f6;
 		background-color:rgba(255,255,255,0);
 		-webkit-border-radius:50%;
 		-moz-border-radius:50%;
 		border-radius:50%;
-		top:-8px;
-		left:-8px;
+		top:-4px;
+		left:-4px;
 		}
 	.a{
 		display: -webkit-flex;
@@ -66,16 +73,28 @@ body{
 		border-color:red;
 		width:150px;
 		margin:10px 10px;
+<<<<<<< HEAD
 	} 
+=======
+	}
+
+>>>>>>> b5cdf2356a5503cdfce2c00acf3c6afffd9c1226
 </style>
 </head>
 <body>
 <audio id="music"></audio>
 <div class="player">
 <div class="a">
+<<<<<<< HEAD
 	<img src="images/04.jpg" width="30px" height="30px" alt="bofang">
 	<img src="images/01.jpg" width="30px" height="30px" alt="bofang">
 	<img src="images/05.jpg" width="30px" height="30px" alt="bofang">
+=======
+<a href=" " ><img src="images/04.png" width="30px" height="30px" alt="bofang"></a>
+<a href=" " ><img src="images/01.png" width="30px" height="30px" alt="bofang"></a>
+<a href=" " ><img src="images/05.png" width="30px" height="30px" alt="bofang"></a>
+<div class="yl"><img src="images/07.png"><input type="range" min="1" max="100" /></div>
+>>>>>>> b5cdf2356a5503cdfce2c00acf3c6afffd9c1226
 </div>
 	<div class="slider">								<!-- 滑动条 -->
 	<div class="buffer"></div>					<!-- 缓冲进度条 -->

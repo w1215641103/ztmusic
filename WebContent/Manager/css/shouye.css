@@ -1,0 +1,149 @@
+a:link,a:visited
+ 		{
+				color:#d9d9d9; 
+                text-decoration:none;/*超链接无下划线*/
+		}
+a:hover {color:white;} 
+a:active{color:#d9d9d9;}
+.center{			/* 整体的一个容器标签 */
+      	width:100%;
+      	height:100%;
+      	border:1px solid red;
+      	background-color:#d9d9d9;	
+      	}
+.a{				/* 首页的布局标签 */
+		width:100%;
+		height:70px;
+		display:-webkit-flex;					/* 固定 */
+		-webkit-justify-content:center;			/* 水平居中 */
+		-webkit-align-items:center;				/* 垂直居中 */
+		display:flex;							/* 固定 */
+		justify-content:center;					/* 水平居中 */
+		align-items:center;						/* 垂直居中 */
+		border-bottom:2px solid #4CAF50;
+		background-color:#393939;
+		position:fixed;							/* 绝对定位*/
+       	top:0%;								/* 放置在顶部*/
+	}
+.a_0{
+		flex:0 1 20%;
+		height:100%;
+		line-height:300%;
+		color:#d9d9d9;
+		font-size:30px;			/*文字大小*/
+        font-family:Blackoak Std;	/*字体*/
+        text-align:center;
+	}
+.a_0:hover{
+		transition:0.3s;
+		line-height:280%;
+		box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
+}
+.a_1{
+		flex:0 1 7%;
+		height:100%;
+		color:#666;
+		font-size:25px;			/*文字大小*/
+        font-family:微软雅黑;	/*字体*/
+        line-height:300%;
+        align-items:center;	
+        text-align:center;
+        background-color:#151515;
+        cursor:pointer; /* 改变鼠标 */
+	}
+.a_1:hover {
+			line-height:280%;
+			transition:0.5s;	/* 过渡动画时间   顺序是property duration timing-function delay*/
+			box-shadow:0 8px 10px 0 rgba(0,0,0,0.24), 0 11px 30px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
+	}
+	/* 下拉按钮样式 */
+.buttonz {
+  	border-radius: 4px;
+  	background-color: #f4511e;
+ 	border: none;
+ 	color: #FFFFFF;
+ 	text-align: center;
+  	font-size: 18px;
+ 	padding: 10px;
+  	width: 100px;
+  	transition: all 0.5s;
+  	cursor: pointer;
+  	margin: 5px;
+}
+.buttonz:hover{
+	background-color:#4CAF50;
+	
+}
+.buttonz span {
+  	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+.buttonz span:after {
+ 	 content: 'V';
+   	 position: absolute;	
+  	 opacity: 0;		/* 透明 */
+ 	 bottom: -10px;	/* 起始位置 */
+  	 left: 11px;		/* content的左右位置 */
+ 	 transition: 1s;	/* 动画时间 */
+}
+
+.buttonz:hover span {
+ 	 padding-bottom: 10px;	/* 改变按钮大小 */
+}
+
+.buttonz:hover span:after {
+	 opacity: 1;		/* 不透明 是1*/
+	 bottom: -10px;		/* 触发时出现位置 */
+}
+/* 容器<div a_2>---需要定位下拉内容 */
+.a_2{
+	 position:relative; 
+	 display:inline-block;
+}
+/* 下拉内容 (默认隐藏) */
+.a_3{
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* 下拉菜单的链接 */
+.a_3 .a_4 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* 鼠标触发后修改a_4的颜色 */
+.a_3 .a_4:hover {
+	background-color: #f1f1f1;
+	transition-duration:500ms;/*过渡动画时间*/
+    transition-property:background-color;/*动画效果是改变背景颜色*/
+	}
+
+/* 在鼠标触发后显示下拉菜单 */
+.a_2:hover .a_3 {
+    display: block;
+    transition-duration:500ms;/*过渡动画时间*/
+    transition-property:display;/*动画效果是改变display*/
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.a_2:hover .buttonz {
+    background-color: #3e8e41;
+     transition-duration:500ms;/*过渡动画时间*/
+    transition-property:background-color;/*动画效果是改变背景颜色*/
+}
+
+	
+	
+	
+	
+	
+	
+	
+	

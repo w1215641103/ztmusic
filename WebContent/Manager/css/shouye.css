@@ -57,7 +57,7 @@ a:active{color:#d9d9d9;}
 			box-shadow:0 8px 10px 0 rgba(0,0,0,0.24), 0 11px 30px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
 	}
 	/* 下拉按钮样式 */
-.button {
+.buttonz {
   	border-radius: 4px;
   	background-color: #f4511e;
  	border: none;
@@ -70,18 +70,18 @@ a:active{color:#d9d9d9;}
   	cursor: pointer;
   	margin: 5px;
 }
-.button:hover{
+.buttonz:hover{
 	background-color:#4CAF50;
 	
 }
-.button span {
+.buttonz span {
   	cursor: pointer;
   	display: inline-block;
   	position: relative;
   	transition: 0.5s;
 }
 
-.button span:after {
+.buttonz span:after {
  	 content: 'V';
    	 position: absolute;	
   	 opacity: 0;		/* 透明 */
@@ -90,11 +90,11 @@ a:active{color:#d9d9d9;}
  	 transition: 1s;	/* 动画时间 */
 }
 
-.button:hover span {
+.buttonz:hover span {
  	 padding-bottom: 10px;	/* 改变按钮大小 */
 }
 
-.button:hover span:after {
+.buttonz:hover span:after {
 	 opacity: 1;		/* 不透明 是1*/
 	 bottom: -10px;		/* 触发时出现位置 */
 }
@@ -133,7 +133,7 @@ a:active{color:#d9d9d9;}
 }
 
 /* 当下拉内容显示后修改下拉按钮的背景颜色 */
-.a_2:hover .button {
+.a_2:hover .buttonz {
     background-color: #3e8e41;
      transition-duration:500ms;/*过渡动画时间*/
     transition-property:background-color;/*动画效果是改变背景颜色*/

@@ -18,7 +18,7 @@ body{
 		justify-content:center;					/* 水平居中 */
 		align-items:center;						/* 垂直居中 */
         width:100%;								
-        height:auto;
+        height:40px;
         background-color:#2d2d2d;
         border-top:1px solid #4a4a4a;
         border-bottom:1px solid #4a4a4a;
@@ -55,6 +55,7 @@ body{
 		left:-6px;
 		}
 .w{		
+		margin-left:1%;
 		margin-right:1%;
 		flex:0 1 8%;
 		height:3px;
@@ -102,56 +103,74 @@ body{
 		height:40px;
 		background-color:green;
 }
+.button{
+		margin-right:0.5%;
+		border-radius:100%;
+		border:2px solid #555555;
+		background-color:#2d2d2d;
+		color:white;
+		width:25px;
+		height:25px;
+		outline:none;					/* 消除蓝色边框 */
+}
+.button:hover {border-color:snow;}		/* 鼠标放到按钮上*/
+.button:active {						/* 鼠标按下*/
+		border-color:snow;
+		transform: translateY(2px);		/* Y轴向下偏移2px*/
+}
+.button1{
+		margin-right:0.5%;
+		border-radius:100%;
+		border:2px solid #555555;
+		background-color:#2d2d2d;
+		color:white;
+		width:30px;
+		height:30px;
+		outline:none;					/* 消除蓝色边框 */
+}
+.button1:hover {border-color:snow;}		/* 鼠标放到按钮上*/
+.button1:active {						/* 鼠标按下*/
+		border-color:snow;
+		transform: translateY(2px);		/* Y轴向下偏移2px*/
+}
 </style>
 </head>
 <body>
-
-<audio id="audio" scr="" loop="loop" autoplay="autoplay"></audio>
-
 <div class="player">
-	<div class="q">
-		<img id="qys" src="images/04.png" width="25px" height="25px">
-		<img id="bofang" src="images/01.png" width="35px" height="35px" onclck="getSong()">
-		<img id="hys" src="images/05.png" width="25px" height="25px">
+	<button class="button"><</button>
+	<button class="button1" id="bofang" name="bofang">=</button>
+	<button class="button">></button>
+	<div class="w">
+		<div class="w1"></div>
+		<div class="w2"></div>
 	</div>
-		<div class="w">
-			<div class="w1"></div>
-			<div class="w2"></div>
-		</div>
-		<div class="slider">
-			<div id="jindu" class="processor"></div>
-			<div id="huadian" class="controller"></div>
-		</div>
+	<div class="slider">
+		<div id="jindu" class="processor"></div>
+		<div id="huadian" class="controller"></div>
+	</div>
 	<div class="x"> </div>
 </div>
 
+<audio id="audio" scr="" loop="loop" autoplay="autoplay"></audio>
+
 <script>
-	$(function() {
-		getSong();
+	var slider = document.querySelector(".slider");
+	var step = 0.05;
+	
+	var timer = window.setInterval(function() {
+		var sw = slider.offsetWidth;
 	})
+	var processor = document.querySelector(".processor");
+	var controller = document.querySelector(".controller");
 	
-	function getSong() {
-		var audio = document.getElementById("audio");
-		audio.src = "http://timelessberry.com/material/item/mp3/2013midori.mp3";
-		audio.loop = true;		//歌曲循环
-		playCotrol();			//播放控制函数
-	}
+	slider.addEventListener("mousedown", dragDropHandler);
 	
-	//点击播放/暂停
-	function clicks() {
-		var audio = document.getElementById("audio");
-		$("#bofang").click(function()) {
-			if($("#bofang")).hasClass("play")) {
-				$("#bofang").addClass("pause").removeClass("play");
-				audio.play();		//开始播放
-				dragMove();			//滚动条开始
-				$("#bofang").html("暂停播放");
-			} else {
-				$("#bofang").addClass("play").removeClass("pause");
-				$("#bofang").html("点击播放");
-				audio.pause();
-			}
-		})
+	function dragDropHandler(event) {
+		switch(event.type) {
+		case "mousedown": break;
+		case "mousemove": break;
+		case "mouseup": break;
+		}
 	}
 </script>
 

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="javax.servlet.http.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,8 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+<% String url = "http://timelessberry.com/material/item/mp3/2011tsukioru.mp3";
+%>
 <object id="MediaPlayer" name="MediaPlayer" width="338" height="64" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6" type="application/x-oleobject">   
-<param name = "url" value="http://timelessberry.com/material/item/mp3/2011tsukioru.mp3">
+<param name = "url" value= <%=url%> >
 <param name="ShowControls" value="1">  
 <param name="ShowPositionControls" value="0">  
 <param name="ShowAudioControls" value="1">  

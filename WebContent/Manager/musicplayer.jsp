@@ -304,16 +304,5 @@ body{
 	}
 	
 </script>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

@@ -8,7 +8,7 @@
 <style type="text/css">
 *{padding:o;margin:0;}
 body{
-		background-color:#cccccc;	
+		background-color:#cccccc;
 }
 .player{
      	touch-callout:none;

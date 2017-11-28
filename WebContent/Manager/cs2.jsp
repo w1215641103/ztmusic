@@ -6,27 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style>
-	
+	body{
+		cursor: url('wm.ico');
+	}
 </style>
 </head>
 <body>
-	<audio id="audio1">
-		<source src="2011tsukioru.mp3">
-	</audio>
-	<button onclick="playAV()" type="button">播放</button>
-	<button onclick="pauseAV()" type="button">暂停</button>
-	
-	<script>
-	
-	var myAudio = document.getElementById("audio1");
-	
-	function playAV() {
-		myAudio.play();
-		
-	}
-	function pauseAV() {
-		myAudio.pause();
-	}
-	</script>
+
 </body>
 </html>

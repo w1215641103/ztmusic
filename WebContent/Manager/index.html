@@ -1,0 +1,52 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ZT.音乐网</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="css/shouye.css">
+<link rel="stylesheet" href="css/yetou.css">
+<link rel="stylesheet" href="css/style.css" media="screen"/>
+<link rel="stylesheet" href="css/jplay.css">
+<style>
+*{padding:0;margin:0;}
+#jplay{
+		touch-callout:none;
+		display:-webkit-flex;					/* 固定 */
+		-webkit-justify-content:center;			/* 水平居中 */
+		-webkit-align-items:center;				/* 垂直居中 */
+		display:flex;							/* 固定 */
+		justify-content:center;					/* 水平居中 */
+		align-items:center;						/* 垂直居中 */
+        width:100%;								
+        height:40px;
+        background-color:#2d2d2d;
+        border-top:1px solid #4a4a4a;
+        border-bottom:1px solid #4a4a4a;
+        position:fixed;							/* 绝对定位*/
+        bottom:0%;								/* 放置在底部*/
+}
+#head{
+		width:100%;
+		height:70px;
+		display:-webkit-flex;					/* 固定 */
+		-webkit-justify-content:center;			/* 水平居中 */
+		-webkit-align-items:center;				/* 垂直居中 */
+		display:flex;							/* 固定 */
+		justify-content:center;					/* 水平居中 */
+		align-items:center;						/* 垂直居中 */
+		border-bottom:2px solid #4CAF50;
+		background-color:#393939;
+		position:fixed;							/* 绝对定位*/
+       	top:0%;								/* 放置在顶部*/
+}
+</style>
+</head>
+<body onmouseup="mj()">
+<iframe id="head" src="head.jsp"></iframe>
+	<div class="center">
+		
+	</div>
+<iframe id="jplay" src="musicplayer.jsp"></iframe>
+</body>
+</html>

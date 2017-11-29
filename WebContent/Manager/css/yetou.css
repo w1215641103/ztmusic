@@ -28,18 +28,18 @@ body{
 		background-color:#393939;
 		position:fixed;							/* 绝对定位*/
        	top:0%;								/* 放置在顶部*/
-       	overflow:ellipsis;	/* 超出文本隐藏 */
+		overflow:ellipsis;	/* 超出文本省略号 */
     	white-space: nowrap;	/* 强制不换行 */
 	}
-.aa{	
-		float:left;
-		width:15%;
+/* .a_center{	
+		width:1000px;
 		height:70px;
 		border:1px;
+		border-color:yellow;
 		background-color:red;
-		overflow:ellipsis;	/* 超出文本隐藏 */
-    	white-space: nowrap;	/* 强制不换行 */
-	}
+		overflow:hiddle;	超出文本隐藏
+    	white-space: nowrap;	强制不换行
+	} */
 .a_0{
 		float:left;
 		width:25%;

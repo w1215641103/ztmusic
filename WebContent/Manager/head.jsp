@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style>
+*{padding:0;margin:0;}
 a:link,a:visited
  		{
 				color:#d9d9d9; 
@@ -49,7 +50,7 @@ a:active{color:#d9d9d9;}
 		box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
 }
 .a_1{
-		flex:0 1 7%;
+		flex:0 1 10%;
 		height:100%;
 		color:#666;
 		font-size:25px;			/*文字大小*/
@@ -59,6 +60,8 @@ a:active{color:#d9d9d9;}
         text-align:center;
         background-color:#151515;
         cursor:pointer; /* 改变鼠标 */
+        overflow: hidden;	/* 超出文本隐藏 */
+        white-space: nowrap;	/* 强制不换行 */
 	}
 .a_1:hover {
 			line-height:280%;
@@ -148,9 +151,11 @@ a:active{color:#d9d9d9;}
     transition-property:background-color;/*动画效果是改变背景颜色*/
 }
  	.webdesigntuts-workshop {
+
+ 	white-space: nowrap;
 	line-height:350%;
 	text-align: center;
-	width: 300px;
+	width: 15%;
 } 
 
  .webdesigntuts-workshop:before,
@@ -159,10 +164,9 @@ a:active{color:#d9d9d9;}
 	display: block;	
 	height: 3px;
 	/* left: 40%; */
-	margin: 5px 0 0px -650px;
+	margin: 5px 0 0px -280%;
 /* 	position: absolute; */
-	width:650px;
-
+	width:200%;
 }  
 
 .webdesigntuts-workshop:before {
@@ -203,7 +207,7 @@ a:active{color:#d9d9d9;}
 	z-index: 1;
 }
 
-.webdesigntuts-workshop input {
+.webdesigntuts-workshop input {  /* 文本框 */
 	background: #222;
 	background: -webkit-linear-gradient(#333, #222);	
 	background: -moz-linear-gradient(#333, #222);	
@@ -223,7 +227,7 @@ a:active{color:#d9d9d9;}
 	margin: 0;
 	padding: 0 10px;
 	text-shadow: 0 -1px 0 #000;
-	width: 200px;
+	width: 79%;
 }
 
 .ie .webdesigntuts-workshop input {
@@ -292,7 +296,7 @@ a:active{color:#d9d9d9;}
 	padding: 0;
 	position: relative;
 	text-shadow: 0 -1px 0 #000;
-	width: 40px;
+	width: 20%;
 }	
 
 .webdesigntuts-workshop button:hover,
@@ -399,7 +403,7 @@ a:active{color:#d9d9d9;}
   					<a class="a_4" href="">登陆</a>
   					<a class="a_4" href="">注册</a>
   				</div>
-  			</div>	
+  			</div>
 	</div>
 </body>
 </html>

@@ -27,13 +27,9 @@ body{
 		background-color:#393939;
 		position:fixed;							/* 绝对定位*/
        	top:0%;								/* 放置在顶部*/
-<<<<<<< HEAD
 		overflow:ellipsis;	/* 超出文本省略号 */
     	white-space: nowrap;	/* 强制不换行 */
-=======
-       	/* overflow:ellipsis;		超出文本隐藏 */
-    	/* white-space: nowrap;	强制不换行 */
->>>>>>> a611249b3da21124a48e0a57ef9520cd3e0b0c8e
+
 	}
 /* .a_center{	
 		width:1000px;
@@ -41,15 +37,9 @@ body{
 		border:1px;
 		border-color:yellow;
 		background-color:red;
-<<<<<<< HEAD
 		overflow:hiddle;	超出文本隐藏
     	white-space: nowrap;	强制不换行
 	} */
-=======
-		/* overflow:ellipsis;	超出文本隐藏 */
-    	white-space: nowrap;	/* 强制不换行 */
-	}
->>>>>>> a611249b3da21124a48e0a57ef9520cd3e0b0c8e
 .a_0{
 		float:left;
 		width:25%;

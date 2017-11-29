@@ -11,8 +11,8 @@
 *{padding:0;margin:0;}
 </style>
 </head>
-<body>
-		<div class="a">
+<body onload="xwidth()">
+		<div id="ap" class="a">
 			<div class="a_0"><a href="index.jsp">ZT.music</a></div>
 			<div class="a_1"><a href="index.jsp">音乐首页</a></div>
 			<div class="a_1"><a href="index.jsp">发现音乐</a></div>
@@ -34,5 +34,11 @@
   				</div>
   			</div>		
 		</div>	
+<script>
+	function xwidth() {
+		var a = window.screen.width;
+		document.getElementById("ap").style.width = a + 'px';
+	}
+</script>
 </body>
 </html>

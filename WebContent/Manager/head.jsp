@@ -31,6 +31,7 @@ a:active{color:#d9d9d9;}
 		border-bottom:2px solid #4CAF50;
 		background-color:#393939;
 		position:fixed;							/* 绝对定位*/
+		border-style:none;
        	top:0%;								/* 放置在顶部*/
 	}
 .a_0{
@@ -378,12 +379,12 @@ a:active{color:#d9d9d9;}
 </style>
 </head>
 <body>
-		<div class="a">
+	<div class="a">
 			<div class="a_0"><a href="head.jsp">ZT.music</a></div>
 			<div class="a_1"><a href="index.jsp">音乐首页</a></div>
 			<div class="a_1"><a href="index.jsp">发现音乐</a></div>
-			<div class="a_1"><a href="index.jsp">我的音乐</a></div>
-			<div class="a_1"><a href="index.jsp">音乐大全</a></div>
+			<div class="a_1"><a href="wodeyunyue.jsp">我的音乐</a></div>
+			<div class="a_1"><a href="music.jsp">音乐大全</a></div>
 			<div class="a_1"><a href="index.jsp">音乐简介</a></div>
 				<section class="webdesigntuts-workshop">
 					<form action="" method="">		    
@@ -398,8 +399,7 @@ a:active{color:#d9d9d9;}
   					<a class="a_4" href="">登陆</a>
   					<a class="a_4" href="">注册</a>
   				</div>
-  			</div>
-  					
-		</div>
+  			</div>	
+	</div>
 </body>
 </html>

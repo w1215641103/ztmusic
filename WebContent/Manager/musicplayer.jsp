@@ -160,13 +160,13 @@ body{
 			<div id="huadian" class="controller"></div>
 		</div>
 	</div>
-	
-	<div class="x"> </div>
+	<!-- 循环 -->
+	<button class="button1" id="xh" onclick="xhbf()">↻</button>
 	
 </div>
 
 <audio id="audio1">
-	<source src="2011tsukioru.mp3">
+	<source src="music/敵艦見ゆ.mp3">
 </audio>
 
 <script>
@@ -183,6 +183,22 @@ body{
 	var aj = false;
 	//进度条播放
 	var t1;
+	//是否循环
+	var	xh = false;
+	
+	//修改循环
+	function xhbf() {
+		if (!xh) {
+			//设置位循环
+			myAudio.loop = true;
+			xh = true;
+			document.getElementById("xh").style.border='2px solid snow';
+		} else {
+			myAudio.loop = false;
+			xh = false;
+			document.getElementById("xh").style.border='2px solid #555555';
+		}
+	}
 	
 	//点击播放按钮
 	function playAV() {
@@ -236,13 +252,6 @@ body{
 		}
 	}
 	
-	/* 小数点转百分比 */
-	function toPercent(point) {
-		var str = Number(point*100).toFixed(1);
-		str+="%";
-		return str;
-	}
-	
 	//按下进度条
 	function j1(ev, obj) {
 		//获取鼠标的位置
@@ -293,7 +302,7 @@ body{
 		//调整进度条位置
 		_d1.style.width= yw ;
 		//如果播放结束
-		if(myAudio.ended) {
+		if(myAudio.ended && !xh) {
 			bf = false;
 			//更换b1的图标
 			document.getElementById("b1").innerHTML="►";
@@ -302,6 +311,13 @@ body{
 			//重置进度条
 			_d1.style.width = "0%";
 		}
+	}
+	
+	/* 小数点转百分比 */
+	function toPercent(point) {
+		var str = Number(point*100).toFixed(1);
+		str+="%";
+		return str;
 	}
 </script>
 </body>

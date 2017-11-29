@@ -16,7 +16,6 @@ body{
       	background-color:#d9d9d9;	
       	} */
 .a{				/* 首页的布局标签 */
-		width:1900px;
 		height:70px;
 		/* display:-webkit-flex;					固定
 		-webkit-justify-content:center;			水平居中
@@ -28,8 +27,13 @@ body{
 		background-color:#393939;
 		position:fixed;							/* 绝对定位*/
        	top:0%;								/* 放置在顶部*/
+<<<<<<< HEAD
 		overflow:ellipsis;	/* 超出文本省略号 */
     	white-space: nowrap;	/* 强制不换行 */
+=======
+       	/* overflow:ellipsis;		超出文本隐藏 */
+    	/* white-space: nowrap;	强制不换行 */
+>>>>>>> a611249b3da21124a48e0a57ef9520cd3e0b0c8e
 	}
 /* .a_center{	
 		width:1000px;
@@ -37,9 +41,15 @@ body{
 		border:1px;
 		border-color:yellow;
 		background-color:red;
+<<<<<<< HEAD
 		overflow:hiddle;	超出文本隐藏
     	white-space: nowrap;	强制不换行
 	} */
+=======
+		/* overflow:ellipsis;	超出文本隐藏 */
+    	white-space: nowrap;	/* 强制不换行 */
+	}
+>>>>>>> a611249b3da21124a48e0a57ef9520cd3e0b0c8e
 .a_0{
 		float:left;
 		width:25%;
@@ -49,7 +59,7 @@ body{
 		font-size:30px;			/*文字大小*/
         font-family:Blackoak Std;	/*字体*/
         text-align:center;
-        overflow:ellipsis;	/* 超出文本隐藏 */
+        /* overflow:ellipsis;	超出文本隐藏 */
     	white-space: nowrap;	/* 强制不换行 */
 	}
 .a_0:hover{
@@ -69,7 +79,7 @@ body{
         text-align:center;
         background-color:#151515;
         cursor:pointer; /* 改变鼠标 */
-               	overflow:ellipsis;	/* 超出文本隐藏 */
+        /*overflow:ellipsis;	超出文本隐藏 */
     	white-space: nowrap;	/* 强制不换行 */
 	}
 .a_1:hover {
@@ -90,8 +100,8 @@ body{
   	transition: all 0.5s;
   	cursor: pointer;
   	margin: 10px;
-  	       	overflow:ellipsis;	/* 超出文本隐藏 */
-    	white-space: nowrap;	/* 强制不换行 */
+  	/* overflow:ellipsis;	超出文本隐藏 */
+   	white-space: nowrap;	/* 强制不换行 */
 }
 .buttonz:hover{
 	background-color:#4CAF50;

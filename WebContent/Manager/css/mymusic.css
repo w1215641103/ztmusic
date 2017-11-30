@@ -1,0 +1,159 @@
+        .mymusic{
+            height: 100%;
+            width: 100%;
+            border: 1px solid gainsboro;
+            background-color: gainsboro;
+        }
+        .d-mymusic{
+            height: 100px;
+            border: 1px solid #333333;
+            background-color: #333333;
+            font-size: 30px;
+            word-spacing: 50px;
+            line-height: 100px;
+        }
+        .class8{
+            height: 100px;
+            border: 0.1px solid #333333;
+            background-color: #333333;
+            line-height: 100px;
+            margin-left: 320px;
+        }
+        .class1{
+            border: 1px solid red;
+            background-color: red;
+            height: 5px;
+        }
+        .class2{
+            border: 1px solid gainsboro;
+            background-color: white;
+            height: 82%;
+            width: 180px;
+            margin-left: 110px;
+            font-size: 20px;
+            text-align: center;
+            word-spacing: 100px;
+
+        }
+        .class3{
+            border: 0.1px solid gainsboro;
+            background-color: white;
+            height: 235px;
+            width: 60%;
+            margin-left: 291px;
+            margin-top: -503px;
+        }
+        .class4{
+            border: 0.1px solid gainsboro;
+            background-color: white;
+            height: 200px;
+            width: 100%;
+
+        }
+        .class5{
+            border: 0.1px solid gainsboro;
+            font-size: 25px;
+            text-align: left;
+        }
+        .class{
+            border: 0.1px solid red;
+            background-color: red;
+            height: 3px;
+            width: 100%;
+            margin-top: 0px;
+        }
+        .class6{
+            border: 1px solid gainsboro;
+            background-color:white;
+            height:43.5%;
+            width: 60%;
+            margin-left: 291px;
+        }
+        .class7{
+            border: 0.1px solid white;
+            background-color: white;
+            height: 25px;
+            width: 250px;
+            margin-top: 70px;
+            margin-left:250px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table,td,th
+        {
+            border:0.1px solid gainsboro;
+        }
+        th{
+            background: linear-gradient(white,gainsboro);
+        }
+        table
+        {
+            width:100%;
+        }
+        th
+        {
+            height:30px;
+            text-align:left;
+        }
+        a:link{color:black;}
+        a:visited{color:black;}
+        a:hover{color:red;}
+        a:active{color:red;}
+        .dropdown{
+            position:relative;
+            display:inline-block;
+        }
+        .dropdown-content{
+            display:none;
+            position:absolute;
+            background-color:white;
+            min-width:120px;
+            box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding:5px 1px;
+        }
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+        .dropdown{
+            position:relative;
+            display:inline-block;
+        }
+        .dropdown-content{
+            display:none;
+            position:absolute;
+            background-color:white;
+            min-width:120px;
+            box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding:5px 1px;
+        }
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }

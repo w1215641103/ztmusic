@@ -40,7 +40,7 @@
   			</div>		
 		</div>
 		<div id="music">
-			
+			<button class="cda">修改</button>
 		</div>	
 <script>
 	function xwidth() {

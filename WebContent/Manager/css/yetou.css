@@ -5,7 +5,25 @@ a:link,a:visited
 		}
 a:hover {color:white;} 
 a:active{color:#d9d9d9;}
-
+#c{
+		width:900px;
+		height:900px;
+		border:1px solid red;
+		background-color:yellow;
+		magin:auto;
+}
+#music{
+		left:15%;
+		position:relative;
+		top:70px;
+		width:70%;
+		border:1px solid green;
+		
+}
+.cda{
+		width:100px;
+		height:100px;
+}
 body{
 		background-color:#cccccc;	
 }
@@ -17,6 +35,7 @@ body{
       	} */
 .a{				/* 首页的布局标签 */
 		height:70px;
+		width:100%;
 		/* display:-webkit-flex;					固定
 		-webkit-justify-content:center;			水平居中
 		-webkit-align-items:center;				垂直居中 */

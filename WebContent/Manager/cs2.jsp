@@ -4,14 +4,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-<style>
-	body{
-		cursor: url('wm.ico');
+<script>
+	function loadXMLDoc() {
+		var xmlhttp;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+			}
+		}
+		xmlhttp.open("GET", "a.jsp");
+		xmlhttp.send();
 	}
-</style>
+</script>
 </head>
 <body>
-
+	<div id = "myDiv"></div>
+	<button type="button" onclick="loadXMLDoc()">修改</button>
 </body>
 </html>

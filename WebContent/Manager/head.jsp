@@ -10,8 +10,9 @@
 <style>
 *{padding:0;margin:0;}
 </style>
+<script src="js/goto.js"></script>
 </head>
-<body onload="xwidth()" onresize="xwidth()">
+<body onload="xwidth()">
 		<div id="ap">
 			<div class="a_0"><a href="head.jsp">ZT.music</a></div>
 			<div class="a_1"><a onclick="smusic()">音乐首页</a></div>
@@ -40,9 +41,10 @@
   			</div>		
 		</div>
 		<div id="music">
-			<button class="cda" onclick="loadXMLDoc()">修改</button>
-		</div>
-		<script src="js/goto.js"></script>
-		
+			<!-- <button class="cda" onclick="loadXMLDoc()">修改</button> -->
+		</div>	
 </body>
+<script>
+
+</script>
 </html>

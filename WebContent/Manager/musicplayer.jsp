@@ -162,7 +162,6 @@ body{
 	</div>
 	<!-- 循环 -->
 	<button class="button1" id="xh" onclick="xhbf()">↻</button>
-	
 </div>
 
 <audio id="audio1">

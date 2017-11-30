@@ -13,12 +13,17 @@
 </head>
 <body onload="xwidth()">
 		<div id="ap" class="a">
-			<div class="a_0"><a href="index.jsp">ZT.music</a></div>
-			<div class="a_1"><a href="index.jsp">音乐首页</a></div>
-			<div class="a_1"><a href="index.jsp">发现音乐</a></div>
-			<div class="a_1"><a href="index.jsp">我的音乐</a></div>
-			<div class="a_1"><a href="index.jsp">音乐大全</a></div>
-			<div class="a_1"><a href="index.jsp">音乐简介</a></div>
+			<div class="a_0"><a href="index.html">ZT.music</a></div>
+			<div class="a_1"><a href="index.html">音乐首页</a></div>
+			<div class="a_1"><a href="music.jsp">发现音乐</a></div>
+			<div class="a_1"><a href="mymusic.jsp">我的音乐</a></div>
+			<div class="a_1"><a href="musicword.jsp">音乐大全</a></div>
+			<div class="a_1"><a href=" ">音乐简介</a>
+				<div class="a_3">
+  					<a class="a_4" href=" ">登陆</a>
+  					<a class="a_4" href="">注册</a>
+  				</div>
+			</div>
 				<section class="webdesigntuts-workshop">
 					<form action="" method="">		    
 						<input type="search" placeholder="请输入搜索内容">		    	
@@ -33,6 +38,9 @@
   					<a class="a_4" href="">注册</a>
   				</div>
   			</div>		
+		</div>
+		<div id="music">
+			
 		</div>	
 <script>
 	function xwidth() {

@@ -13,10 +13,7 @@
 <script src="js/goto.js"></script>
 </head>
 <body onload="xwidth()">
-<<<<<<< HEAD
-=======
 	<div id="a">
->>>>>>> 16a5f293f0ac00f422e328eacc20910f1bb4a178
 		<div id="ap">
 			<div class="a_0"><a href="head.jsp">ZT.music</a></div>
 			<div class="a_1"><a onclick="smusic()">音乐首页</a></div>
@@ -46,11 +43,6 @@
 		</div>
 	</div>
 		<div id="music">
-<<<<<<< HEAD
-			<!-- <button class="cda" onclick="loadXMLDoc()">修改</button> -->
-=======
-				
->>>>>>> 16a5f293f0ac00f422e328eacc20910f1bb4a178
 		</div>	
 </body>
 <script>

@@ -25,7 +25,7 @@ function mymusic() {
 	xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+			document.getElementById("music").innerHTML=xmlhttp.responseText;
 		}
 	}
 	xmlhttp.open("GET", "mymusic.jsp");
@@ -36,10 +36,21 @@ function amusic() {
 	xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+			document.getElementById("music").innerHTML=xmlhttp.responseText;
 		}
 	}
 	xmlhttp.open("GET", "amusic.jsp");
+	xmlhttp.send();
+}
+function jmusic() {
+	var xmlhttp;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+			document.getElementById("music").innerHTML=xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("GET", "jmusic.jsp");
 	xmlhttp.send();
 }
 function xwidth() {

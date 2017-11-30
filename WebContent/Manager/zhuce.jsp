@@ -1,13 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-    
 <%@ page import="common.MD5" %>
 <%@ page import="common.conn" %>
 <%@ page import="dal.User" %>
 <%@ page import="model.UserInfo" %>
 <%@ page import="common.cookie" %>
-
 <html>
-
 <head>
 <title>注册</title>
 <style type="text/css">
@@ -34,7 +31,6 @@
 	.gs {width: 180px; height: 22px;}
 </style>
 </head>
-
 <body>
 <%
    request.setCharacterEncoding("utf-8");		//页面编码

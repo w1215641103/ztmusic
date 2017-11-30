@@ -11,17 +11,17 @@
 *{padding:0;margin:0;}
 </style>
 </head>
-<body onload="xwidth()">
-		<div id="ap" class="a">
-			<div class="a_0"><a href="index.html">ZT.music</a></div>
-			<div class="a_1"><a href="index.html">音乐首页</a></div>
-			<div class="a_1"><a href="music.jsp">发现音乐</a></div>
-			<div class="a_1"><a href="mymusic.jsp">我的音乐</a></div>
-			<div class="a_1"><a href="musicword.jsp">音乐大全</a></div>
-			<div class="a_1"><a href=" ">音乐简介</a>
+<body onload="xwidth()" onresize="xwidth()">
+		<div id="ap">
+			<div class="a_0"><a href="head.jsp">ZT.music</a></div>
+			<div class="a_1"><a onclick="smusic()">音乐首页</a></div>
+			<div class="a_1"><a onclick="fmusic()">发现音乐</a></div>
+			<div class="a_1"><a onclick="mymusic()">我的音乐</a></div>
+			<div class="a_1"><a onclick="amusic()">音乐大全</a></div>
+			<div class="a_1"><a onclick="">音乐简介</a>
 				<div class="a_3">
-  					<a class="a_4" href=" ">登陆</a>
-  					<a class="a_4" href="">注册</a>
+  					<a class="a_4" href="">登陆</a>
+  					<a class="a_4" href="zhuce.jsp">注册</a>
   				</div>
 			</div>
 				<section class="webdesigntuts-workshop">
@@ -34,19 +34,15 @@
   			<div class="a_2">
   				<button class="buttonz" style="vertical-align:middle"><span>登陆</span></button>
   				<div class="a_3">
-  					<a class="a_4" href="">登陆</a>
-  					<a class="a_4" href="">注册</a>
+  					<a class="a_4" href="denglu.jsp">登陆</a>
+  					<a class="a_4" href="zhuce.jsp">注册</a>
   				</div>
   			</div>		
 		</div>
 		<div id="music">
-			<button class="cda">修改</button>
-		</div>	
-<script>
-	function xwidth() {
-		var a = window.screen.width;
-		document.getElementById("ap").style.width = a + 'px';
-	}
-</script>
+			<button class="cda" onclick="loadXMLDoc()">修改</button>
+		</div>
+		<script src="js/goto.js"></script>
+		
 </body>
 </html>

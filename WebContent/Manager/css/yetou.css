@@ -17,8 +17,8 @@ a:active{color:#d9d9d9;}
 		position:relative;
 		top:70px;
 		width:70%;
-		border:1px solid green;
-		
+		height:500px;
+		border:1px solid green;	
 }
 .cda{
 		width:100px;
@@ -33,9 +33,9 @@ body{
       	border:1px solid red;
       	background-color:#d9d9d9;	
       	} */
-.a{				/* 首页的布局标签 */
+#ap{				/* 首页的布局标签 */
 		height:70px;
-		width:100%;
+		
 		/* display:-webkit-flex;					固定
 		-webkit-justify-content:center;			水平居中
 		-webkit-align-items:center;				垂直居中 */

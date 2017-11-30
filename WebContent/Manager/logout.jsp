@@ -4,9 +4,9 @@
 <%
 	String data = cookie.readCookie(request, "name");
 	if (data.equals("")) {
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("head.jsp");
 	} else {
 		cookie.writeCookie(response, "name", "");
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("head.jsp");
 	}
 %>

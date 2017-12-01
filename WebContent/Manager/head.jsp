@@ -62,10 +62,7 @@
                     </div>
                 </div>
             </div>
-         <div class="">
-         
-         
-         </div>
+			<div class=""></div>
             <script src="assets/js/jquery-1.8.3.min.js"></script>
             <script src="assets/js/slider.js"></script>
             <script type="text/javascript">

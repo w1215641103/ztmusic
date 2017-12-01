@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="common.cookie"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -23,30 +24,33 @@
 			<div class="a_1"><a onclick="mymusic()">我的音乐</a></div>
 			<div class="a_1"><a onclick="amusic()">音乐大全</a></div>
 			<div class="a_1"><a onclick="jmusic()">音乐简介</a></div>
-				<section class="webdesigntuts-workshop">
-					<form action="" method="">		    
-						<input type="search" placeholder="请输入歌曲名/歌手">		    	
-						<button>搜索</button>
-					</form>
-				</section>
-  					<script src='jquery.js'></script>
-  					
+			<section class="webdesigntuts-workshop">
+				<form action="" method="">		    
+					<input type="search" placeholder="请输入歌曲名/歌手">		    	
+					<button>搜索</button>
+				</form>
+			</section>
+  			<script src='jquery.js'></script>
+  			<%String cook = cookie.readCookie(request, "name");
+  			if (cook.equals("")) {%>
 	 		<div class="a_2">
   				<button class="buttonz" style="vertical-align:middle"><span>登陆</span></button>
   				<div class="a_3">
-  					<a class="a_4" href="denglu.jsp">登陆</a>
-  					<a class="a_4" href="zhuce.jsp">注册</a>
+  					<a class="a_4"  target="_top" href="denglu.jsp">登陆</a>
+  					<a class="a_4"  target="_top" href="zhuce.jsp">注册</a>
   				</div>
 			</div> 
-			
-<!-- 			<div class="a_5">
+			<%} else {%>
+ 			<div class="a_5">
 				<div class="a_6"><a onclick="mymusic()"><img class="a_6t" src="images/logo.png"></a></div>
-				<div class="a_7"><a onclick="mymusic()">user</a></div> 
+				<div class="a_7"><a onclick="mymusic()"><%=cookie.readCookie(request, "name")%></a></div> 
 				<div class="a_8">
  					<a class="a_9" href="denglu.jsp">个人中心</a>
   					<a class="a_9" href="zhuce.jsp">我的音乐</a>
+  					<a class="a_9"  target="_top" href="logout.jsp">退出</a>
   				</div>
-			</div> -->
+			</div>
+			<%} %>
 			
 		</div>
 	</div>

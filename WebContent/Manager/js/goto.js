@@ -39,7 +39,7 @@ function amusic() {
 			document.getElementById("music").innerHTML=xmlhttp.responseText;
 		}
 	}
-	xmlhttp.open("GET", "a.jsp");
+	xmlhttp.open("GET", "amusic.jsp");
 	xmlhttp.send();
 }
 

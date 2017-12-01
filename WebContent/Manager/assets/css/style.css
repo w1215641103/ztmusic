@@ -1,20 +1,5 @@
-div, ul, ol, h1, h2 {
-	margin: 0;
-	padding: 0
-}
-img {
+.st {
 	border: 0
-}
-li {
-	list-style: none;
-	margin: 0;
-	padding: 0
-}
-a {
-	margin: 0;
-	outline: none;
-	padding: 0;
-	text-decoration: none
 }
 /*
 +----------------------------------------------------------------+
@@ -24,7 +9,7 @@ a {
 
 .cf:before, .cf:after {
 	content: " ";
-	display: table
+	display: table;
 }
 .cf:after {
 	clear: both
@@ -117,5 +102,5 @@ h1 {
 	width: 16px;
 }
 .slider-nav .next {
-	background-position: -15px top
+	background-position: -15px top;
 }

@@ -20,19 +20,19 @@
             word-spacing: 50px;
             line-height: 100px;
         }
-        .class8{
+        .b_8{
             height: 100px;
             border: 0.1px solid #333333;
             background-color: #333333;
             line-height: 100px;
-            margin-left: 320px;
+            margin-left: 260px;
         }
-        .class1{
-            border: 1px solid red;
-            background-color: red;
-            height: 5px;
+        .b_1{
+            border: 1px solid lawngreen;
+            background-color: lawngreen;
+            height: 1px;
         }
-        .class2{
+        .b_2{
             border: 1px solid gainsboro;
             background-color: white;
             height: 82%;
@@ -43,41 +43,41 @@
             word-spacing: 100px;
 
         }
-        .class3{
+        .b_3{
             border: 0.1px solid gainsboro;
             background-color: white;
             height: 235px;
             width: 60%;
             margin-left: 291px;
-            margin-top: -503px;
+            margin-top: -507px;
         }
-        .class4{
+        .b_4{
             border: 0.1px solid gainsboro;
             background-color: white;
             height: 200px;
             width: 100%;
 
         }
-        .class5{
+        .b_5{
             border: 0.1px solid gainsboro;
             font-size: 25px;
             text-align: left;
         }
-        .class{
+        .b_0{
             border: 0.1px solid red;
             background-color: red;
             height: 3px;
             width: 100%;
             margin-top: 0px;
         }
-        .class6{
+        .b_6{
             border: 1px solid gainsboro;
             background-color:white;
             height:43.5%;
             width: 60%;
             margin-left: 291px;
         }
-        .class7{
+        .b_7{
             border: 0.1px solid white;
             background-color: white;
             height: 25px;
@@ -171,19 +171,20 @@
 <body>
 <div class="mymusic" style="height: 611px">
     <div class="d-mymusic" >
-        <div class="class8">
-        <ul>
-            <li><a class="active" href="#home">发现音乐</a></li>
-            <li><a href="#news">我的音乐</a></li>
-            <li><a href="#content">商城</a></li>
-            <li><a href="#about">音乐人</a></li>
-        </ul>
+        <div class="b_8">
+            <ul>
+                <li><a class="active" href="#home">音乐首页</a></li>
+                <li><a href="#news">发现音乐</a></li>
+                <li><a href="#content">我的音乐</a></li>
+                <li><a href="#about">音乐大全</a></li>
+                <li><a href="#about">音乐简介</a>
+            </ul>
         </div>
     </div>
-    <div class="class1"></div>
-    <div class="class2"><br>
-        <p><b><a href="class3" target="_blank">我的歌手</a></b>
-        <p><b><a href="class3" target="_blank">我的电台</a></b>
+    <div class="b_1"></div>
+    <div class="b_2"><br>
+        <p><b><a href="b_3" target="_blank">我的歌手</a></b>
+        <p><b><a href="b_3" target="_blank">我的电台</a></b>
             <div class="dropdown">
                 <span>我的歌单</span>
                 <div class="dropdown-content">
@@ -200,14 +201,14 @@
 </div>
 </div>
 </div>
-<div class="class3">
-    <div class="class4">
+<div class="b_3">
+    <div class="b_4">
         <a href="muban.html" target="_blank">
             <div style="float:left;claear:both;margin: 30px 20px 20px 80px">
                 <img src="1.img.jpg"width="150" height="150"style="text-align: center">
             </div>
         </a>
-        <div class="class7">
+        <div class="b_7">
             <button onclick="getElementById('demo').innerHTML=Date()">播放</button>
             <button onclick="getElementById('demo').innerHTML=Date()">分享</button>
             <button onclick="getElementById('demo').innerHTML=Date()">下载</button>
@@ -215,10 +216,10 @@
         </div>
 
     </div>
-    <div class="class5">歌曲列表</div>
-    <div class="class"></div>
+    <div class="b_5">歌曲列表</div>
+    <div class="b_0"></div>
 </div>
-<div class="class6">
+<div class="b_6">
     <table>
         <tr>
             <th>歌曲标题</th>

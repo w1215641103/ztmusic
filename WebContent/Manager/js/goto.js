@@ -59,3 +59,9 @@ function xwidth() {
 	var a = window.screen.width;
 	document.getElementById("ap").style.width = a + 'px';
 }
+
+function search() {
+	var myvaluer = document.getElementById("inpt").value;
+	
+	amusic();
+}

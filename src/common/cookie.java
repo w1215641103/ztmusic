@@ -8,8 +8,8 @@ public class cookie {
 	//写入Cookie
 	public static void writeCookie(HttpServletResponse response, String key, String value) {
 		Cookie cookie = new Cookie(key, value);	//创建Cookie
-		cookie.setMaxAge(60*60*24);		//设置cookie过期时间为24小时
-		response.addCookie(cookie); 		//在响应头部添加cookie
+		cookie.setMaxAge(60*60*24);				//设置cookie过期时间为24小时
+		response.addCookie(cookie); 			//在响应头部添加cookie
 	}
 	
 	//读取Cookie值

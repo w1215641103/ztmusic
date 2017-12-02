@@ -1,0 +1,22 @@
+.b3{
+	position:absolute;
+	top:30%;
+	width:60%;
+	left:25%;
+}
+ table,td,th{
+     border:1px solid gainsboro;
+}
+th{
+     background: linear-gradient(white,gainsboro);
+     
+}
+.b4{
+	position:absolute;
+	bottom:10%;
+	width:60%;
+	left:25%;
+}
+.b5{
+	
+}

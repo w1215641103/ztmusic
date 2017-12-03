@@ -1,67 +1,19 @@
-function smusic() {
-		var xmlhttp;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange=function() {
-			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-				document.getElementById("music").innerHTML=xmlhttp.responseText;
-			}
-		}
-		xmlhttp.open("GET", "index.jsp");
-		xmlhttp.send();
-	}
-function fmusic() {
+function gth() {
 	var xmlhttp;
 	xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			document.getElementById("music").innerHTML=xmlhttp.responseText;
+			document.getElementById("ap").innerHTML=xmlhttp.responseText;
 		}
 	}
-	xmlhttp.open("GET", "fmusic.jsp");
+	xmlhttp.open("GET", "head.jsp");
 	xmlhttp.send();
-}
-function mymusic() {
-	var xmlhttp;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange=function() {
-		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			document.getElementById("music").innerHTML=xmlhttp.responseText;
-		}
-	}
-	xmlhttp.open("GET", "mymusic.jsp");
-	xmlhttp.send();
-}
-function amusic() {
-	var xmlhttp;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange=function() {
-		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			document.getElementById("music").innerHTML=xmlhttp.responseText;
-		}
-	}
-	xmlhttp.open("GET", "amusic.jsp");
-	xmlhttp.send();
-}
-
-function jmusic() {
-	var xmlhttp;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange=function() {
-		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			document.getElementById("music").innerHTML=xmlhttp.responseText;
-		}
-	}
-	xmlhttp.open("GET", "jmusic.jsp");
-	xmlhttp.send();
-}
-
-function xwidth() {
+	//获取宽度
 	var a = window.screen.width;
 	document.getElementById("ap").style.width = a + 'px';
 }
 
-function search() {
-	var myvaluer = document.getElementById("inpt").value;
-	
-	amusic();
+function ssgt() {
+	var wb = document.getElementById("inpt").value;
+	window.location.href="amusic.jsp";
 }

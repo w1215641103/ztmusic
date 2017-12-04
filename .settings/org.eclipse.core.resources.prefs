@@ -1,5 +1,9 @@
 eclipse.preferences.version=1
 encoding//WebContent/Manager/ceshi4.jsp=UTF-8
 encoding//WebContent/Manager/css/shouye.css=UTF-8
+<<<<<<< HEAD
 encoding//WebContent/Manager/index1.jsp=UTF-8
 encoding//WebContent/Manager/wodeyunyue.jsp=UTF-8
+=======
+encoding//WebContent/Manager/music/MyMUSIC.jsp=UTF-8
+>>>>>>> 70818b3e9b34bd2274d448e5611834f5e3f2f758

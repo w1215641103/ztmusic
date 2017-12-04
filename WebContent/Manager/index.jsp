@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/yetou.css">
 <link rel="stylesheet" href="css/denglu.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="css/tj.css">
 <script src="js/goto.js"></script>
 <script src='js/jquery.js'></script>
 <style>
@@ -18,7 +19,10 @@
 </head>
 
 <body onload="gth()">
-	<div id="a"><div id="ap"></div></div>
+	<div id="a">
+	<div id="ap"></div>
+	</div>
+	
 	<div id="music">
 		<input id="inpt" type="text" placeholder="请输入歌曲名/歌手"/>
 		<button id="butt" onclick="setCookie()">搜索</button>
@@ -32,8 +36,25 @@
                	</div>
         	</div>
      	</div>
-		<div class=""></div>
-   		<script src="assets/js/jquery-1.8.3.min.js"></script>
+	
+		<div class="tj">
+			<div class="wq">
+				<div class="nq"></div>
+			</div>
+			<ul class="lb_ul">
+					<li class="lb_li"><a class="li1">摇滚</a></li>
+					<li class="lb_li"><a class="li2">摇滚</a></li>
+					<li class="lb_li"><a class="li2">摇滚</a></li>
+					<li class="lb_li"><a class="li2">摇滚</a></li>
+					<li class="lb_li"><a class="li2">摇滚</a></li>
+					<li class="lb_li"><a class="li3">更多</a></li>
+			</ul>
+		</div>
+		
+		<div class="">
+			<div class=""></div>
+		</div>   		
+		<script src="assets/js/jquery-1.8.3.min.js"></script>
    		<script src="assets/js/slider.js"></script>
      	<script type="text/javascript">
      		(function() {

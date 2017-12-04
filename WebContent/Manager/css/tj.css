@@ -1,0 +1,66 @@
+.tj{
+	border:1px solid red;
+	background-color:green;
+	width:100%;
+	height:30px;
+	position:absolute;
+ 	voerflow:hidden;
+	
+}
+.wq{
+	width:20px;
+	height:20px;
+	border:1px solid black;
+	border-radius:50%;
+	position:absolute;
+	top:14%;
+}
+.nq{
+	width:10px;
+	height:10px;
+	border:1px solid black;
+	background-color:red;
+	border-radius:50%;
+    position:absolute;
+    top:4px;
+    left:4px;
+    
+}
+.lb_ul{
+	position:absolute;
+	left:4%;
+	background:#666;
+	top:10%;
+	
+}
+.lb_li{
+	
+	display:inline;
+	padding:10px;
+}
+.li1{
+	font-weight:900;  /*×ÖÌå´ÖÏ¸*/ 
+	font-size:20px;
+	padding-right:20px;
+	border-right:1px solid black;
+	
+}
+.li2{
+	padding-right:20px;
+	border-right:1px solid black;
+}
+.li3{
+	position:absolute;
+	right:0%;
+	
+}
+
+
+
+
+
+
+
+
+
+

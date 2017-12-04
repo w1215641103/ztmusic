@@ -81,6 +81,7 @@ body{
 		font-size:30px;			/*文字大小*/
         font-family:Blackoak Std;	/*字体*/
         text-align:center;
+        
         /* overflow:ellipsis;	超出文本隐藏 */
     	white-space: nowrap;	/* 强制不换行 */
 	}

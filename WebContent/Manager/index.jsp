@@ -18,14 +18,19 @@
 </style>
 </head>
 
+<<<<<<< HEAD
+<body onload="gth('index.jsp')">
+	<div id="a"><div id="ap"></div></div>
+=======
 <body onload="gth()">
 	<div id="a">
 	<div id="ap"></div>
 	</div>
 	
+>>>>>>> a6c0b3155c730244a45342b8579e14cb389688ea
 	<div id="music">
 		<input id="inpt" type="text" placeholder="请输入歌曲名/歌手"/>
-		<button id="butt" onclick="setCookie()">搜索</button>
+		<button id="butt" onclick="wb()">搜索</button>
 		<div class="slider">
        		<div class="slider-container">
           		<div class="slider-wrapper">
@@ -64,13 +69,6 @@
        		})();
       	</script>
 	</div>
-	<script>
-		function setCookie() {
-			var exp = new Date();
-			exp.setTime(exp.getTime()+60*60*24);
-			document.cookie = "wb="+document.getElementById("inpt").value+";expires="+exp.toGMTString;
-			window.location.href="amusic.jsp";
-		}
-	</script>
+	
 </body>
 </html>

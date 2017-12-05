@@ -60,7 +60,7 @@
 		   info.setadmin(0);
 		   user.insert(info);
 		   cookie.writeCookie(response, "name", name);		//写入cookie
-		   out.println("<script>alert('注册成功');window.location.href('index.jsp');</script>");
+		   out.println("<script>alert('注册成功');window.location.href('main.jsp');</script>");
 	   }
    }
 %>

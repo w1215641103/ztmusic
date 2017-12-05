@@ -23,7 +23,7 @@
 		   out.println("<script>alert('用户名或密码错误');</script>");
 	   else {
 		   cookie.writeCookie(response, "name", name);		//写入cookie
-		   out.println("<script>window.location.href='index.html';</script>");		//转到index
+		   out.println("<script>window.location.href='main.jsp';</script>");		//转到index
 	   }
    }
 %>

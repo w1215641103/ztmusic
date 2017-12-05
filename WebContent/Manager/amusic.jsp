@@ -14,7 +14,7 @@
 <script src='js/jquery.js'></script>
 </head>
 
-<body class="b" onload="gth()">
+<body class="b" onload="gth('amusic.jsp')">
 	<div id="a"><div id="ap"></div></div>
 	<div id="music">
 		<input style="text"/>
@@ -60,16 +60,11 @@
     	</div>
     </div>
     <script>
-    //获取cookie
-    	function getCookie(name) {
-    		var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
-    		if(arr !=null) return unescape(arr[2]); return null;
-   	 	}
-    	function ces() {
-    		alert("success");
-    		alert(getCookie("wb"));
-    		alert(getCookie("name"));
-    	}
+    function ces() {
+    	alert("success");
+    	alert(getCookie("wb"));
+    	alert(getCookie("name"));
+    }
     </script>
 </body>
 </html>

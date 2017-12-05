@@ -1,10 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="common.cookie" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>我的音乐</title>
+    <link rel="stylesheet" href="css/ss.css" media="screen"/>
+	<link rel="stylesheet" href="css/bd.css" media="screen"/>
+	<link rel="stylesheet" href="css/yetou.css">
+	<link rel="stylesheet" href="css/denglu.css">
+	<script src="js/goto.js"></script>
+	<script src='js/jquery.js'></script>
     <style type="text/css">
         .mymusic{
             height: 100%;
@@ -104,10 +111,6 @@
             height:30px;
             text-align:left;
         }
-        a:link{color:black;}
-        a:visited{color:black;}
-        a:hover{color:red;}
-        a:active{color:red;}
         .dropdown{
             position:relative;
             display:inline-block;
@@ -168,9 +171,11 @@
 
     </style>
 </head>
-<body>
+
+<body onload="gth('mymusic.jsp')">
+<div id="a"><div id="ap"></div></div>
 <div class="mymusic" style="height: 611px">
-    <div class="d-mymusic" >
+<!--     <div class="d-mymusic" >
         <div class="b_8">
             <ul>
                 <li><a class="active" href="#home">音乐首页</a></li>
@@ -180,7 +185,7 @@
                 <li><a href="#about">音乐简介</a>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="b_1"></div>
     <div class="b_2"><br>
         <p><b><a href="b_3" target="_blank">我的歌手</a></b>

@@ -4,10 +4,10 @@
 <%
 	String data = cookie.readCookie(request, "name");
 	if (data.equals("")) {
-		out.println("<script>window.location.href='index.html';</script>");
+		out.println("<script>window.location.href='main.jsp';</script>");
 	} else {
 		cookie.writeCookie(response, "name", "");
-		out.println("<script>window.location.href='index.html';</script>");
+		out.println("<script>window.location.href='main.jsp';</script>");
 	}
 %>
 </html>

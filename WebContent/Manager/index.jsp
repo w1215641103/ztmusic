@@ -41,7 +41,6 @@
                	</div>
         	</div>
      	</div>
-	
 		<div class="tj">
 			<div class="wq">
 				<div class="nq"></div>

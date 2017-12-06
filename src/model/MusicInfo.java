@@ -6,6 +6,7 @@ public class MusicInfo {
 	private String album = "";
 	private String place = "";
 	private String lyric = "";
+	private String style = "";
 	
 	public String getname() {
 		return name;
@@ -40,5 +41,12 @@ public class MusicInfo {
 	}
 	public void setlyric(String lyric) {
 		this.lyric = lyric;
+	}
+	
+	public String getstyle() {
+		return style;
+	}
+	public void setstyle(String style) {
+		this.style = style;
 	}
 }

@@ -7,7 +7,7 @@ import common.conn;
 public class Adminr {
 	conn conn = new conn();
 	
-	//判断登录用户是否存在
+		//判断登录用户是否存在
 		public boolean isExist(String name, String pass) throws SQLException {
 			boolean result = false;
 			String sql = "select * from admin where name = '" + name + "' and pass = '" + pass + "'";

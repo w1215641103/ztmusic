@@ -14,6 +14,5 @@
 <%			} %>
   				<frame src="musicplayer.jsp"  noresize="noreszie">
 		</frameset>
-	<body></body>
 	<script src="js/jplay.js"></script>
 </html>

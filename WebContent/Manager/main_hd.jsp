@@ -8,7 +8,7 @@
     <style>
         .h_t_k{
             float:left;
-            width:16%;
+            width:20%;
             height:50px;
             font-size: 20px;
             padding-top:10px;
@@ -16,20 +16,29 @@
         }
         .h_center{
             position: absolute;
+            top:200px;
+            width:100%;
+        }
+        .h_center1{
+        	position: absolute;
             top:100px;
             width:100%;
             text-align: center;
+            text-align: center;
             font-size: 30px;
+        }
+        .l_table{
+        	width:300px;
+        	margin:auto;
         }
     </style>
 </head>
-<body>             <!-- kl是块的LOGO，t_l是a标签的属性，现未css美化，留着备用 -->
-	<div class="h_t_k"><a href="">添加专辑</a></div>
+<body>
+	<div class="h_t_k"><a href="AddAlbum_hd.jsp">添加专辑</a></div>
  	<div class="h_t_k"><a href="AddMusic_hd.jsp">添加音乐</a></div>
-   	<div class="h_t_k"><a href=" ">删除音乐</a></div>
- 	<div class="h_t_k"><a href=" ">添加管理员</a></div>
-  	<div class="h_t_k"><a href=" ">删除管理员</a></div>
-  	<div class="h_t_k"><a href=" ">删除用户</a></div>
-    <div class="h_center">欢迎</div>
+   	<div class="h_t_k"><a href="removeMA_hd.jsp">删除音乐</a></div>
+ 	<div class="h_t_k"><a href="AddAdmin_hd.jsp">添加管理员</a></div>
+  	<div class="h_t_k"><a href="removeAU_hd.jsp">删除用户</a></div>
+    <div class="h_center1">欢迎</div>
 </body>
 </html>

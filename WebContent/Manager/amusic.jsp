@@ -36,14 +36,16 @@
         	<th>歌曲标题</th>
             <th>歌手</th>
             <th>专辑</th>
+            <th>类型</th>
         	</tr>
 <%			if (ss.equals("")) {} else {
 				for (int i = 0; i < musiclist.size(); i++) {
 %>
         	<tr>
             <td><%=musiclist.get(i).getname() %></td>
-            <td><%=musiclist.get(i).getwriter() %></td>
+            <td></td>
             <td><%=musiclist.get(i).getalbum() %></td>
+            <td></td>
         	</tr>
 <%				}
 			}

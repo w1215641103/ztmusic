@@ -15,15 +15,16 @@ function gth(url) {
 	setCookie(url);
 }
 
-function ssgt() {
-	var wb = document.getElementById("inpt").value;
-	window.location.href="amusic.jsp";
-}
-
 function wb() {
 	var exp = new Date();
 	exp.setTime(exp.getTime()+60*60*24);
 	document.cookie = "wb="+document.getElementById("inpt").value+";expires="+exp.toGMTString;
+	window.location.href="amusic.jsp";
+}
+function wb1() {
+	var exp = new Date();
+	exp.setTime(exp.getTime()+60*60*24);
+	document.cookie = "wb="+document.getElementById("inpt1").value+";expires="+exp.toGMTString;
 	window.location.href="amusic.jsp";
 }
 

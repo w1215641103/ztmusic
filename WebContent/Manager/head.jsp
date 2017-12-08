@@ -19,6 +19,8 @@
 	</form>
 </section>
 <script src='jquery.js'></script> -->
+<input id="inpt" type="text" placeholder="请输入歌曲名/歌手"/>
+<button id="butt" onclick="wb()">搜索</button>
 <%	String cook2 = cookie.readCookie(request, "name");
 		if (cook2.equals("")) {%>
 			<div class="a_2">

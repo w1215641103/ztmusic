@@ -4,8 +4,6 @@ public class MusicInfo {
 	private String name = "";
 	private String writer = "";
 	private String album = "";
-	private String place = "";
-	private String lyric = "";
 	private String style = "";
 	
 	public String getname() {
@@ -28,21 +26,7 @@ public class MusicInfo {
 	public void setalbum(String album) {
 		this.album = album;
 	}
-	
-	public String getplace() {
-		return place;
-	}
-	public void setplace(String place) {
-		this.place = place;
-	}
-	
-	public String getlyric() {
-		return lyric;
-	}
-	public void setlyric(String lyric) {
-		this.lyric = lyric;
-	}
-	
+
 	public String getstyle() {
 		return style;
 	}

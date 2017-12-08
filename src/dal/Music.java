@@ -21,8 +21,6 @@ public class Music {
 			musicinfo.setname(rs.getString("name"));
 			musicinfo.setwriter(rs.getString("writer"));
 			musicinfo.setalbum(rs.getString("album"));
-			musicinfo.setplace(rs.getString("place"));
-			musicinfo.setlyric(rs.getString("lyric"));
 			musicinfo.setstyle(rs.getString("style"));
 		}
 		conn.close();
@@ -44,8 +42,6 @@ public class Music {
 			musicinfo.setname(rs.getString("name"));
 			musicinfo.setwriter(rs.getString("writer"));
 			musicinfo.setalbum(rs.getString("album"));
-			musicinfo.setplace(rs.getString("place"));
-			musicinfo.setlyric(rs.getString("lyric"));
 			musicinfo.setstyle(rs.getString("style"));
 			musiclist.add(musicinfo);
 		}

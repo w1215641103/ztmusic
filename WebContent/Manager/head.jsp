@@ -6,7 +6,7 @@
 <div class="a_1"><a href="fmusic.jsp">发现音乐</a></div>
 <%	String cook1 = cookie.readCookie(request, "name");
 		if (cook1.equals("")) {%>
-	<div class="a_1"><a target="_top" href="denglu.jsp">我的音乐</a></div>
+	<div class="a_1"><a target="_top" onclick="stop_()">我的音乐</a></div>
 <%		} else {%>
 	<div class="a_1"><a href="mymusic.jsp">我的音乐</a></div>
 <%		}%>

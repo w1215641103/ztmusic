@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="common.cookie" %>
+<%@ page import="model.MusicInfo" %>
+<%@ page import="dal.Music" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -182,6 +187,8 @@
                 border-bottom:1px solid lightgray;
                 border-right:1px solid lightgray;
                 line-height: 200%;
+                white-space: nowrap;	/* 禁止换行 */
+				overflow: hidden;		/* 超出隐藏 */
             }
             .bb3{
                 float:left;
@@ -271,36 +278,33 @@
         </style>
 </head>
 <body onload="gth('special.jsp')" class="big">
+<%
+	request.setCharacterEncoding("utf-8");		//设置页面编码
+	List<MusicInfo> musiclist = new ArrayList<MusicInfo>();
+	Music n_music = new Music();
+	musiclist = n_music.getMusicList("陈奕迅国语精选");
+%>
 	<div id="a"><div id="ap"></div></div>
         <!--        可动部分整体      -->
     <div class="w_m">
              <!--       主体的上半部分           -->
         <div class="w_t">
             <!--    黑色的圆圈+图片构成的圆形体  -->
-            <div class="w_q"><img class="w_tt" src="images/aab.jpg" ></div>
+            <div class="w_q"><img class="w_tt" src=<%="music/"+musiclist.get(0).getalbum()+".png" %> ></div>
             <!--       文本信息显示读取的区域    -->
             <div class="w_text">
                 <!--此处的<div>作为块级元素是为了换行，当然也可以用display，但这样更方便-->
                     <div class="w_j">
                         <!--    j就是专辑，zj也是专辑，z是字的意思     -->
                         <a class="w_zj"><b>专辑：</b></a>
-                        <a class="w_z" href=" ">class1</a>
+                        <a class="w_z" href=" "><%=musiclist.get(0).getalbum() %></a>
                     </div>
                         <!--    g是歌，剩下两个同上      -->
                     <div class="w_g">
                         <a class="w_zj"><b>歌手：</b></a>
-                        <a class="w_z" href=" ">class2</a>
+                        <a class="w_z" href=" "><%=musiclist.get(0).getwriter() %></a>
                     </div>
-                        <!--    time是发行时间   -->
-                    <div class="w_time">
-                        <a ><b>发行时间：</b></a>
-                        <a class="w_z" href=" ">2017.12.05</a>
-                    </div>
-                        <!--    gs就是公司的拼音   -->
-                    <div class="w_gs">
-                        <a ><b>发行公司：</b></a>
-                        <a class="w_z" href=" ">class1</a>
-                    </div>
+\
                 <!--    以上都是需要调用数据库的信息  -->
             </div>
         </div>
@@ -315,16 +319,16 @@
                 <div class="w_bt4"><a class="btz"><b>专辑</b></a></div>
             </div>
                 <!--    w_bb就是表格里面的每一行  -->
-                
-            <div class="w_bb">
-                <div class="bb1"><a>1</a></div>
-                <div class="bbx"><a class="bbz" href=" ">♡</a></div>
-                <a class="bbf" onclick="m_play()">▶</a>
-                <div class="bb2"><a class="bbz" href="music.jsp">歌曲名</a></div>
-                <div class="bb3"><a class="bbz" href=" ">歌手名</a></div>
-                <div class="bb4"><a class="bbz" href=" ">专辑</a></div>
-            </div>
-            
+<%			for (int i = 0; i < musiclist.size(); i++) { %>
+            	<div class="w_bb">
+               		<div class="bb1"><a><%=i+1 %></a></div>
+               		<div class="bbx"><a class="bbz" href=" ">♡</a></div>
+                	<a class="bbf" onclick=<%="m_play("+i+")" %> >▶</a>
+                	<div class="bb2"><a class="bbz" onclick=<%="go_music("+i+")" %> id=<%="music_"+i %>><%=musiclist.get(i).getname() %></a></div>
+                	<div class="bb3"><a class="bbz" ><%=musiclist.get(i).getwriter() %></a></div>
+                	<div class="bb4"><a class="bbz" id=<%="album_"+i %>><%=musiclist.get(i).getalbum() %></a></div>
+            	</div>
+<%			} %>           
         </div>
     </div>
         <!--    左边那一坨固定栏    -->
@@ -342,8 +346,18 @@
     </div>
 </body>
 <script>
-	function m_play() {
-		window.parent.frames["music_play"].window.loadMusic("music/2011tsukioru.mp3");
+	function m_play(i) {
+		var music_name = document.getElementById("music_"+i).innerText;
+		var music_album = document.getElementById("album_"+i).innerText;
+		var music_url = "music/"+music_album+"/"+music_name+".mp3";
+		window.parent.frames["music_play"].window.loadMusic(music_url);
+	}
+	function go_music(i) {
+		var album_name = document.getElementById("album_"+i).innerText;
+		var music_name = document.getElementById("music_"+i).innerText;
+		setCookie("album", album_name);
+		setCookie("music", music_name);
+		window.location.href="music.jsp";
 	}
 </script>
 </html>

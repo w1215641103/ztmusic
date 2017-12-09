@@ -12,7 +12,7 @@ function gth(url) {
 	var a = window.screen.width;
 	document.getElementById("ap").style.width = a + 'px';
 	//setCookie
-	setCookie(url);
+	setCookie("url", url);
 }
 
 function wb() {
@@ -28,14 +28,18 @@ function wb1() {
 	window.location.href="amusic.jsp";
 }
 
-function setCookie(url) {
+function setCookie(name, date) {
 	var exp = new Date();
 	exp.setTime(exp.getTime()+60*60*24);
-	document.cookie = "url="+url+";expires="+exp.toGMTString;
+	document.cookie = name+"="+date+";expires="+exp.toGMTString;
 }
 
 //获取cookie
 function getCookie(name) {
 	var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
 	if(arr !=null) return unescape(arr[2]); return null;
+}
+
+function stop_() {
+	alert("您还未登录，请登录后重试！");
 }

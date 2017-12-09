@@ -42,7 +42,7 @@ public class User {
 	//插入用户音乐表
 	public void iMUSIC(String name) {
 		String tablename = name + "_music";
-		String sql = "create table "+tablename+"(music varchar(20) not null, album varchar(1000) not null)";
+		String sql = "create table "+tablename+"(music varchar(50) not null, album varchar(1000) not null)";
 		conn.update(sql);
 	}
 	

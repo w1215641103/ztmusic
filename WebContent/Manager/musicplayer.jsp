@@ -11,7 +11,7 @@
 <div class="player">
 	<!-- 控制按钮 -->
 	<button class="button">«</button>
-	<button onclick="playAV()" class="button1" type="button" id="b1">►</button>
+	<button onclick="playAV('0')" class="button1" type="button" id="b1">►</button>
 	<button class="button">»</button>
 	<!-- 音量 -->
 	<div class="w" onmousedown="m1(event,this)" onmousemove="m2(event,this)" id="w">
@@ -68,12 +68,14 @@
 	//加载歌曲
 	function loadMusic(url) {
 		myAudio.src = url;
-		playAV();
-		bf = false;
+		playAV("1");
 	}
 	
 	//点击播放按钮
-	function playAV() {
+	function playAV(a) {
+		if (a == 1) {
+			bf = false;
+		}
 		if (!bf) {	//未播放
 			//播放
 			myAudio.play();

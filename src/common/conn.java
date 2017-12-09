@@ -17,7 +17,6 @@ public class conn {
 		}
 	}
 	
-	
 	//²éÑ¯²Ù×÷
 	public ResultSet query(String sql) {
 		try {

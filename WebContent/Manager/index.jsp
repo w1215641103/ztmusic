@@ -21,8 +21,6 @@
 <body onload="gth('index.jsp')">
 	<div id="a"><div id="ap"></div></div>
 	<div id="music">
-		<input id="inpt" type="text" placeholder="请输入歌曲名/歌手"/>
-		<button id="butt" onclick="wb()">搜索</button>
 		<div class="slider">
        		<div class="slider-container">
           		<div class="slider-wrapper">
@@ -61,6 +59,5 @@
        		})();
       	</script>
 	</div>
-	
 </body>
 </html>

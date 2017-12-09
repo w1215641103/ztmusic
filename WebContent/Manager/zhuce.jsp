@@ -28,6 +28,10 @@
 		border:1px solid #a1a1a1;
 		border-radius:25px;
 	}
+	.l_table{
+        	width:250px;
+        	margin:auto;
+        }
 	.gs {width: 180px; height: 22px;}
 </style>
 </head>
@@ -57,10 +61,9 @@
 		   info.setpass(MD5.Encrypt(pass));
 		   info.setphone(phone);
 		   info.setemail(email);
-		   info.setadmin(0);
 		   user.insert(info);
 		   cookie.writeCookie(response, "name", name);		//写入cookie
-		   out.println("<script>alert('注册成功');window.location.href('main.jsp');</script>");
+		   out.println("<script>window.location.href='main.jsp';</script>");
 	   }
    }
 %>
@@ -69,26 +72,22 @@
        	<table>
           	<tr align="center"> 
           		<td colspan="2"> <strong>用户注册</strong>  </td> 
-          	</tr>
-      		<tr align = "right">
+          	</tr><tr align = "right">
       			<td>用户名</td> 
       			<td> <input id="wenben" type="text"  name="name"  id="name" class="gs"/> </td>
-          	</tr>
-           	<tr align = "right"> 
+          	</tr><tr align = "right"> 
            		<td>密码</td> 
            		<td> <input id= "wenben" type="password" name="pass"  id="pass"  class="gs"/> </td>
-      		</tr>
-           	<tr align = "right">
+      		</tr><tr align = "right">
 				<td>电话</td>
               	<td> <input id= "wenben" type="text" name="phone"  id="phone"  class= "gs"/> </td>
-           	</tr>
-           	<tr align = "right"> 
+           	</tr><tr align = "right"> 
            		<td>邮箱</td>
                 <td> <input id= "wenben"  type="text" name="email"  id="email"  class= "gs"/> </td>
            	</tr>
       	</table>
-       	<table>
-       		<tr id="button">
+       	<table class="l_table">
+       		<tr>
            		<td > <input style="" id="button" type="submit" name="button" value="注册"/> </td>
                	<td> <input style="" id="button" type="reset" name="button2"  value="重置"/> </td>
           	</tr>

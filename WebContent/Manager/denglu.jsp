@@ -7,8 +7,31 @@
 <html>
 <head>
 <title>登录</title>
+<style>
+.dl_j {
+	position: absolute;
+	top:2.5%;
+	left:1%;
+	width:98%;
+	border:2px solid black;
+	border-radius:10em;
+	height:95%;
+	background-image:url("aab.jpg");
+}
+.dl_b {
+	position:absolute;
+	right:10%;
+	top:15%;
+	width:450px;
+	height:300px;
+	border:1px solid black;
+	background-color:gray;
+	border-radius:2em;
+}
+</style>
 </head>
-<body>
+
+<body onload="gd()">
 <%
    request.setCharacterEncoding("utf-8");		//设置页面编码
    String action=request.getParameter("action");		//页面响应
@@ -27,27 +50,35 @@
 	   }
    }
 %>
-<div id="content">
-    <form id="form1" name="form1" method="post" action="denglu.jsp?action=dl">
-          <table style = (width:100)  border="1">
-                <tr>
-                    <td>用户名</td>
-                    <td>
-                        <input type="text" name="name" id="name" width="500px"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>密码</td>
-                    <td>
-                        <input type="password" name="pass" id="pass" width="500px"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td> <input style="" type="submit" name="button" id="button" value="登录"/> </td>
-                   	 <td> <input style="" type="reset" name="button2" id="button2" value="重置"/> </td>
-                </tr>
-          </table>
-    </form>
+<div id="gd">
+	<div class="dl_j">
+  	  <div class="dl_b">
+			<div id="content">
+    			<form id="form1" name="form1" method="post" action="denglu.jsp?action=dl">
+          			<table style = (width:100)  border="1">
+                		<tr>
+	                    	<td>用户名</td>
+	                    	<td> <input type="text" name="name" id="name" width="500px"/> </td>
+                		</tr>
+                		<tr>
+                    		<td>密码</td>
+                    		<td> <input type="password" name="pass" id="pass" width="500px"/> </td>
+                		</tr>
+                		<tr>
+                    		<td> <input style="" type="submit" name="button" id="button" value="登录"/> </td>
+                   	 		<td> <input style="" type="reset" name="button2" id="button2" value="重置"/> </td>
+                		</tr>
+          			</table>
+    			</form>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
+<script>
+	function gd() {
+		var a = window.screen.width;
+		document.getElementById("gd").style.width = a + 'px';
+	}
+</script>
 </html>

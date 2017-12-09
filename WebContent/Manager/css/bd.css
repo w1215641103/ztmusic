@@ -1,8 +1,9 @@
 .b3{
 	position:absolute;
-	top:30%;
+	top:72px;
 	width:60%;
-	left:25%;
+	height:auto;
+	left:20%;
 }
  table,td,th{
      border:1px solid gainsboro;

@@ -5,7 +5,6 @@ public class UserInfo {
 	private String pass = "";
 	private String phone = "";
 	private String email = "";
-	private int admin = 0;
 	
 	public String getname() {
 		return name;
@@ -33,13 +32,6 @@ public class UserInfo {
 	}
 	public void setemail(String email) {
 		this.email = email;
-	}
-	
-	public int getadmin() {
-		return admin;
-	}
-	public void setadmin(int admin) {
-		this.admin = admin;
 	}
 }
 

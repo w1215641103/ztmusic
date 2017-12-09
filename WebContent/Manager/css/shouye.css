@@ -1,149 +1,261 @@
-/* a:link,a:visited
- 		{
-				color:#d9d9d9; 
-                text-decoration:none;超链接无下划线
-		}
-a:hover {color:white;} 
-a:active{color:#d9d9d9;}
-.center{			整体的一个容器标签
-      	width:100%;
-      	height:100%;
-      	border:1px solid red;
-      	background-color:#d9d9d9;	
-      	}
-.a{				首页的布局标签
-		width:100%;
-		height:70px;
-		display:-webkit-flex;					固定
-		-webkit-justify-content:center;			水平居中
-		-webkit-align-items:center;				垂直居中
-		display:flex;							固定
-		justify-content:center;					水平居中
-		align-items:center;						垂直居中
-		border-bottom:2px solid #4CAF50;
-		background-color:#393939;
-		position:fixed;							绝对定位
-       	top:0%;								放置在顶部
-	}
-.a_0{
-		flex:0 1 20%;
-		height:100%;
-		line-height:300%;
-		color:#d9d9d9;
-		font-size:30px;			文字大小
-        font-family:Blackoak Std;	字体
-        text-align:center;
-	}
-.a_0:hover{
-		transition:0.3s;
-		line-height:280%;
-		box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	双重阴影
-}
-.a_1{
-		flex:0 1 7%;
-		height:100%;
-		color:#666;
-		font-size:25px;			文字大小
-        font-family:微软雅黑;	字体
-        line-height:300%;
-        align-items:center;	
-        text-align:center;
-        background-color:#151515;
-        cursor:pointer; 改变鼠标
-	}
-.a_1:hover {
-			line-height:280%;
-			transition:0.5s;	过渡动画时间   顺序是property duration timing-function delay
-			box-shadow:0 8px 10px 0 rgba(0,0,0,0.24), 0 11px 30px 0 rgba(0,0,0,0.19);	双重阴影
-	}
-	下拉按钮样式
-.buttonz {
-  	border-radius: 4px;
-  	background-color: #f4511e;
- 	border: none;
- 	color: #FFFFFF;
- 	text-align: center;
-  	font-size: 18px;
- 	padding: 10px;
-  	width: 100px;
-  	transition: all 0.5s;
-  	cursor: pointer;
-  	margin: 5px;
-}
-.buttonz:hover{
-	background-color:#4CAF50;
-	
-}
-.buttonz span {
-  	cursor: pointer;
-  	display: inline-block;
-  	position: relative;
-  	transition: 0.5s;
-}
+ .big{
+            background-color: #777575;
+        }
+        .e_center-top{      /*轮播区域*/
+            position: absolute;
+            top:100px;
+            left:0px;
+            width:100%;
+            height:400px;
+            border:1px solid black;
+            background-color:gray;
+        }
+        .e_center{          /*中间区域*/
+            position:absolute;
+            top:550px;
+            width:60%;
+            height:3000px;
+            left:20%;
+            background:#272726;
+        }
+        .e_top{             /*长方形的大图*/
+            position:absolute;
+            top:4px;
+            width:100%;
+            height:300px;
+            left:4px;
+            z-index:0;
+        }
+        .e_top_tu{
+            width:99.2%;
+            height:300px;
+        }
+        .e_top_tu1{
+            position:absolute;
+            top:25px;
+            left:25px;
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            border-radius:50%;
+            transform:rotate(-30deg);
+        }
+        .e_top_tu2{
+            position:absolute;
+            top:25px;
+            right:25px;
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            transform:rotate(30deg);
+            border-radius:50%;
+        }
+        .e_top_tu3{
+            position:absolute;
+            top:175px;
+            right:25px;
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            transform:rotate(120deg);
+            border-radius:50%;
+        }
+        .e_top_tu4{
+            position:absolute;
+            top:175px;
+            left:25px;
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            transform:rotate(-120deg);
+            border-radius:50%;
+        }
+        .e_t{               /*推荐歌曲  第一个导航栏*/
+            position:absolute;
+            top:315px;
+            left:4px;
+            width:70%;
+            height:40px;
+            border-bottom: 2px solid green;
+        }
+        .e_t_text{             /* text1,2,3分别是导航栏的4个分类类别的定位*/
+            position:absolute;
+            top:40%;
+            left:25%;
+            border-left:1px solid black;
+            padding-left:30px;
+            width:70px;
+            font-size: 16px;
+            height:20px;
+        }
+        .e_t_text1{
+            position:absolute;
+            top:40%;
+            left:37%;
+            border-left:1px solid black;
+            padding-left:30px;
+            width:70px;
+            font-size: 16px;
+            height:20px;
+        }
+        .e_t_text2{
+            position:absolute;
+            top:40%;
+            left:49%;
+            border-left:1px solid black;
+            padding-left:30px;
+            width:70px;
+            font-size: 16px;
+            height:20px;
+        }
+        .e_t_text3{
+            position:absolute;
+            top:40%;
+            left:61%;
+            border-left:1px solid black;
+            padding-left:30px;
+            width:70px;
+            font-size: 16px;
+            height:20px;
+        }
+        .e_t2{              /* 推荐歌曲 导航栏下面的内容区域*/
+            position:absolute;
+            top:360px;
+            left:4px;
+            width:70%;
+            height:500px;
 
-.buttonz span:after {
- 	 content: 'V';
-   	 position: absolute;	
-  	 opacity: 0;		透明
- 	 bottom: -10px;	起始位置
-  	 left: 11px;		content的左右位置
- 	 transition: 1s;	动画时间
-}
+        }
+/*        .e_lt{                 !* 圆圈图片父级*!
+            position:absolute;
+            top:4px;
+            right:4px;
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            overflow: hidden;
+        }*/
+        .e_l{               /*左边列表*/
+            position:absolute;
+            top:314px;
+            right:4px;
+            width:25%;
+            height:1000px;
+            border:1px solid black;
+        }
+        .e_tu{              /*歌曲图片*/
+            float:left;
+            margin:20px 20px 80px 40px;
+            border:1px solid black;
+/*            border-radius:20%;*/
+        }
+        .e_2t{              /*推荐专辑  第二个导航栏*/
+            position:absolute;
+            top:875px;
+            left:4px;
+            width:70%;
+            height:40px;
+            border-bottom: 2px solid green;
+        }
+        .e_2t2{             /*推荐专辑  导航栏下面的内容框*/
+            position:absolute;
+            top:920px;
+            left:4px;
+            width:70%;
+            height:500px;
+        }
+        .e_3t{             /* 新歌排行第三个导航栏*/
+            position:absolute;
+            top:1435px;
+            left:4px;
+            width:70%;
+            height:40px;
+            border-bottom: 2px solid green;
+        }
+        .e_3t_h{            /*导航栏中最左边的那个logo*/
+            float:left;
+            margin-left:20px;
+            margin-right:20px;
+            width:40px;
+            height:40px;
+            background-color: black;
 
-.buttonz:hover span {
- 	 padding-bottom: 10px;	改变按钮大小
-}
+        }
+        .e_3t_bt{
+            float:left;
+            margin-top: 15px;
+            font-size: 20px;
+            line-height: 20px;
 
-.buttonz:hover span:after {
-	 opacity: 1;		不透明 是1
-	 bottom: -10px;		触发时出现位置
-}
-容器<div a_2>---需要定位下拉内容
-.a_2{
-	 position:relative; 
-	 display:inline-block;
-}
-下拉内容 (默认隐藏)
-.a_3{
-	display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-下拉菜单的链接
-.a_3 .a_4 {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-鼠标触发后修改a_4的颜色
-.a_3 .a_4:hover {
-	background-color: #f1f1f1;
-	transition-duration:500ms;过渡动画时间
-    transition-property:background-color;动画效果是改变背景颜色
-	}
+        }
+        .e_3t_text{             /*更多》》那个超链接*/
+            position: absolute;
+            top:20px;
+            right:0;
+            width:60px;
+            height:20px;
+            font-size: 10px;
 
-在鼠标触发后显示下拉菜单
-.a_2:hover .a_3 {
-    display: block;
-    transition-duration:500ms;过渡动画时间
-    transition-property:display;动画效果是改变display
-}
-
-当下拉内容显示后修改下拉按钮的背景颜色
-.a_2:hover .buttonz {
-    background-color: #3e8e41;
-     transition-duration:500ms;过渡动画时间
-    transition-property:background-color;动画效果是改变背景颜色
-}
-
-	
-	
-	
-	
-	
-	
-	
-	 */
+        }
+        .e_3t3{             /*最新歌曲   导航栏下面的内容框*/
+            position:absolute;
+            top:1480px;
+            left:4px;
+            width:70%;
+            height:500px;
+        }
+        .e_3t3_b{       /*歌曲信息项的父级*/
+            float:left;
+            margin-top:4px;
+            width:49.98%;
+            height:100px;
+            border-right:0.1px solid black;
+        }
+        .e_3t3_a{      /* 前面的序号*/
+            float:left;
+            width:10%;
+            line-height:100px;
+            text-align: center;
+            height:100px;
+            background-color: #777575;
+        }
+        .e_3t3_tu{      /*序号旁边的图*/
+            float:left;
+            width:96px;
+            height:96px;
+            margin-top:2px;
+            margin-left:5px;
+            margin-right:5px;
+        }
+        .e_3t3_text{       /* 剩下的文字部分*/
+            float:left;
+            width:50%;
+            height:100px;
+            background-color: #777575;
+        }
+        .e_lb{             /*列表的每一项的父级*/
+            float:left;
+            margin-top:20px;
+            width:100%;
+            height:80px;
+            background-color:darkgrey;
+        }
+/*        .e_lt1{        !* 列表头像的容器*!
+            float:left;
+            width:100px;
+            height:100px;
+            background-color: #4e55a9;
+        }*/
+        .e_lt2{         /*列表头像*/
+            float:left;
+            width:80px;
+            height:70px;
+            margin:5px;
+        }
+        .e_lt3{         /*文本的容器*/
+            float:left;
+            width:60%;
+            margin-top:10px;
+            font-size:13px;
+            height:50px;
+        }

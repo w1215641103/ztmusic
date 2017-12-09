@@ -5,12 +5,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>音乐专辑</title>
+<link rel="stylesheet" href="css/yetou.css">
+<link rel="stylesheet" href="css/shouye.css">
+<link rel="stylesheet" href="css/denglu.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="css/tj.css">
+<script src="js/goto.js"></script>
+<script src='js/jquery.js'></script>
  <style>
             .w_m{
                 width:800px;
                 height:1500px;
                 position: absolute;
-                left:650px;
+                left:450px;
                 top:100px;
                 border:2px solid black;
                 background-color:gray;
@@ -20,7 +27,7 @@
                 height:100%;
                 position: fixed;
                 top:100px;
-                left:450px;
+                left:250px;
                 border:0.1px solid gold;
                 background-color: #30ff74;
             }
@@ -263,7 +270,8 @@
             }
         </style>
 </head>
-<body>
+<body onload="gth('special.jsp')" class="big">
+	<div id="a"><div id="ap"></div></div>
         <!--        可动部分整体      -->
     <div class="w_m">
              <!--       主体的上半部分           -->
@@ -307,24 +315,16 @@
                 <div class="w_bt4"><a class="btz"><b>专辑</b></a></div>
             </div>
                 <!--    w_bb就是表格里面的每一行  -->
+                
             <div class="w_bb">
                 <div class="bb1"><a>1</a></div>
                 <div class="bbx"><a class="bbz" href=" ">♡</a></div>
-                <a class="bbf" href=" ">▶</a>
-                <div class="bb2"><a class="bbz" href=" music.jsp">歌曲名</a></div>
+                <a class="bbf" onclick="m_play()">▶</a>
+                <div class="bb2"><a class="bbz" href="music.jsp">歌曲名</a></div>
                 <div class="bb3"><a class="bbz" href=" ">歌手名</a></div>
                 <div class="bb4"><a class="bbz" href=" ">专辑</a></div>
             </div>
-
-            <div class="w_bb">
-                <!--    bbz并未设置任何属性，留着备用，z代表的是bb的字体，bb是列表行    -->
-                <div class="bb1"><a>2</a></div>
-                <div class="bbx"><a class="bbz" href=" ">♡</a></div>
-                <a class="bbf" href=" ">▶</a>
-                <div class="bb2"><a class="bbz" href=" music">歌曲名</a></div>
-                <div class="bb3"><a class="bbz" href=" ">歌手名</a></div>
-                <div class="bb4"><a class="bbz" href=" ">专辑</a></div>
-            </div>
+            
         </div>
     </div>
         <!--    左边那一坨固定栏    -->
@@ -340,6 +340,10 @@
             <a class="la">我收藏的歌单</a>
         </div>
     </div>
-
 </body>
+<script>
+	function m_play() {
+		window.parent.frames["music_play"].window.loadMusic("music/2011tsukioru.mp3");
+	}
+</script>
 </html>

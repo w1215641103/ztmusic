@@ -8,11 +8,11 @@
 		<frameset rows="*,40px" frameborder="no">
 <%		String cook1 = cookie.readCookie(request, "url");
 			if (cook1.equals("")) {%>
-				<frame src=index.jsp noresize="noreszie" >
+				<frame src=index.jsp noresize="noreszie" id="main_j" name="main_j">
 <% 			}else {%>
-				<frame src=<%=cook1 %> noresize="noreszie" >
+				<frame src=<%=cook1 %> noresize="noreszie" id="main_j" name="main_j">
 <%			} %>
-  				<frame src="musicplayer.jsp"  noresize="noreszie">
+  				<frame src="musicplayer.jsp"  noresize="noreszie" id="music_play" name="music_play">
 		</frameset>
 	<script src="js/jplay.js"></script>
 </html>

@@ -30,7 +30,7 @@
 </div>
 
 <audio id="audio1">
-	<source src="music/Azis - Хоп.mp3">
+	<source src="">
 </audio>
 
 <script>
@@ -49,6 +49,7 @@
 	var t1;
 	//是否循环
 	var	xh = false;
+	//是否
 	
 	//修改循环
 	function xhbf() {
@@ -62,6 +63,13 @@
 			xh = false;
 			document.getElementById("xh").style.border='2px solid #555555';
 		}
+	}
+	
+	//加载歌曲
+	function loadMusic(url) {
+		myAudio.src = url;
+		playAV();
+		bf = false;
 	}
 	
 	//点击播放按钮

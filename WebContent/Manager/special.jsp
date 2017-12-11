@@ -304,6 +304,10 @@
                         <a class="w_zj"><b>歌手：</b></a>
                         <a class="w_z" href=" "><%=musiclist.get(0).getwriter() %></a>
                     </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 990cdba8fd5a9a473731daabedcc55e298677f4c
                 <!--    以上都是需要调用数据库的信息  -->
             </div>
         </div>

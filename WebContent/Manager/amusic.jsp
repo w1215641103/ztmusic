@@ -11,12 +11,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>音乐大全</title>
-<link rel="stylesheet" href="css/ss.css" media="screen"/>
 <link rel="stylesheet" href="css/bd.css" media="screen"/>
 <link rel="stylesheet" href="css/yetou.css">
 <link rel="stylesheet" href="css/denglu.css">
+<link rel="stylesheet" href="css/yqf.css">
+<style>
+*{margin:0;padding:0;}
+</style>
 <script src="js/goto.js"></script>
-<script src='js/jquery.js'></script>
 </head>
 
 <body onload="gth('amusic.jsp')">
@@ -27,10 +29,6 @@
 %>
 	<div id="a"><div id="ap"></div></div>
 	<div id="music">
-		<div class="b0">
-			<input id="inpt1" type="text" placeholder="请输入歌曲名/歌手"/>
-			<button id="butt" onclick="wb1()">搜索</button>
-		</div>
     	<table class="b3">
         	<tr>
         	<th>歌曲标题</th>

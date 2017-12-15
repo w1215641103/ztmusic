@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/ss.css" media="screen"/>
 <link rel="stylesheet" href="css/bd.css" media="screen"/>
 <link rel="stylesheet" href="css/yetou.css">
+<link rel="stylesheet" href="css/yqf.css">
 <link rel="stylesheet" href="css/denglu.css">
 <script src="js/goto.js"></script>
 <script src='js/jquery.js'></script>

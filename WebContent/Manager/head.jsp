@@ -10,6 +10,7 @@
 <%		} else {%>
 	<div class="a_1"><a href="mymusic.jsp">我的音乐</a></div>
 <%		}%>
+<div class="a_h"></div>
 <div class="a_1"><a href="amusic.jsp">音乐大全</a></div>
 <div class="a_1"><a href="jmusic.jsp">音乐简介</a></div>
 <!-- <section class="webdesigntuts-workshop">
@@ -19,8 +20,12 @@
 	</form>
 </section>
 <script src='jquery.js'></script> -->
-<input id="inpt" type="text" placeholder="请输入歌曲名/歌手"/>
-<button id="butt" onclick="wb()">搜索</button>
+<div class="a_ss">
+	<from action=" " method=" ">
+		<input id="inpt" type="text" placeholder="请输入歌曲名/歌手"/>
+		<button id="butt" onclick="wb()">搜索</button>
+	</from>
+</div>
 <%	String cook2 = cookie.readCookie(request, "name");
 		if (cook2.equals("")) {%>
 			<div class="a_2">

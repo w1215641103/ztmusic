@@ -43,11 +43,8 @@ body{
     	white-space: nowrap;	/* 强制不换行 */
     	box-shadow: 0 30px 70px rgba(0,255,0,.2), inset 0 70px 70px rgba(0,255,0,.1), 0 2px 0 #000;
     	z-index:2;
-    	-webkit-animation: a 800ms ease-out infinite alternate;
-		-moz-animation: a 800ms ease-out infinite alternate;
-		-o-animation: a 800ms ease-out infinite alternate;
-		-ms-animation: a 800ms ease-out infinite alternate;
 		animation: a 800ms ease-out infinite alternate;
+		z-index:10;
 	
 }
 #ap{				/* 首页的布局标签 */
@@ -63,7 +60,7 @@ body{
 		background-color:#393939;
 		overflow:ellipsis;	/* 超出文本省略号 */
     	white-space: nowrap;	/* 强制不换行 */
-    	z-index:2;
+    	z-index:10;
 	}
 /* .a_center{	
 		width:1000px;
@@ -83,7 +80,7 @@ body{
 		font-size:30px;			/*文字大小*/
         font-family:Blackoak Std;	/*字体*/
         text-align:center;
-        
+        text-shadow: 7px 5px #000;
         /* overflow:ellipsis;	超出文本隐藏 */
     	white-space: nowrap;	/* 强制不换行 */
 	}
@@ -113,50 +110,6 @@ body{
 			transition:0.5s;	/* 过渡动画时间   顺序是property duration timing-function delay*/
 			box-shadow:0 8px 10px 0 rgba(0,0,0,0.24), 0 11px 30px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
 	}
-@-webkit-keyframes a {
-    0% {
-		border-color: #393;
-		box-shadow: 0 70px 50px rgba(0,255,0,.2), inset 0 50px 55px rgba(0,255,0,.1), 0 3px 0 #000;
-    }	
-    100% {
-		border-color: #6f6;
-		box-shadow: 0 0 70px 60px rgba(0,255,0,.6), inset 0 50px 55px rgba(0,255,0,.4), 0 6px 0 #000;
-    }
-}
-
-@-moz-keyframes a {
-    0% {
-		border-color: #393;
-		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
-    }	
-    100% {
-		border-color: #6f6;
-		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
-    }
-}
-
-@-o-keyframes a {
-    0% {
-		border-color: #393;
-		box-shadow: 0 70px 50px rgba(0,255,0,.2), inset 0 50px 55px rgba(0,255,0,.1), 0 3px 0 #000;
-    }	
-    100% {
-		border-color: #6f6;
-		box-shadow: 0 0 70px 60px rgba(0,255,0,.6), inset 0 50px 55px rgba(0,255,0,.4), 0 6px 0 #000;
-    }
-}
-
-@-ms-keyframes a {
-    0% {
-		border-color: #393;
-		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
-    }	
-    100% {
-		border-color: #6f6;
-		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
-    }
-}
-
 @keyframes a {
     0% {
 		border-color: #393;
@@ -167,7 +120,6 @@ body{
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
 }	
-	
 	
 	
 	

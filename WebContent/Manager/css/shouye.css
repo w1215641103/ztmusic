@@ -1,17 +1,26 @@
 
- .big{
+ 	.big{
             background-color: #777575;
         }
-        #e_center-top{      /*轮播区域*/
+	#e_center-top{      /*轮播区域*/
             position: absolute;
             top:100px;
-            left:3%;
-            width:1200px;
+            left:20%;
+            width:60%;
             height:400px;
             border:1px solid black;
             background-color:gray;
             overflow:hidden;
         }
+	.e_center_top_bj{
+			 position: absolute;
+			 top:100px;
+			 width:100%;
+             height:400px;
+             border:1px solid black;
+            background-color:gray;
+            z-index:1;
+	}
       #photos img{
       float:left;
       width:1200px;
@@ -29,18 +38,18 @@
       	
       @keyframes ma {
          0%,25% {        margin-left: 0px;       }
-         30%,50% {       margin-left: -100%;    }
-         55%,75% {       margin-left: -200%;    }
-         80%,100% {       margin-left: -300%;    }
+         30%,50% {       margin-left: -110%;    }
+         55%,75% {       margin-left: -212%;    }
+         80%,100% {       margin-left: -317%;    }
     	}
         .e_center{          /*中间区域*/
             position:absolute;
             top:550px;
             width:60%;
-            height:3000px;
+            height:1800px;
             left:20%;
             background:#272726;
-            box-shadow:0 60px 50px 0 rgba(0,0,0,0.24), 0 60px 100px 0 rgba(0,0,0,0.19);
+            box-shadow:0 60px 80px 80px rgba(0,0,0,0.24), 0 120px 100px 20px rgba(0,0,0,0.19);
         }
         .e_top{             /*长方形的大图*/
             position:absolute;
@@ -107,12 +116,13 @@
             border-bottom: 2px solid green;
         }
         .e_t_text{             /* text1,2,3分别是导航栏的4个分类类别的定位*/
-            position:absolute;
+            float:left;
+            position:relative;
             top:40%;
-            left:25%;
             border-left:1px solid black;
-            padding-left:30px;
-            width:70px;
+            padding-left:3%;
+            margin-left:3%;
+            width:7%;
             font-size: 16px;
             height:20px;
         }
@@ -164,20 +174,43 @@
             border-radius:50%;
             overflow: hidden;
         }*/
+        .e_tou{
+        	position:absolute;
+        	top:495px;
+        	right:4px;
+        	width:25%;
+        	height:20px;
+        	border-bottom:1px solid green;
+        }
         .e_l{               /*左边列表*/
             position:absolute;
             /* top:314px; */
-            top:500px;
+            top:520px;
             right:4px;
             width:25%;
-            height:1000px;
-            border:1px solid black;
+            height:300px;
+            border-bottom:1px solid green;
         }
-        .e_tu{              /*歌曲图片*/
-            float:left;
-            margin:20px 20px 80px 40px;
+        .e_tu{
+        	float:left;
+        	width:20%;
+        	height:30%;
+        	margin:7% 5% 10% 5%;
+        	border:1px solid black;
+        	overflow:hidden;
+        }
+        .e_tu img{              /*歌曲图片*/
             border:1px solid black;
 /*            border-radius:20%;*/
+        }
+        .e_tu a{
+        	text-align: center;
+        }
+        .e_tu:hover{
+        	border-color:green;
+        }
+        .e_tu a:hover{
+        	color:green;
         }
         .e_2t{              /*推荐专辑  第二个导航栏*/
             position:absolute;
@@ -212,11 +245,12 @@
             background-color: black;
 
         }
-        .e_3t_bt{
+        .e_3t_bt{			/* 分类 */
             float:left;
             margin-top: 15px;
             font-size: 20px;
             line-height: 20px;
+            cursor:pointer;
 
         }
         .e_3t_text{             /*更多》》那个超链接*/
@@ -234,41 +268,43 @@
             left:4px;
             width:70%;
             height:500px;
+            cursor:pointer;
         }
         .e_3t3_b{       /*歌曲信息项的父级*/
             float:left;
             margin-top:4px;
+            margin-bottom:20px;
             width:49.98%;
-            height:100px;
+            height:60px;
             border-right:0.1px solid black;
+            background-color:#777575;
+            cursor:pointer;
         }
         .e_3t3_a{      /* 前面的序号*/
             float:left;
             width:10%;
-            line-height:100px;
+            line-height:60px;
             text-align: center;
-            height:100px;
-            background-color: #777575;
+            height:60px;
+            cursor:auto;
         }
         .e_3t3_tu{      /*序号旁边的图*/
             float:left;
-            width:96px;
-            height:96px;
-            margin-top:2px;
-            margin-left:5px;
-            margin-right:5px;
+            width:60px;
+            height:60px;
+            cursor:pointer;
         }
         .e_3t3_text{       /* 剩下的文字部分*/
             float:left;
             width:50%;
-            height:100px;
-            background-color: #777575;
+            height:60px;
+            cursor:pointer;
         }
         .e_lb{             /*列表的每一项的父级*/
             float:left;
-            margin-top:20px;
-            width:100%;
-            height:80px;
+            margin:20px 10px 0px 15px;
+            width:90%;
+            height:50px;
             background-color:darkgrey;
         }
 /*        .e_lt1{        !* 列表头像的容器*!
@@ -279,8 +315,8 @@
         }*/
         .e_lt2{         /*列表头像*/
             float:left;
-            width:80px;
-            height:70px;
+            width:20%;
+            height:40px;
             margin:5px;
         }
         .e_lt3{         /*文本的容器*/
@@ -289,6 +325,27 @@
             margin-top:10px;
             font-size:13px;
             height:50px;
+            cursor:pointer;
         }
-
+        .yinfu{
+        	position:absolute;
+        	top:315px;
+        	right:4px;
+        	width:25%;
+        	height:170px;
+        	background-image:url('../images/yin2.jpg');
+        	/* background-repeat:no-repeat; */
+        	background-size:cover;
+        	border:none;
+        	overflow:hidden;
+        	animation:yinfu 2s ease-out infinite alternate;
+        	
+        }
+        @keyframes yinfu{
+        	0%{background-image:url(../images/yin2.jpg);}
+        	25%{background-image:url(../images/yin3.jpg);}
+        	50%{background-image:url(../images/yin4.jpg);}
+        	100%{background-image:url(../images/yin2.jpg);}
+        }
+        
 	

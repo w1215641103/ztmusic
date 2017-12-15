@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>歌曲界面</title>
 <link rel="stylesheet" href="css/ss.css" media="screen"/>
 <link rel="stylesheet" href="css/bd.css" media="screen"/>
 <link rel="stylesheet" href="css/yetou.css">

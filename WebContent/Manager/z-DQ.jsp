@@ -15,9 +15,10 @@
 
 <div class="z-dq">
 	<div class="dq-head">
-<!-- 		<a href=" ">专辑大全</a>
-		<a href=" ">歌手大全</a>
-		<a href=" ">歌曲大全</a> -->
+		<a href=" ">摇滚</a>
+		<a href=" ">爵士</a>
+		<a href=" ">流行</a>
+		<a href=" ">古典</a>
 	</div>
 	<div class="dq-gs">
 		<p>入驻歌手</p>

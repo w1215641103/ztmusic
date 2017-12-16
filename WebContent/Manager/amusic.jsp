@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>音乐大全</title>
+<title>音乐分类</title>
 <link rel="stylesheet" href="css/bd.css" media="screen"/>
 <link rel="stylesheet" href="css/yetou.css">
 <link rel="stylesheet" href="css/denglu.css">

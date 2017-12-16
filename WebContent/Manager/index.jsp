@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="css/lunbo.css">
 <link rel="stylesheet" href="css/yqf.css">
 <script src="js/goto.js"></script>
-<script src='js/jquery.js'></script>
 <style>
 *{padding:0;margin:0;}
 </style>

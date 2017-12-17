@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>专辑大全</title>
+<title>音乐大全</title>
 <link rel="stylesheet" href="css/yetou.css">
 <link rel="stylesheet" href="css/yqf.css">
 <link rel="stylesheet" href="css/denglu.css">
@@ -49,23 +49,23 @@
 			<div class=" dq-x"></div>
  			<div class="dq-zj">
 				<a href=" "><img src="music/Libyus.png"></a>
-				<p><a href=" ">专辑名称</a></p>  
+				<p><a href=" ">歌曲名称</a></p>  
 			</div>
 			<div class="dq-zj">
 				<a href=" "><img src="music/Libyus.png"></a>
-				<p><a href=" ">专辑名称</a></p>  
+				<p><a href=" ">歌曲名称</a></p>  
 			</div>
 			<div class="dq-zj">
 				<a href=" "><img src="music/Libyus.png"></a>
-				<p><a href=" ">专辑名称</a></p>
+				<p><a href=" ">歌曲名称</a></p>
 			</div>
 			<div class="dq-zj">
 				<a href=" "><img src="music/Libyus.png"></a>
-				<p><a href=" ">专辑名称</a></p>
+				<p><a href=" ">歌曲名称</a></p>
 			</div>
 			<div class="dq-zj">
 				<a href=" "><img src="music/Libyus.png"></a>
-				<p><a href=" ">专辑名称</a></p>
+				<p><a href=" ">歌曲名称</a></p>
 			</div>
 		</div>
 		<!-- ----------------------------- -->

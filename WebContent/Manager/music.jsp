@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="common.cookie" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,6 +14,11 @@
 </head>
 
 <body onload="gth('music.jsp'), load_l()" class="big">  <!--你需要在每个DIV里面加东西然后用class="v_*"的形式布局css不要随便使用全局，定义css全部按v_*的格式来-->
+<%
+	String music_name = cookie.readCookie(request, "music");
+	String album_name = cookie.readCookie(request, "album");
+	String writer_name = cookie.readCookie(request, "writer");
+%>
     <div id="a"><div id="ap"></div></div>
                     <!--        v_1是全局         -->
     <div class="v_1">
@@ -20,12 +26,12 @@
         <div class="v_s"></div>
                     <!--    v_x是图片布局       -->
         <div class="v_x">
-        	<img src="music/Libyus.png">
+        	<img src=<%="music/"+album_name+".png" %>>
         </div>
                     <!--    v_a是文本区域      -->
         <div class="v_a">
-        	<span><b>歌曲名：class</b></span>
-        	<span><b>歌手： class</b></span>
+        	<span><b>歌曲名：<%=music_name %></b></span>
+        	<span><b>歌手： <%=writer_name %></b></span>
         </div>
                     <!--    v_j是歌词上面那根线   -->
         <div class="v_j"></div>
@@ -39,7 +45,7 @@
 		var lyric_get_music = getCookie("music");
 		var lyric_get_album = getCookie("album");
 		var lyric = "music/"+lyric_get_album+"/"+lyric_get_music+".txt";
-		alert(lyric);
+		/* alert(lyric); */
 		xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange=function() {
 			if (xmlhttp.readyState==4 && xmlhttp.status==200) {

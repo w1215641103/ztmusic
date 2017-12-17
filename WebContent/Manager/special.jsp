@@ -323,7 +323,7 @@
                		<div class="bbx"><a class="bbz" href=" ">♡</a></div>
                 	<a class="bbf" onclick=<%="m_play("+i+")" %> >▶</a>
                 	<div class="bb2"><a class="bbz" onclick=<%="go_music("+i+")" %> id=<%="music_"+i %>><%=musiclist.get(i).getname() %></a></div>
-                	<div class="bb3"><a class="bbz" ><%=musiclist.get(i).getwriter() %></a></div>
+                	<div class="bb3"><a class="bbz" id=<%="writer_"+i %>><%=musiclist.get(i).getwriter() %></a></div>
                 	<div class="bb4"><a class="bbz" id=<%="album_"+i %>><%=musiclist.get(i).getalbum() %></a></div>
             	</div>
 <%			} %>           
@@ -353,8 +353,10 @@
 	function go_music(i) {
 		var album_name = document.getElementById("album_"+i).innerText;
 		var music_name = document.getElementById("music_"+i).innerText;
+		var writer_name = document.getElementById("writer_"+i).innerText;
 		setCookie("album", album_name);
 		setCookie("music", music_name);
+		setCookie("writer", writer_name);
 		window.location.href="music.jsp";
 	}
 </script>

@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="css/yetou.css">
 <link rel="stylesheet" href="css/shouye.css">
 <link rel="stylesheet" href="css/denglu.css">
-<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="css/tj.css">
 <script src="js/goto.js"></script>
 <script src='js/jquery.js'></script>
@@ -334,7 +333,7 @@
     <div class="w_l">
         <div class="w_lx">
             <div class="lx_d">
-                <a class="d1">我喜欢的歌单</a>
+                <a class="d1">我喜欢的</a>
                 <!--<a calss="d3">♡</a>-->
                 <a class="d2">❤</a>
             </div>

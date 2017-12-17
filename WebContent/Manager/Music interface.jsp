@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Music interfac</title>
+    <title>个人中心</title>
     <style type="text/css">
         .music{
             width: 100%;

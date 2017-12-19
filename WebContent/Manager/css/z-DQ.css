@@ -1,125 +1,173 @@
-*{margin:0;padding:0;}
-.z-dq{
-	position:absolute;
-	left:25%;
-	top:70px;
-	width:50%;
-	height:1400px;
-	border:1px solid balck;
-	background:gray;
-}
-.dq-head{
-	position:absolute;
-	top:10px;
-	left:15%;
-	width:30%;
-	height:30px;
-	border-bottom:1px solid black;
-}
- .dq-head a{
-	float:left;
-	margin: 1% 3% 0% 3%;
-	padding:0 2% 0 2%;
-	background:linear-gradient(#333, #222);
-}
-.dq-head a:hover{
-	color:green;
-	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
-} 
-.dq-gs{
-	position:fixed;
-	left:25%;
-	top:80px;
-	width:6%;
-	height:100%;
-	border-right:1px solid black;
-}
-.dq-ge p{
-	float:left;
-}
-.dq-tx{
-	float:left;
-	width:90%;
-	margin:10% 0 4% 0;
-	padding:2% 0% 2% 4%;
-	border-top:1px solid black;
-	border-bottom:1px solid black;
-	cursor:pointer;
-}
-.dq-tx:hover{
-	padding-top:5px;
-	height:45px;
-	background:#393939;
-}
-.dq-tx img{
-	position:relative;
-	left:0;
-	width:35%;
-	height:40px;
-	border-radius:50%;
-	overflow:hidden;
-}
-.dq-tx span{
-	position:absolute;
-	left:40%;
-	line-height:250%;
-}
+ *{margin:0;padding:0;}
+        .z-dq{
+            position:absolute;
+            left:25%;
+            top:70px;
+            width:50%;
+            height:5000px;
+            border:1px solid gray;
+            background:gray;
+            font-size:10px;
+        }
+        .z-fl{ 		/* 	分类 */
+        	position:fixed;
+        	width:100px;
+        	height:500px;
+        	border:0.1px solid green;
+        	background-color:#c0c0c0;
+        	top:25%;
+        	left:75%;	
+        	box-shadow:0px 0px 10px 5px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+        }
+        .z-fl button{
+        	position:relative;
+        	left:10px;
+        	width:80px;
+        	height:80px;
+        	border-radius:50%;
+        	background-color:gray;
+        }
+        .z-fl1{
+        	top:35px;
+        }
+        .z-fl1:active{
+        	top:37px;
+        }
+        .z-fl2{
+        	top:70px;
+        }
+        .z-fl2:active{
+        	top:72px;
+        }
+        .z-fl3{
+        	top:105px;
+        }
+        .z-fl3:active{
+        	top:107px;
+        }
+        .z-fl4{
+        	top:140px;
+        }
+        .z-fl4:active{
+        	top:142px;
+        }
+        .z-fl button:hover{
+        	background-color:black;
+        	box-shadow:0px 0px 1px 5px rgba(0,0,0,0.24), 0px 0px 1px 4px rgba(0,0,0,0.19);
+        }
+        .dq-head{
+            position:absolute;
+            top:10px;
+            left:15%;
+            width:30%;
+            height:30px;
+            border-bottom:1px solid black;
+        }
+        .dq-head a{
+            float:left;
+            margin: 1% 3% 0% 3%;
+            padding:0 2% 0 2%;
+            background:linear-gradient(#333, #222);
+        }
+        .dq-head a:hover{
+            color:green;
+            box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+        }
+        .dq-gs{
+            position:fixed;
+            padding-top:40px;
+            left:25%;
+            top:75px;
+            width:6%;
+            height:100%;
+            border-right:1px solid black;
+            background-color:#c0c0c0;
+            box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
+        }
+        .dq-ge p{
+            float:left;
+        }
+        .dq-tx{
+            float:left;
+            width:96%;
+            margin:10% 0 4% 0;
+            padding:2% 0% 2% 4%;
+            border-top:1px solid black;
+            cursor:pointer;
+            box-shadow:0 0px 7px 0 rgba(0,0,0,0.24), 0 0px 4px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
+        }
+        .dq-tx:hover{
+            padding-top:5px;
+            height:45px;
+            border-top:1px solid black;
+            background:white;
+        }
+        .dq-tx img{
+            position:relative;
+            left:0;
+            width:35%;
+            height:40px;
+            border-radius:50%;
+            overflow:hidden;
+            box-shadow:0 0px 1px 4px rgba(0,0,0,0.24), 0 0px 1px 1px rgba(0,0,0,0.19);	/* 双重阴影 */
+        }
+        .dq-tx span{
+            position:absolute;
+            left:45%;
+            line-height:350%;
+        }
+        .dq-center{
+            position:absolute;
+            top:100px;
+            left:15%;
+            width:80%;
+            border:1px solid gray;
+            box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
+        }
+        .dq-tou{
+            float:left;
+            margin-left:3%;
+            margin-bottom:20px;
+            margin-top:10px;
+            width:95%;
+            height:400px;
+            box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
 
-.dq-center{
-	position:absolute;
-	top:100px;
-	left:15%;
-	width:80%;
-	border:1px solid black;
-}
-.dq-tou{
-	float:left;
-	margin-left:3%;
-	margin-bottom:20px;
-	margin-top:10px;
-	width:95%;
-	height:400px;
-	border:1px solid black;
-	
-}
-.dq-tou-tu{
-	position:relative;
-	left:0;
-	width:40px;
-	height:40px;
-	border-radius:50%;
-	overflow:hidden;
-	margin-top:5px;
-	margin-bottom:5px;
-}
-.dq-tou span{
-	position:absolute;
-	margin-left:1%;
-	line-height:300%;
-}
-.dq-x{
-	border-top:1px solid black;
-	width:20%;
-	height:1px;
-}
-.dq-zj{
-	float:left;
-	width:20%;
-	height:35%;
-	text-align:center;
-	margin:2% 2% 3% 2%;
-	border:1px solid black;
-}
-.dq-zj img{
-	width:100%;
-	height:85%;
-}
-
-
-
-
-
-
-
-
-
+        }
+        .dq-tou-tu{
+            position:relative;
+            left:5px;
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            overflow:hidden;
+            margin-top:5px;
+            margin-bottom:5px;
+            box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
+        }
+        .dq-tou span{
+            position:absolute;
+            margin-left:1%;
+            line-height:450%;
+        }
+        .dq-x{
+            border-top:1px solid black;
+            width:20%;
+            height:1px;
+        }
+        .dq-zj{
+            float:left;
+            width:20%;
+            height:35%;
+            text-align:center;
+            margin:2% 2% 3% 2%;
+            border:1px solid white;
+        }
+        .dq-zj img{
+            width:100%;
+            height:85%;
+            box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
+        }
+        .dq-zj:hover{
+            border:1px solid green;
+        }

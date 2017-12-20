@@ -24,7 +24,7 @@
 		height:30px;
 		box-shadow: 5px 5px 2px #888888;
 	}
-	#wenben {
+	.wenben {
 		border:1px solid #a1a1a1;
 		border-radius:25px;
 	}
@@ -67,6 +67,7 @@
 	   }
    }
 %>
+<img src="images/lun6.jpg" style="width:100%;height:100%">
 <div class="content">
     <form id="form1" name="form1" method="post" action="zhuce.jsp?action=zc">
        	<table>
@@ -74,16 +75,16 @@
           		<td colspan="2"> <strong>用户注册</strong>  </td> 
           	</tr><tr align = "right">
       			<td>用户名</td> 
-      			<td> <input id="wenben" type="text"  name="name"  id="name" class="gs"/> </td>
+      			<td> <input class="wenben" type="text"  name="name"  id="name" class="gs"/> </td>
           	</tr><tr align = "right"> 
            		<td>密码</td> 
-           		<td> <input id= "wenben" type="password" name="pass"  id="pass"  class="gs"/> </td>
+           		<td> <input class= "wenben" type="password" name="pass"  id="pass"  class="gs"/> </td>
       		</tr><tr align = "right">
 				<td>电话</td>
-              	<td> <input id= "wenben" type="text" name="phone"  id="phone"  class= "gs"/> </td>
+              	<td> <input class= "wenben" type="text" name="phone"  id="phone"  class= "gs"/> </td>
            	</tr><tr align = "right"> 
            		<td>邮箱</td>
-                <td> <input id= "wenben"  type="text" name="email"  id="email"  class= "gs"/> </td>
+                <td> <input class= "wenben"  type="text" name="email"  id="email"  class= "gs"/> </td>
            	</tr>
       	</table>
        	<table class="l_table">

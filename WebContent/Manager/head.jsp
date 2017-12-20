@@ -11,7 +11,7 @@
 	<div class="a_1"><a href="mymusic.jsp">我的音乐</a></div>
 <%		}%>
 <div class="a_h"></div>
-<div class="a_1"><a href="amusic.jsp">音乐大全</a></div>
+<div class="a_1"><a href="m-DQ.jsp">音乐大全</a></div>
 
 <div class="a_ss">
 	<from action=" " method=" ">

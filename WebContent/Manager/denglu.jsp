@@ -13,20 +13,30 @@
 	top:2.5%;
 	left:1%;
 	width:98%;
-	border:2px solid black;
-	border-radius:10em;
 	height:95%;
-	background-image:url("aab.jpg");
 }
 .dl_b {
 	position:absolute;
-	right:10%;
-	top:15%;
-	width:450px;
-	height:300px;
+	left:35%;
+	top:30%;
+	width:300px;
+	height:100px;
 	border:1px solid black;
-	background-color:gray;
-	border-radius:2em;
+}
+#button, #button2 {
+		width:50px;
+		height:30px;
+		box-shadow: 5px 5px 2px #888888;
+	}
+
+#name, #pass{
+		border:1px solid #a1a1a1;
+		border-radius:25px;
+		width: 180px; 
+		height: 22px;
+}
+#content, from, table, tr,td{
+		border:none;
 }
 </style>
 </head>
@@ -50,6 +60,7 @@
 	   }
    }
 %>
+<img src="images/lun6.jpg" style="width:100%;height:100%">
 <div id="gd">
 	<div class="dl_j">
   	  <div class="dl_b">
@@ -65,8 +76,9 @@
                     		<td> <input type="password" name="pass" id="pass" width="500px"/> </td>
                 		</tr>
                 		<tr>
-                    		<td> <input style="" type="submit" name="button" id="button" value="登录"/> </td>
-                   	 		<td> <input style="" type="reset" name="button2" id="button2" value="重置"/> </td>
+                    		<td><input style="" type="submit" name="button" id="button" value="登录"/></td>
+                    		<td></td>
+                   	 		<td><input style="" type="reset" name="button2" id="button2" value="重置"/></td>
                 		</tr>
           			</table>
     			</form>

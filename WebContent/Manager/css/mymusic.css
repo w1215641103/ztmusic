@@ -1,138 +1,177 @@
-        .mymusic{
+ .mymusic{
+        	position:relative;
+        	top:70px;
+        	margin:auto;
+        	width:50%;
+            height: 1500px;
+            background-color: gray;
+        }
+        .b_8tu{
+        	position:absolute;
+        	top:0.5%;
+        	left:20.5%;
+        	width:79%;
+        	height:280px;
+        	box-shadow:0px 0px 20px 8px rgba(0,0,0,0.24), 0px 0px 17px 5px rgba(0,0,0,0.19);
+        }
+        .b_2{
+        	position:fixed;
+        	top:370px;
+            background:linear-gradient(to left,gray 1% ,#c0c0c0 80%);
             height: 100%;
-            width: 100%;
-            border: 1px solid gainsboro;
-            background-color: gainsboro;
-        }
-        .d-mymusic{
-            height: 100px;
-            border: 1px solid #333333;
-            background-color: #333333;
-            font-size: 30px;
-            word-spacing: 50px;
-            line-height: 100px;
-        }
-        .class8{
-            height: 100px;
-            border: 0.1px solid #333333;
-            background-color: #333333;
-            line-height: 100px;
-            margin-left: 320px;
-        }
-        .class1{
-            border: 1px solid red;
-            background-color: red;
-            height: 5px;
-        }
-        .class2{
-            border: 1px solid gainsboro;
-            background-color: white;
-            height: 82%;
-            width: 180px;
-            margin-left: 110px;
+            width: 10%;
             font-size: 20px;
             text-align: center;
-            word-spacing: 100px;
+          /*   word-spacing: 100px; /* ×Ö¶Î¼äµÄ¿ÕÏ¶ */ */
 
         }
-        .class3{
-            border: 0.1px solid gainsboro;
-            background-color: white;
-            height: 235px;
-            width: 60%;
-            margin-left: 291px;
-            margin-top: -503px;
+        .dropdown{
+            position:absolute;
+            left:0;
+            top:20px;
+            width:100%;
+            box-shadow:0px 0px 1px 3px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+            
         }
-        .class4{
-            border: 0.1px solid gainsboro;
-            background-color: white;
-            height: 200px;
-            width: 100%;
+        .dropdown-content{
+           text-align:center;
+           line-height:100%;
+           float:left;
+           width:99%;
+           height:25px;
+           margin:5% 0 2% 0;
+           padding:3% 0 0 0;
+           border-top:0.1px solid #c0c0c0; 
+           background:#333333;
+           box-shadow:0px 0px 1px 2px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
 
+           
         }
-        .class5{
-            border: 0.1px solid gainsboro;
-            font-size: 25px;
-            text-align: left;
+        .dropdown-content:hover{
+        	border-top:1px solid white;
+        	background:#00a82b;
         }
-        .class{
-            border: 0.1px solid red;
-            background-color: red;
-            height: 3px;
-            width: 100%;
-            margin-top: 0px;
+        .b_3{
+            background-color:#c0c0c0;
+            position:fixed;
+            height: 300px;
+            width:10%;
         }
-        .class6{
+        .b_3 img{
+        	position:absolute;
+        	top:10%;
+        	left:22%;
+        	width:100px;
+        	height:100px;
+        	border-radius:50%;
+        	margin:0;
+        	padding:0;
+        	background:gray;
+        	box-shadow:0px 0px 1px 3px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+        	
+        }
+        .b_4x{
+        	font-size:30px;
+        	width:62.5%;
+        	margin:0;
+        	color:#c0c0c0;
+        	padding-left:70px;
+        	position:absolute;
+        	bottom:30%;
+        	left:0%;
+        	background:#333333;
+        	text-algin:center;
+        	box-shadow:0px 0px 10px 5px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+        }
+        .b_5{
+        	position:absolute;
+        	width:130px;
+        	height:30px;
+        	color:#c0c0c0;
+        	left:10%;
+            background:#333333;
+            border:1px solid black;
+            font-size:25px;
+            box-shadow:0px 0px 10px 5px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+        }
+        .b_search{
+        	position:absolute;
+        	left:40%;
+        	width:400px;
+        	height:31px;
+        }
+        .b_search input{
+        	float:left;
+        	width:300px;
+        	height:29px;
+        	border:none;
+        	background:gray;
+        	color:white;
+        	box-shadow:0px 0px 1px 3px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+        }
+         .b_search input::-webkit-input-placeholder{
+			color:#000000;
+        }
+         .b_search input:focus::-webkit-input-placeholder { 
+			color: #efe;
+		}
+        .b_search input:hover{
+        	box-shadow:0px 0px 1px 5px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+        }
+        .b_search button{
+        	float:left;
+        	width:60px;
+        	height:30px;
+        	border:none;
+        	background-color:#151515;
+        	color:#c0c0c0;
+        }
+        .b_search button:hover{
+        	color:white;
+        	box-shadow:0px 0px 1px 3px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
+        }
+        .b_search button:active{
+        	margin-top:1.5px;
+        }
+        .b_7{
+        	position:absolute;
+        	left:20%;
+        	top:17%;
+        	width:80%;
+        	height:30px;
+        	background:#333333;
+        	border:1px solid black;  	
+        }
+        .b_6{
+        	position:absolute;
+        	top:20%;
             border: 1px solid gainsboro;
-            background-color:white;
+            background-color:#c0c0c0;
             height:43.5%;
             width: 60%;
-            margin-left: 291px;
+            margin-left:30%;
+            box-shadow:0px 0px 10px 5px rgba(0,0,0,0.24), 0px 0px 1px 1px rgba(0,0,0,0.19);
         }
-        .class7{
-            border: 0.1px solid white;
-            background-color: white;
-            height: 25px;
-            width: 250px;
-            margin-top: 70px;
-            margin-left:250px;
-        }
-        table{
+        .b_6 table{
             border-collapse: collapse;
         }
-        table,td,th
+         .b_6 table, .b_6 td, .b_6 th
         {
             border:0.1px solid gainsboro;
         }
-        th{
+         .b_6 th{
             background: linear-gradient(white,gainsboro);
         }
-        table
+         .b_6 table
         {
             width:100%;
         }
-        th
+         .b_6 th
         {
             height:30px;
             text-align:left;
         }
-        a:link{color:black;}
-        a:visited{color:black;}
-        a:hover{color:red;}
-        a:active{color:red;}
-        .dropdown{
-            position:relative;
-            display:inline-block;
-        }
-        .dropdown-content{
-            display:none;
-            position:absolute;
-            background-color:white;
-            min-width:120px;
-            box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding:5px 1px;
-        }
-        .dropdown:hover .dropdown-content {
-            display:block;
-        }
-        .dropdown{
-            position:relative;
-            display:inline-block;
-        }
-        .dropdown-content{
-            display:none;
-            position:absolute;
-            background-color:white;
-            min-width:120px;
-            box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding:5px 1px;
-        }
-        .dropdown:hover .dropdown-content {
-            display:block;
-        }
-
-
-        ul {
+         .b_6 ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -140,13 +179,13 @@
             background-color: #333;
         }
 
-        li {
+         .b_6 li {
             float: left;
             padding: 0;
             margin: 0 auto;
         }
 
-        li a {
+         .b_6 li a {
             display: block;
             color: white;
             text-align: center;

@@ -4,9 +4,9 @@
             left:25%;
             top:70px;
             width:50%;
-            height:5000px;
+            height:7500px;
             border:1px solid gray;
-            background:gray;
+            background:linear-gradient(to left, #c0c0c0, gray 5%, #939393 5%);
             font-size:10px;
         }
         .z-fl{ 		/* 	分类 */
@@ -100,7 +100,7 @@
             padding-top:5px;
             height:45px;
             border-top:1px solid black;
-            background:white;
+            background:#e4e4e4;
         }
         .dq-tx img{
             position:relative;
@@ -126,11 +126,14 @@
         }
         .dq-tou{
             float:left;
-            margin-left:3%;
+            padding-top:100px;
+            padding-bottom:70px;
+            margin-left:0.5%;
             margin-bottom:20px;
-            margin-top:10px;
+            margin-top:70px;
             width:95%;
             height:400px;
+            border-top:1px solid #c0c0c0;
             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
 
         }
@@ -161,7 +164,7 @@
             height:35%;
             text-align:center;
             margin:2% 2% 3% 2%;
-            border:1px solid white;
+            border:1px solid #c0c0c0;
         }
         .dq-zj img{
             width:100%;
@@ -169,5 +172,5 @@
             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .dq-zj:hover{
-            border:1px solid green;
+            border:1px solid white;
         }

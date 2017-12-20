@@ -48,7 +48,7 @@
             width:60%;
             height:1800px;
             left:20%;
-            background:#272726;
+            background:#41413f;
             box-shadow:0 60px 80px 80px rgba(0,0,0,0.24), 0 120px 100px 20px rgba(0,0,0,0.19);
         }
         .e_top{             /*长方形的大图*/
@@ -58,10 +58,12 @@
             height:300px;
             left:4px;
             z-index:0;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_top_tu{
             width:99.2%;
             height:300px;
+            
         }
         .e_top_tu1{
             position:absolute;
@@ -113,7 +115,9 @@
             left:4px;
             width:70%;
             height:40px;
+            background:#262624;
             border-bottom: 2px solid green;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_t_text{             /* text1,2,3分别是导航栏的4个分类类别的定位*/
             float:left;
@@ -163,6 +167,7 @@
             width:70%;
             height:500px;
             overflow:hidden;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
 
         }
 /*        .e_lt{                 !* 圆圈图片父级*!
@@ -181,6 +186,7 @@
         	width:25%;
         	height:20px;
         	border-bottom:1px solid green;
+        	 box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_l{               /*左边列表*/
             position:absolute;
@@ -190,6 +196,7 @@
             width:25%;
             height:300px;
             border-bottom:1px solid green;
+            box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_tu{
         	float:left;
@@ -198,9 +205,11 @@
         	margin:7% 5% 10% 5%;
         	border:1px solid black;
         	overflow:hidden;
+        	
         }
         .e_tu img{              /*歌曲图片*/
             border:1px solid black;
+            
 /*            border-radius:20%;*/
         }
         .e_tu a{
@@ -211,6 +220,7 @@
         }
         .e_tu a:hover{
         	color:green;
+        	 box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_2t{              /*推荐专辑  第二个导航栏*/
             position:absolute;
@@ -218,7 +228,9 @@
             left:4px;
             width:70%;
             height:40px;
+             background:#262624;
             border-bottom: 2px solid green;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_2t2{             /*推荐专辑  导航栏下面的内容框*/
             position:absolute;
@@ -227,6 +239,7 @@
             width:70%;
             height:500px;
             overflow:hidden;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_3t{             /* 新歌排行第三个导航栏*/
             position:absolute;
@@ -234,7 +247,9 @@
             left:4px;
             width:70%;
             height:40px;
+             background:#262624;
             border-bottom: 2px solid green;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_3t_h{            /*导航栏中最左边的那个logo*/
             float:left;
@@ -243,6 +258,7 @@
             width:40px;
             height:40px;
             background-color: black;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
 
         }
         .e_3t_bt{			/* 分类 */
@@ -251,7 +267,7 @@
             font-size: 20px;
             line-height: 20px;
             cursor:pointer;
-
+ 			box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_3t_text{             /*更多》》那个超链接*/
             position: absolute;
@@ -269,6 +285,7 @@
             width:70%;
             height:500px;
             cursor:pointer;
+             box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	/* 双重阴影 */
         }
         .e_3t3_b{       /*歌曲信息项的父级*/
             float:left;
@@ -305,7 +322,7 @@
             margin:20px 10px 0px 15px;
             width:90%;
             height:50px;
-            background-color:darkgrey;
+            background-color:#505050;
         }
 /*        .e_lt1{        !* 列表头像的容器*!
             float:left;

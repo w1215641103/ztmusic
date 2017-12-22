@@ -18,6 +18,8 @@
 <script src="js/goto.js"></script>
 <script src='js/jquery.js'></script>
  <style>
+*{margin:0;padding:0;}
+
             .w_m{
                 width:65%;
                 height:1500px;

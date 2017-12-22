@@ -4,8 +4,9 @@
             top:120px;
             width:60%;   /*改成获取屏幕宽度*/
             border:2px solid black;
-            background-color:#666;
+            background-color:#800080;
             height:1500px;
+            border-radius:250px 0 0 0 ;
         }
         .v_x{
             position: absolute;
@@ -18,8 +19,11 @@
             margin-right:10%;
             margin-bottom:10%;
             top:0%;
-            background-color:black;
+            background-color:#0f0f0f;
             overflow:hidden;
+            border:1px solid black;
+            box-shadow:15px 12px 10px 5px rgba(0,0,0,0.24), 10px 9px 6px 3px rgba(0,0,0,0.19);
+            
         }
         .v_x img{
         	position: absolute;
@@ -46,8 +50,9 @@
             left:25%;
             width:50%;
             height:900px;
-            background-color:gray;
+            background-color:#252525;
             color:white;
+            box-shadow:0px 25px 10px 5px rgba(0,0,0,0.24), 0px 3px 1px 1px rgba(0,0,0,0.19);
         }
         .v_j{
             position:absolute;
@@ -59,9 +64,77 @@
         }
         .v_s{
             position:absolute;
-            border-right: 2px solid black;
+            border-right: 2px solid #ff0080;
             border-radius:70%;
             height:300px;
             top:3%;
             left:45%;
+        }
+        .v_b{
+        	position:absolute;
+        	top:350px;
+        	width:100%;
+        	height:40px;
+        	border-bottom:5px solid black;
+        }
+        .v_bj{
+        	position:absolute;
+        	width:270px;
+        	left:8%;
+        	height:35px;
+        	bottom:0;
+        	border-radius:25px;
+        	background:#484848;
+        	border:1px solid black;
+        	background:#2f2f2f;
+        	box-shadow:0px 1px 10px 5px rgba(0,0,0,0.24), 0px 3px 1px 1px rgba(0,0,0,0.19);
+        }
+        	
+        .v_b0:hover, .v_b1:hover, .v_b2:hover, .v_b3:hover{
+        	color:white;
+        	background:#2f2f2f;
+        	box-shadow:0px 1px 10px 5px rgba(0,0,0,0.24), 0px 3px 1px 1px rgba(0,0,0,0.19);
+        }
+        .v_b0{
+        	position:absolute;
+        	bottom:3px;
+        	left:10%;
+        	width:50px;
+        	height:25px;
+        	border:1px solid black;
+        	background:#2f2f2f;
+        	color:#c0c0c0;
+        }
+        .v_b1{
+        	bottom:3px;
+        	position:absolute;
+        	left:15%;
+        	width:50px;
+        	height:25px;
+        	border:1px solid black;
+        	background:#2f2f2f;
+        	color:#c0c0c0;
+        }
+        .v_b2{
+        	bottom:3px;
+        	position:absolute;
+        	left:20%;
+        	width:50px;
+        	height:25px;
+        	border:1px solid black;
+        	background:#2f2f2f;
+        	color:#c0c0c0;
+        }
+        .v_b3{
+        	bottom:3px;
+        	position:absolute;
+        	left:25%;
+        	width:50px;
+        	height:25px;
+        	border:1px solid black;
+        	background:#2f2f2f;
+        	color:#c0c0c0;
+        }
+        .v_b a{
+        	margin-left:40%;
         }

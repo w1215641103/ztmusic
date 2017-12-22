@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="css/yqf.css">
 <link rel="stylesheet" href="css/denglu.css">
 <script src="js/goto.js"></script>
+<style>
+*{margin:0;padding:0;}
+</style>
 </head>
 
 <body onload="gth('music.jsp'), load_l()" class="big">  <!--你需要在每个DIV里面加东西然后用class="v_*"的形式布局css不要随便使用全局，定义css全部按v_*的格式来-->
@@ -31,6 +34,13 @@
     <div class="v_1">
                     <!--   v_s是中间那根竖线    -->
         <div class="v_s"></div>
+        <div class="v_b">
+        	<div class="v_bj"></div>
+			<div class="v_b0"><a href=" ">«</a></div>
+			<div class="v_b1"><a href=" ">▶</a></div>
+			<div class="v_b2"><a href=" ">»</a></div>
+			<div class="v_b3"><a href=" ">↻</a></div>
+        </div>
                     <!--    v_x是图片布局       -->
         <div class="v_x">
         	<img src=<%="music/"+album_name+".png" %>>

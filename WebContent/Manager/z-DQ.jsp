@@ -16,6 +16,9 @@
 <link rel="stylesheet" href="css/denglu.css">
 <link rel="stylesheet" href="css/z-DQ.css">
 	<script src="js/goto.js"></script>
+	<style>
+*{margin:0;padding:0;}
+</style>
 </head>
 <body onload="gth('z-DQ.jsp')">
 <%	request.setCharacterEncoding("utf-8");		//设置页面编码

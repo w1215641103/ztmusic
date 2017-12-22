@@ -4,7 +4,8 @@
 <div class="a_0"><a href="index.jsp">ZT.music</a></div>
 <div class="a_1"><a href="index.jsp">音乐首页</a></div>
 <div class="a_1"><a href="z-DQ.jsp">发现音乐</a></div>
-<%	String cook1 = cookie.readCookie(request, "name");
+<%		String cook1 = "";
+		cook1 = cookie.readCookie(request, "name");
 		if (cook1.equals("")) {%>
 	<div class="a_1"><a target="_top" onclick="stop_()">我的音乐</a></div>
 <%		} else {%>

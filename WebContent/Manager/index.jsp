@@ -52,35 +52,35 @@
             <div class="e_t_text"><a href="m-DQ.jsp " >摇滚</a></div>
             <div class="e_t_text"><a href=" m-DQ.jsp" >流行</a></div>
             <div class="e_t_text"><a href=" m-DQ.jsp" >古典</a></div>
-            <div class="e_t_text"><a href=" m-DQ.jsp" >爵士</a></div>
+            <div class="e_t_text"><a href=" m-DQ.jsp" >纯音乐</a></div>
             <div class="e_3t_text"><a href=" z-DQ.jsp">更多>></a></div>
             <!--       分割线 ------------------------------------------  套用       -->
         </div>
         <!--     导航栏下面                             -->
         <div class="e_t2">
             	<div class="e_tu">
-            	<a href="music.jsp "><img src="music/陈奕迅 国语精选/你的背包.jpg" width="100%" height="80%"></a>
-            	<p><a href="music.jsp ">你的背包</a></p>
+            	<a onclick="set_music('你的背包')" href="music.jsp "><img src="music/陈奕迅国语精选/你的背包.jpg" width="100%" height="80%"></a>
+            	<p><a onclick="set_music('你的背包')" href="music.jsp ">你的背包</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="music.jsp "><img src="music/穿越三部曲/穿越人海.jpg" width="100%" height="80%"></a>
-            	<p><a href="music.jsp ">穿越人海</a></p>
+            	<a onclick="set_music('穿越人海')" href="music.jsp "><img src="music/穿越三部曲/穿越人海.jpg" width="100%" height="80%"></a>
+            	<p><a onclick="set_music('穿越人海')" href="music.jsp ">穿越人海</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="music.jsp "><img src="music/渡/动物世界.jpg" width="100%" height="80%"></a>
-            	<p><a href="music.jsp ">动物世界</a></p>
+            	<a onclick="set_music('动物世界')" href="music.jsp "><img src="music/渡/动物世界.jpg" width="100%" height="80%"></a>
+            	<p><a onclick="set_music('动物世界')" href="music.jsp ">动物世界</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="music.jsp "><img src="music/鸽子/鸽子.jpg" width="100%" height="80%"></a>
-            	<p><a href="music.jsp ">鸽子</a></p>
+            	<a onclick="set_music('鸽子')" href="music.jsp "><img src="music/鸽子/鸽子.jpg" width="100%" height="80%"></a>
+            	<p><a onclick="set_music('鸽子')" href="music.jsp ">鸽子</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="music.jsp "><img src="music/青年晚报/幻胖.jpg" width="100%" height="80%"></a>
-            	<p><a href="music.jsp ">幻胖</a></p>
+            	<a onclick="set_music('幻胖')" href="music.jsp "><img src="music/青年晚报/幻胖.jpg" width="100%" height="80%"></a>
+            	<p><a onclick="set_music('幻胖')" href="music.jsp ">幻胖</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="music.jsp "><img src="music/天生李荣浩/老街 (Live).jpg" width="100%" height="80%"></a>
-            	<p><a href="music.jsp ">老街</a></p>
+            	<a onclick="set_music('老街')" href="music.jsp "><img src="music/天生李荣浩/老街.jpg" width="100%" height="80%"></a>
+            	<p><a onclick="set_music('老街')" href="music.jsp ">老街</a></p>
             </div>
         </div>
 
@@ -93,28 +93,28 @@
         </div>
         <div class="e_2t2">
         	<div class="e_tu">
-            	<a href="special.jsp"><img src="music/陈奕迅国语精选.png" width="100%" height="80%"></a>
-            	<p><a href="special.jsp">陈奕迅国语精选</a></p>
+            	<a onclick="set_c_n('陈奕迅国语精选')" href="special.jsp"><img src="music/陈奕迅国语精选.png" width="100%" height="80%"></a>
+            	<p><a onclick="set_c_n('陈奕迅国语精选')" href="special.jsp">陈奕迅国语精选</a></p>
             </div>
            	<div class="e_tu">
-            	<a href="special.jsp"><img src="music/穿越三部曲.png" width="100%" height="80%"></a>
-            	<p><a href="special.jsp">穿越三部曲</a></p>
+            	<a onclick="set_c_n('穿越三部曲')" href="special.jsp"><img src="music/穿越三部曲.png" width="100%" height="80%"></a>
+            	<p><a onclick="set_c_n('穿越三部曲')" href="special.jsp">穿越三部曲</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="special.jsp"><img src="music/渡 The Crossing.png" width="100%" height="80%"></a>
-            	<p><a href="special.jsp">渡  The Crossing</a></p>
+            	<a onclick="set_c_n('渡')" href="special.jsp"><img src="music/渡.png" width="100%" height="80%"></a>
+            	<p><a onclick="set_c_n('渡')" href="special.jsp">渡</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="special.jsp"><img src="music/鸽子.png" width="100%" height="80%"></a>
-            	<p><a href="special.jsp"">鸽子</a></p>
+            	<a onclick="set_c_n('鸽子')" href="special.jsp"><img src="music/鸽子.png" width="100%" height="80%"></a>
+            	<p><a onclick="set_c_n('鸽子')" href="special.jsp"">鸽子</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="special.jsp"><img src="music/青年晚报.png" width="100%" height="80%"></a>
-            	<p><a href="special.jsp">青年晚报</a></p>
+            	<a onclick="set_c_n('青年晚报')" href="special.jsp"><img src="music/青年晚报.png" width="100%" height="80%"></a>
+            	<p><a onclick="set_c_n('青年晚报')" href="special.jsp">青年晚报</a></p>
             </div>
             	<div class="e_tu">
-            	<a href="special.jsp"><img src="music/天生李荣浩/快让我在这雪地上撒点野 (Live).jpg" width="100%" height="80%"></a>
-            	<p><a href="special.jsp">天生李荣浩</a></p>
+            	<a onclick="set_c_n('天生李荣浩')" href="special.jsp"><img src="music/天生李荣浩.png" width="100%" height="80%"></a>
+            	<p><a onclick="set_c_n('天生李荣浩')" href="special.jsp">天生李荣浩</a></p>
             </div>
         </div>
         <!--    t就是头的意思，这是第三个导航栏                                           -->
@@ -156,7 +156,7 @@
 			   <!---------------------------------------------->
 			   <div class="e_3t3_b">   <!--每一个  e_3t3_b  都是一个块级元素，他们是表格内容的父级-->
                     <div class="e_3t3_a"><a>4</a></div>
-                   		<a href="music.jsp"><img class="e_3t3_tu" src="music/天生李荣浩/作曲家 (Live).jpg"></a> 
+                   		<a href="music.jsp"><img class="e_3t3_tu" src="music/天生李荣浩/作曲家.jpg"></a> 
                     <div class="e_3t3_text">
                         <p><a href="music.jsp"><h4><b>作曲家</b></h4></a></p>
                         <p><a href="z-DQ.jsp">李荣浩</a></p>
@@ -192,7 +192,7 @@
         <div class="e_l">
             <!--e_lb是一整行表！！！！！！！-->
             <div class="e_lb">
-                <img class="e_lt2" src="music/陈奕迅 国语精选/歌手-陈奕迅.jpg">
+                <img class="e_lt2" src="music/陈奕迅国语精选/歌手-陈奕迅.jpg">
                 <div class="e_lt3">
                     <p><a href="z-DQ.jsp"><b>陈奕迅</b></a></p>
                     <p><a  href="special.jsp">国语精选</a></p>
@@ -211,10 +211,10 @@
              <!---------------------------------------------------------------->
             <!--e_lb是一整行表！！！！！！！-->
             <div class="e_lb">
-                <img class="e_lt2" src="music/渡 The Crossing.png">
+                <img class="e_lt2" src="music/渡.png">
                 <div class="e_lt3">
                     <p><a href="z-DQ.jsp"><b>薛之谦</b></a></p>
-                    <p><a href="special.jsp">渡  The Crossing</a></p>
+                    <p><a href="special.jsp">渡</a></p>
                 </div>
             </div>
              <!---------------------------------------------------------------->
@@ -222,4 +222,12 @@
     </div>
 	</div>
 </body>
+<script>
+	function set_c_n(click_name) {
+		setCookie("click_n", click_name);
+	}
+	function set_music(m_name) {
+		setCookie("music", m_name);
+	}
+</script>
 </html>

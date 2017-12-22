@@ -23,6 +23,7 @@
 
 <body onload="gth('amusic.jsp')">
 <%	String ss = cookie.readCookie(request, "wb");
+	request.setCharacterEncoding("utf-8");		//设置页面编码
 	List<MusicInfo> musiclist = new ArrayList<MusicInfo>();
 	Music music = new Music();
 	musiclist = music.getMusicList(ss);

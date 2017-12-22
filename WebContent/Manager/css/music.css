@@ -1,17 +1,17 @@
  .v_1{
             position: absolute;
-            left:25%;
-            top:70px;
-            width:50%;   /*改成获取屏幕宽度*/
+            left:20%;
+            top:120px;
+            width:60%;   /*改成获取屏幕宽度*/
             border:2px solid black;
             background-color:#666;
-            height:2000px;
+            height:1500px;
         }
         .v_x{
             position: absolute;
             left:0%;
-            width:300px;
-            height:300px;
+            width:250px;
+            height:250px;
             border-radius:50%;
             margin-top:5%;
             margin-left:5%;

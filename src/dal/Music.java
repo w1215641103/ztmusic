@@ -61,6 +61,24 @@ public class Music {
 		return musiclist;
 	}
 	
+	//×¨¼­ËÑË÷
+	public List<MusicInfo> getMusicList_a(String ss) throws SQLException {
+		List<MusicInfo> musiclist = new ArrayList<MusicInfo>();
+		String sql = "";
+		sql = "select * from music where album = '"+ss+"'";
+		ResultSet rs = conn.query(sql);
+		while(rs.next()) {
+			MusicInfo musicinfo = new MusicInfo();
+			musicinfo.setname(rs.getString("name"));
+			musicinfo.setwriter(rs.getString("writer"));
+			musicinfo.setalbum(rs.getString("album"));
+			musicinfo.setstyle(rs.getString("style"));
+			musiclist.add(musicinfo);
+		}
+		conn.close();
+		return musiclist;
+	}
+	
 	//Ìí¼ÓÒôÀÖ
 	public int insertMusic(MusicInfo musicinfo) throws SQLException {
 		int result = 0;

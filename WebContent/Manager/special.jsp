@@ -14,24 +14,25 @@
 <link rel="stylesheet" href="css/shouye.css">
 <link rel="stylesheet" href="css/denglu.css">
 <link rel="stylesheet" href="css/tj.css">
+<link rel="stylesheet" href="css/yqf.css">
 <script src="js/goto.js"></script>
 <script src='js/jquery.js'></script>
  <style>
             .w_m{
-                width:800px;
+                width:65%;
                 height:1500px;
                 position: absolute;
-                left:450px;
+                left:25%;
                 top:100px;
                 border:2px solid black;
                 background-color:gray;
             }
             .w_l{
-                width:200px;
+                width:15%;
                 height:100%;
                 position: fixed;
                 top:100px;
-                left:250px;
+                left:10%;
                 border:0.1px solid gold;
                 background-color: #30ff74;
             }
@@ -278,10 +279,11 @@
 </head>
 <body onload="gth('special.jsp')" class="big">
 <%
+	String click_name = cookie.readCookie(request, "click_n");
 	request.setCharacterEncoding("utf-8");		//设置页面编码
 	List<MusicInfo> musiclist = new ArrayList<MusicInfo>();
 	Music n_music = new Music();
-	musiclist = n_music.getMusicList("陈奕迅国语精选");
+	musiclist = n_music.getMusicList(click_name);
 %>
 	<div id="a"><div id="ap"></div></div>
         <!--        可动部分整体      -->

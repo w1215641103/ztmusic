@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ZT</title>
 		<frameset rows="*,40px" frameborder="no">
-<%		String cook1 = cookie.readCookie(request, "url");
+<%			cookie.writeCookie(response, "url", "");
+			String cook1 = cookie.readCookie(request, "url");
 			if (cook1.equals("")) {%>
 				<frame src=index.jsp noresize="noreszie" id="main_j" name="main_j">
 <% 			}else {%>

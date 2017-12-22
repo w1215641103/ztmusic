@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="common.cookie" %>
+<%@ page import="dal.Music" %>
+<%@ page import="model.MusicInfo" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,9 +17,14 @@
 
 <body onload="gth('music.jsp'), load_l()" class="big">  <!--你需要在每个DIV里面加东西然后用class="v_*"的形式布局css不要随便使用全局，定义css全部按v_*的格式来-->
 <%
+	request.setCharacterEncoding("utf-8");		//设置页面编码
 	String music_name = cookie.readCookie(request, "music");
-	String album_name = cookie.readCookie(request, "album");
-	String writer_name = cookie.readCookie(request, "writer");
+	Music n_music = new Music();
+	MusicInfo musicinfo = new MusicInfo();
+	musicinfo = n_music.getMusic(music_name);
+	String album_name = musicinfo.getalbum();
+	String writer_name = musicinfo.getwriter();
+	cookie.writeCookie(response, "album", album_name);
 %>
     <div id="a"><div id="ap"></div></div>
                     <!--        v_1是全局         -->

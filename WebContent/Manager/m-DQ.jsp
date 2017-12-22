@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="css/yqf.css">
 <link rel="stylesheet" href="css/denglu.css">
 <link rel="stylesheet" href="css/m-DQ.css">
+<script src="js/goto.js"></script>
+<script src='js/jquery.js'></script>
 <style>
 .b_6{
         	position:absolute;
@@ -39,7 +41,7 @@
         }
 </style>
 </head>
-<body>
+<body onload="gth('m-DQ.jsp')">
 <div id="a"><div id="ap"></div></div>
 
 <div class="z-dq">
@@ -58,7 +60,7 @@
 		
 		<div class="dq-tx">
 			<a href=" "><img src="images/yin1.jpg"></a>
-			<span>爵士</span>
+			<span>纯音乐</span>
 		</div>
 		<div class="dq-tx">
 			<a href=" "><img src="images/yin1.jpg"></a>

@@ -1,8 +1,8 @@
  .mymusic{
         	position:relative;
-        	top:70px;
+        	top:100px;
         	margin:auto;
-        	width:50%;
+        	width:70%;
             height: 1500px;
             background-color: gray;
         }
@@ -72,7 +72,7 @@
         }
         .b_4x{
         	font-size:30px;
-        	width:62.5%;
+        	width:60%;
         	margin:0;
         	color:#c0c0c0;
         	padding-left:70px;

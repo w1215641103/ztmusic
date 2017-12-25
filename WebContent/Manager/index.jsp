@@ -122,61 +122,61 @@
             <!--    h的意思就是我自己画一个图标出来！！！！！    上面的都是调用的这个同款 -->
             <div class="e_3t_h"></div>
             <a class="e_3t_bt">最新音乐</a>
-            <div class="e_3t_text"><a href="special.jsp">更多>></a></div>
+            <div class="e_3t_text"><a href="z-DQ.jsp">更多>></a></div>
             <!--       分割线 ------------------------------------------  套用            -->
         </div>
             <div class="e_3t3">         <!--   这个是第三个，是表格的父级                 -->
                 
                 <div class="e_3t3_b">   <!--每一个  e_3t3_b  都是一个块级元素，他们是表格内容的父级-->
                     <div class="e_3t3_a"><a>1</a></div>
-                    <a href="music.jsp"><img class="e_3t3_tu" src="music/渡/暧昧.jpg"></a>
+                    <a onclick="set_music('暧昧')" href="music.jsp"><img class="e_3t3_tu" src="music/渡/暧昧.jpg"></a>
                     <div class="e_3t3_text">
-                        <p><a href="music.jsp"><h4><b>暧昧</b></h4></a></p>
+                        <p><a onclick="set_music('暧昧')" href="music.jsp"><h4><b>暧昧</b></h4></a></p>
                         <p><a href="z-DQ.jsp">薛之谦</a></p>
                     </div>
                </div>
 			   <!---------------------------------------------->
 			   <div class="e_3t3_b">   <!--每一个  e_3t3_b  都是一个块级元素，他们是表格内容的父级-->
                     <div class="e_3t3_a"><a>2</a></div>
-                    <a href="music.jsp"><img class="e_3t3_tu" src="music/鸽子/鸽子.jpg"></a>
+                    <a onclick="set_music('鸽子')" href="music.jsp"><img class="e_3t3_tu" src="music/鸽子/鸽子.jpg"></a>
                     <div class="e_3t3_text">
-                        <p><a href="music.jsp "><h4><b>鸽子</b></h4></a></p>
+                        <p><a onclick="set_music('鸽子')" href="music.jsp "><h4><b>鸽子</b></h4></a></p>
                         <p><a href="z-DQ.jsp ">杨宗纬</a></p>
                     </div>
                </div>
 			   <!---------------------------------------------->
 			   <div class="e_3t3_b">   <!--每一个  e_3t3_b  都是一个块级元素，他们是表格内容的父级-->
                     <div class="e_3t3_a"><a>3</a></div>
-                   		<a href="music.jsp"><img class="e_3t3_tu" src="music/青年晚报/摄影艺术.jpg"></a> 
+                   		<a onclick="set_music('摄影艺术')" href="music.jsp"><img class="e_3t3_tu" src="music/青年晚报/摄影艺术.jpg"></a> 
                     <div class="e_3t3_text">
-                        <p><a href="music.jsp"><h4><b>摄影艺术</b></h4></a></p>
+                        <p><a onclick="set_music('摄影艺术')" href="music.jsp"><h4><b>摄影艺术</b></h4></a></p>
                         <p><a href="z-DQ.jsp">许嵩</a></p>
                     </div>
                </div>
 			   <!---------------------------------------------->
 			   <div class="e_3t3_b">   <!--每一个  e_3t3_b  都是一个块级元素，他们是表格内容的父级-->
                     <div class="e_3t3_a"><a>4</a></div>
-                   		<a href="music.jsp"><img class="e_3t3_tu" src="music/天生李荣浩/作曲家.jpg"></a> 
+                   		<a onclick="set_music('作曲家')" href="music.jsp"><img class="e_3t3_tu" src="music/天生李荣浩/作曲家.jpg"></a> 
                     <div class="e_3t3_text">
-                        <p><a href="music.jsp"><h4><b>作曲家</b></h4></a></p>
+                        <p><a onclick="set_music('作曲家')" href="music.jsp"><h4><b>作曲家</b></h4></a></p>
                         <p><a href="z-DQ.jsp">李荣浩</a></p>
                     </div>
                </div>
 			   <!---------------------------------------------->
 			   <div class="e_3t3_b">   <!--每一个  e_3t3_b  都是一个块级元素，他们是表格内容的父级-->
                     <div class="e_3t3_a"><a>5</a></div>
-                  <a href="music.jsp"><img class="e_3t3_tu" src="music/新地球/黑键.jpg"></a>  
+                  <a onclick="set_music('黑键')" href="music.jsp"><img class="e_3t3_tu" src="music/新地球/黑键.jpg"></a>  
                     <div class="e_3t3_text">
-                        <p><a href="music.jsp"><h4><b>黑键</b></h4></a></p>
+                        <p><a onclick="set_music('黑键')" href="music.jsp"><h4><b>黑键</b></h4></a></p>
                         <p><a href="z-DQ.jsp">林俊杰</a></p>
                     </div>
                </div>
 			   <!---------------------------------------------->
 			   <div class="e_3t3_b">   <!--每一个  e_3t3_b  都是一个块级元素，他们是表格内容的父级-->
                     <div class="e_3t3_a"><a>6</a></div>
-                  <a href="music.jsp"><img class="e_3t3_tu" src="music/异类/反义词.jpg"></a>   
+                  <a onclick="set_music('反义词')" href="music.jsp"><img class="e_3t3_tu" src="music/异类/反义词.jpg"></a>   
                     <div class="e_3t3_text">
-                        <p><a href="music.jsp"><h4><b>反义词</b></h4></a></p>
+                        <p><a onclick="set_music('反义词')" href="music.jsp"><h4><b>反义词</b></h4></a></p>
                         <p><a href="z-DQ.jsp">华晨宇</a></p>
                     </div>
                </div>
@@ -192,29 +192,29 @@
         <div class="e_l">
             <!--e_lb是一整行表！！！！！！！-->
             <div class="e_lb">
-                <img class="e_lt2" src="music/陈奕迅国语精选/歌手-陈奕迅.jpg">
+                <img onclick="set_c_n('陈奕迅国语精选')" class="e_lt2" src="music/陈奕迅国语精选/歌手-陈奕迅.jpg">
                 <div class="e_lt3">
                     <p><a href="z-DQ.jsp"><b>陈奕迅</b></a></p>
-                    <p><a  href="special.jsp">国语精选</a></p>
+                    <p><a onclick="set_c_n('陈奕迅国语精选')" href="special.jsp">国语精选</a></p>
                 </div>
             </div>
             <!---------------------------------------------------------------->
             <!--e_lb是一整行表！！！！！！！-->
             <div class="e_lb">
-                <img class="e_lt2" src="music/穿越三部曲.png">
+                <img onclick="set_c_n('穿越三部曲')" class="e_lt2" src="music/穿越三部曲.png">
                 <div class="e_lt3">
                     <p><a href="z-DQ.jsp"><b>张杰</b></a></p>
-                    <p><a href="special.jsp">穿越三部曲</a></p>
+                    <p><a onclick="set_c_n('穿越三部曲')" href="special.jsp">穿越三部曲</a></p>
                 </div>
             </div>
             <!---------------------------------------------------------------->
              <!---------------------------------------------------------------->
             <!--e_lb是一整行表！！！！！！！-->
             <div class="e_lb">
-                <img class="e_lt2" src="music/渡.png">
+                <img onclick="set_c_n('渡')" class="e_lt2" src="music/渡.png">
                 <div class="e_lt3">
                     <p><a href="z-DQ.jsp"><b>薛之谦</b></a></p>
-                    <p><a href="special.jsp">渡</a></p>
+                    <p><a onclick="set_c_n('渡')" href="special.jsp">渡</a></p>
                 </div>
             </div>
              <!---------------------------------------------------------------->

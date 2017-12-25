@@ -36,10 +36,10 @@
         <div class="v_s"></div>
         <div class="v_b">
         	<div class="v_bj"></div>
-			<div class="v_b0"><a href=" ">«</a></div>
-			<div class="v_b1"><a href=" ">▶</a></div>
-			<div class="v_b2"><a href=" ">»</a></div>
-			<div class="v_b3"><a href=" ">↻</a></div>
+			<div class="v_b0"><a>«</a></div>
+			<div class="v_b1"><a onclick="m_play()">▶</a></div>
+			<div class="v_b2"><a>»</a></div>
+			<div class="v_b3"><a onclick="replay()">↻</a></div>
         </div>
                     <!--    v_x是图片布局       -->
         <div class="v_x">
@@ -71,6 +71,15 @@
 		}
 		xmlhttp.open("GET", lyric);
 		xmlhttp.send();
+	}
+	function m_play() {
+		var music_name = getCookie("music");
+		var music_album = getCookie("album");
+		var music_url = "music/"+music_album+"/"+music_name+".mp3";
+		window.parent.frames["music_play"].window.loadMusic(music_url);
+	}
+	function replay() {
+		window.parent.frames["music_play"].window.xhbf();
 	}
 </script>
 </html>

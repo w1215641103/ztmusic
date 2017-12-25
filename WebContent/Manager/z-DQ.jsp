@@ -28,10 +28,10 @@
 <div id="a"><div id="ap"></div></div>
 
 <div class="z-fl">
-	<button class="z-fl1"><a href="m-DQ.jsp">摇滚</a></button>
-	<button class="z-fl2"><a href="m-DQ.jsp">流行</a></button>
-	<button class="z-fl3"><a href="m-DQ.jsp">古典</a></button>
-	<button class="z-fl4"><a href="m-DQ.jsp">纯音乐</a></button>
+	<button class="z-fl1"><a onclick="set_c('摇滚')" href="m-DQ.jsp">摇滚</a></button>
+	<button class="z-fl2"><a onclick="set_c('流行')" href="m-DQ.jsp">流行</a></button>
+	<button class="z-fl3"><a onclick="set_c('古典')" href="m-DQ.jsp">古典</a></button>
+	<button class="z-fl4"><a onclick="set_c('纯音乐')" href="m-DQ.jsp">纯音乐</a></button>
 </div>
 <div class="z-dq">
     <!-- 	<div class="dq-head">
@@ -226,6 +226,9 @@
 	
 	function set_m_n(music_n) {
 		setCookie("music", music_n);
+	}
+	function set_c(class_c) {
+		setCookie("m_class", class_c);
 	}
 </script>
 </html>

@@ -19,7 +19,7 @@ function wb() {
 	var exp = new Date();
 	exp.setTime(exp.getTime()+60*60*24);
 	document.cookie = "wb="+document.getElementById("inpt").value+";expires="+exp.toGMTString;
-	window.location.href="amusic.jsp";
+	window.location.href="m-DQ.jsp";
 }
 function wb1() {
 	var exp = new Date();

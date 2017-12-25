@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="common.cookie" %>
+<%@ page import="dal.Music" %>
+<%@ page import="model.MusicInfo" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -42,6 +47,22 @@
 </style>
 </head>
 <body onload="gth('m-DQ.jsp')">
+<%	request.setCharacterEncoding("utf-8");		//设置页面编码
+	String music_class = "";
+	String music_find = "";
+	music_class = cookie.readCookie(request, "m_class");
+	music_find = cookie.readCookie(request, "wb");
+	Music music_z = new Music();
+	List<MusicInfo> musiclist = new ArrayList<MusicInfo>();
+	if (music_find.equals("")) {
+		if (!music_class.equals(""))
+			musiclist = music_z.getMusicList_c(music_class);
+	} else {
+		musiclist = music_z.getMusicList(music_find);
+	}
+	cookie.writeCookie(response, "wb", "");
+	cookie.writeCookie(response, "m_class", "");
+%>
 <div id="a"><div id="ap"></div></div>
 <div class="z-dq">
 
@@ -54,20 +75,20 @@
 	<div class="dq-gs">
 		<p>歌曲分类</p>
 		<div class="dq-tx">
-			<a href=" "><img src="images/yin1.jpg"></a>
+			<a onclick="set_s('摇滚')" href="m-DQ.jsp"><img src="images/yin1.jpg"></a>
 			<span>摇滚</span>
 		</div>
 		
 		<div class="dq-tx">
-			<a href=" "><img src="images/yin1.jpg"></a>
+			<a onclick="set_s('纯音乐')" href="m-DQ.jsp"><img src="images/yin1.jpg"></a>
 			<span>纯音乐</span>
 		</div>
 		<div class="dq-tx">
-			<a href=" "><img src="images/yin1.jpg"></a>
+			<a onclick="set_s('流行')" href="m-DQ.jsp"><img src="images/yin1.jpg"></a>
 			<span>流行</span>
 		</div>
 		<div class="dq-tx">
-			<a href=" "><img src="images/yin1.jpg"></a>
+			<a onclick="set_s('古典')" href="m-DQ.jsp"><img src="images/yin1.jpg"></a>
 			<span>古典</span>
 		</div>
 	</div>
@@ -76,8 +97,8 @@
 		<!-------------------------------  -->
 			<div class="dq_search">
 				<form>
-					<input type="text" placeholder="请输入歌名/作者...">
-					<button type="submit">搜索</button>
+					<input id="text_i" type="text" placeholder="请输入歌名/作者...">
+					<button onclick="set_find()" type="submit">搜索</button>
 				</form>
 			</div>
 		
@@ -89,17 +110,36 @@
             	<th>歌手</th>
             	<th>专辑</th>
        		 </tr>
+<%			for (int i = 0; i < musiclist.size(); i++) { %>
         	<tr>
-            	<td><a href=" ">你还要我怎样</a></td>
-            	<td><a href=" ">流行</a></td>
-            	<td><a href=" ">薛之谦</a></td>
-            	<td><a href=" ">你还要我怎样</a></td>
+            	<td><a id=<%="music_"+i %> onclick=<%="go_music("+i+")" %> href="music.jsp"><%=musiclist.get(i).getname() %></a></td>
+            	<td><a><%=musiclist.get(i).getstyle() %></a></td>
+            	<td><a href="z-DQ.jsp"><%=musiclist.get(i).getwriter() %></a></td>
+            	<td><a id=<%="album_"+i %> onclick=<%="go_album("+i+")" %> href="special.jsp"><%=musiclist.get(i).getalbum() %></a></td>
         	</tr>
+<%			} %>
     		</table>
 
 		</div>
 	</div>
 </div>
-
 </body>
+<script>
+	function go_music(z) {
+		var music_name = document.getElementById("music_"+z).innerText;
+		setCookie("music", music_name);
+	}
+	function go_album(z) {
+		var album_name = document.getElementById("album_"+z).innerText;
+		setCookie("click_n", album_name);
+	}
+	function set_s(s) {
+		setCookie("m_class", s);
+	}
+	function set_find() {
+		var f = document.getElementById("text_i").value;
+		setCookie("wb", f);
+		window.location.href="m-DQ.jsp";
+	}
+</script>
 </html>
